@@ -8,7 +8,7 @@ import ArticleList from '@/components/ArticleList'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'DevToolset - Open Source Developer Tools Navigator Without Database',
+  title: 'DevToolset: Open-Source Database-free Developer Tools Navigator',
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
 }
 
@@ -34,7 +34,7 @@ export default function Home() {
       <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-7xl tracking-tight">
             <span className="text-primary">Dev Toolset</span>
           </h1>
-        <h2 className="text-2xl tracking-tight sm:text-3xl md:text-3xl lg:text-3xl">Open Source Developer Tools Navigator Without Database</h2>
+        <h2 className="text-2xl tracking-tight sm:text-3xl md:text-3xl lg:text-3xl">Open-Source & Database-Free Developer Tools Navigator</h2>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl">
           Explore Every Essential Tool for Your Development Journey
         </p>
