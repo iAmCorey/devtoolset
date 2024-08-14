@@ -1,6 +1,6 @@
 # DevToolset
 
-[DevToolset](https://DevToolset.net/) is an open-source developer tools navigator without database
+[DevToolset](https://DevToolset.net/) is an open-source database-free developer tools navigator
 
 ![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
 
@@ -87,6 +87,8 @@ Before submitting your PR, please ensure you have completed the following:
    GITHUB_OWNER=your_github_username
    GITHUB_REPO=your_repo_name
    ACCESS_PASSWORD=your_secure_access_password
+   NEXT_PUBLIC_PLAUSIBLE_URL=your_plausible_data_domain(Optional)
+   NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your_google_analytics(G-xxx)
    ```
 
 4. Set up your GitHub repository:
