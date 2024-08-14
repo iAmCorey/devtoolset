@@ -79,7 +79,9 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                 </div>
                 { resource.tags ? 
                   <div className='mt-3'>
-                    <Badge variant="secondary">{resource.tags}</Badge>
+                    {resource.tags.slice(0,2).map((tag, i) => (
+                      <Badge key={i} variant="secondary" className='pb-1 mr-1'>{tag}</Badge>
+                    ))}
                   </div> :
                  null
                 }     
@@ -124,8 +126,10 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                 </div>
                 { resource.tags ? 
                   <div className='mt-3'>
-                    <Badge variant="secondary">{resource.tags}</Badge>
-                  </div> :
+                  {resource.tags.slice(0,2).map((tag, i) => (
+                    <Badge key={i} variant="secondary" className='pb-1 mr-1'>{tag}</Badge>
+                  ))}
+                </div> :
                  null
                 }     
               </CardDescription>
