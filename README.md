@@ -87,8 +87,9 @@ Before submitting your PR, please ensure you have completed the following:
    GITHUB_OWNER=your_github_username
    GITHUB_REPO=your_repo_name
    ACCESS_PASSWORD=your_secure_access_password
+   JWT_SECRET=your_secret_key_here
+   NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your_google_analytics(G-xxx)(Optional)
    NEXT_PUBLIC_PLAUSIBLE_URL=your_plausible_data_domain(Optional)
-   NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your_google_analytics(G-xxx)
    ```
 
 4. Set up your GitHub repository:
@@ -113,6 +114,9 @@ Visit `http://localhost:3000` to see your DevToolset instance running locally.
    - `GITHUB_OWNER`
    - `GITHUB_REPO`
    - `ACCESS_PASSWORD`
+   - `JWT_SECRET`
+   - `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`(Optional)
+   - `NEXT_PUBLIC_PLAUSIBLE_URL`(Optional)
 4. Deploy the project.
 
 For a detailed deployment guide, please refer to our [Installation and Deployment Guide](/data/md/deploy-own-devtoolset.md).
