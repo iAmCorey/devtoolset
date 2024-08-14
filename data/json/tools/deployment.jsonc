@@ -1,0 +1,108 @@
+// example data
+// {
+//   "name": "Tailwind CSS",
+//   "description": "A utility-first CSS framework",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (Optional, 3tags max)
+//   "add_date": "yyyy-MM-dd" (Optional) 
+//   ...any other key if you want
+// }
+// 
+// Notice:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed
+// 3. Do not submit tools that are unrelated to development.
+
+[
+  // A
+  // B
+  // C
+  {
+    "name": "Cloudflare Pages",
+    "description": "Cloudflare's JAMstack platform for frontend developers to collaborate and deploy websites globally",
+    "url": "https://pages.cloudflare.com/"
+  },
+  {
+    "name": "Coolify",
+    "description": "Self-hosted & open-source PaaS to deploy applications and databases",
+    "url": "https://coolify.io/",
+    "tags": ["open-source"]
+  },
+  // D
+  {
+    "name": "Dokploy",
+    "description": "Simple, fast, and secure Docker-based PaaS for deploying your apps",
+    "url": "https://dokploy.com/",
+    "tags": ["open-source"]
+  },
+  {
+    "name": "Dokku",
+    "description": "Docker-powered mini-Heroku that helps you build and manage applications",
+    "url": "https://dokku.com/",
+    "tags": ["open-source", "PaaS"]
+  },
+  // E
+  // F
+  {
+    "name": "Firebase",
+    "description": "Google's mobile platform that helps you quickly develop high-quality apps",
+    "url": "https://firebase.google.com/"
+  },
+  // G
+  // H
+  {
+    "name": "Heroku",
+    "description": "Platform as a service that enables developers to build, run, and operate applications entirely in the cloud",
+    "url": "https://www.heroku.com/"
+  },
+  // I
+  // J
+  // K
+  // L
+  // M
+  // N
+  {
+    "name": "Netlify",
+    "description": "Platform for deploying static websites and modern web applications",
+    "url": "https://www.netlify.com/"
+  },
+  // O
+  // P
+  // Q
+  // R
+  {
+    "name": "Railway",
+    "description": "Cloud infrastructure platform that makes deployments easy and fast",
+    "url": "https://railway.app/"
+  },
+  {
+    "name": "Render",
+    "description": "Unified cloud platform to build and run all your apps and websites",
+    "url": "https://render.com/"
+  },
+  // S
+  {
+    "name": "SST",
+    "description": "Serverless Stack (SST) is a framework that makes it easy to build serverless apps",
+    "url": "https://sst.dev/",
+    "tags": ["open-source", "Serverless"]
+  },
+  // T
+  // U
+  // V
+  {
+    "name": "Vercel",
+    "description": "Cloud platform for static sites and Serverless Functions",
+    "url": "https://vercel.com/"
+  },
+  // W
+  // X
+  // Y
+  // Z
+  {
+    "name": "Zeabur",
+    "description": "Cloud platform for deploying and managing applications effortlessly",
+    "url": "https://zeabur.com/"
+  },
+  
+]
