@@ -113,7 +113,7 @@ Visit `http://localhost:3000` to see your DevToolset instance running locally.
    - `ACCESS_PASSWORD`
 4. Deploy the project.
 
-For a detailed deployment guide, please refer to our [Installation and Deployment Guide](link-to-guide).
+For a detailed deployment guide, please refer to our [Installation and Deployment Guide](/data/md/deploy-own-devtoolset.md).
 
 ## Usage
 
@@ -124,11 +124,11 @@ For a detailed deployment guide, please refer to our [Installation and Deploymen
 
 ## Contributing
 
-We welcome contributions to DevToolset! Please read our [Contributing Guide](link-to-contributing-guide) for details on our code of conduct and the process for submitting pull requests.
+We welcome contributions to DevToolset! Please read our [Contributing Guide](/data/md/add-new-developer-tools.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 
-DevToolset is open-source software licensed under the [MIT license](link-to-license).
+DevToolset is open-source software licensed under the [MIT license](./LICENSE).
 
 ## Support
 
