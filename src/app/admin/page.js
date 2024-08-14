@@ -9,7 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 export default function AdminPage() {
   const [resources, setResources] = useState([]);
-  const [newResource, setNewResource] = useState({ name: '', description: '', url: '' });
+  const [newResource, setNewResource] = useState({ name: '', src: '', link: '' });
   const [editingIndex, setEditingIndex] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -45,6 +45,7 @@ export default function AdminPage() {
         throw new Error('Failed to fetch resources');
       }
       const data = await response.json();
+      console.log('get resources: ', data)
       setResources(data);
     } catch (error) {
       console.error('Error fetching resources:', error);
@@ -68,12 +69,15 @@ export default function AdminPage() {
   const handleEdit = (index) => {
     setEditingIndex(index);
   };
+  const handleCancel = (index) => {
+    setEditingIndex(null);
+  };
 
   const handleSave = async (index) => {
     let updatedResources = [...resources];
     if (index === -1) {
       updatedResources.push(newResource);
-      setNewResource({ name: '', description: '', url: '' });
+      setNewResource({ name: '', src: '', link: '' });
     }
     try {
       const response = await fetch('/api/resources', {
@@ -108,13 +112,13 @@ export default function AdminPage() {
           <Button>Manage Articles</Button>
         </Link>
       </div>
-      <h2 className="text-xl font-bold mb-4">Resource Management</h2>
+      <h2 className="text-xl font-bold mb-4">Category Management</h2>
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead>Name</TableHead>
-            <TableHead>Description</TableHead>
-            <TableHead>URL</TableHead>
+            <TableHead>Src</TableHead>
+            <TableHead>Link</TableHead>
             <TableHead>Actions</TableHead>
           </TableRow>
         </TableHeader>
@@ -130,21 +134,24 @@ export default function AdminPage() {
               </TableCell>
               <TableCell>
                 {editingIndex === index ? (
-                  <Input name="description" value={resource.description} onChange={(e) => handleInputChange(e, index)} />
+                  <Input name="src" value={resource.src} onChange={(e) => handleInputChange(e, index)} />
                 ) : (
-                  resource.description
+                  resource.src
                 )}
               </TableCell>
               <TableCell>
                 {editingIndex === index ? (
-                  <Input name="url" value={resource.url} onChange={(e) => handleInputChange(e, index)} />
+                  <Input name="link" value={resource.link} onChange={(e) => handleInputChange(e, index)} />
                 ) : (
-                  resource.url
+                  resource.link
                 )}
               </TableCell>
               <TableCell>
                 {editingIndex === index ? (
-                  <Button onClick={() => handleSave(index)}>Save</Button>
+                  <div >
+                    <Button size="sm" className='mr-4' onClick={() => handleCancel(index)}>Cancel</Button>
+                    <Button size="sm" onClick={() => handleSave(index)}>Save</Button>
+                  </div>
                 ) : (
                   <Button onClick={() => handleEdit(index)}>Edit</Button>
                 )}
@@ -153,13 +160,13 @@ export default function AdminPage() {
           ))}
           <TableRow>
             <TableCell>
-              <Input name="name" value={newResource.name} onChange={handleInputChange} placeholder="New resource name" />
+              <Input name="name" value={newResource.name} onChange={handleInputChange} placeholder="New category name" />
             </TableCell>
             <TableCell>
-              <Input name="description" value={newResource.description} onChange={handleInputChange} placeholder="New resource description" />
+              <Input name="src" value={newResource.src} onChange={handleInputChange} placeholder="New category src" />
             </TableCell>
             <TableCell>
-              <Input name="url" value={newResource.url} onChange={handleInputChange} placeholder="New resource URL" />
+              <Input name="link" value={newResource.link} onChange={handleInputChange} placeholder="New category link" />
             </TableCell>
             <TableCell>
               <Button onClick={() => handleSave(-1)}>Add New</Button>

@@ -29,6 +29,7 @@ export function Navigation() {
       try {
         const response = await fetch('/api/check-auth');
         const data = await response.json();
+        console.log('check auth res: ', data)
         if (isMounted) setIsLoggedIn(data.isLoggedIn);
       } catch (error) {
         console.error('Failed to check auth status:', error);

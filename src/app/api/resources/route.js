@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { Octokit } from '@octokit/rest';
+import * as jsonc from 'jsonc-parser';
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN
@@ -9,8 +10,8 @@ const octokit = new Octokit({
 
 const owner = process.env.GITHUB_OWNER;
 const repo = process.env.GITHUB_REPO;
-const githubPath = 'data/json/resources.json';
-const localPath = path.join(process.cwd(), 'data', 'json', 'resources.json');
+const githubPath = 'data/json/tools/category.jsonc';
+const localPath = path.join(process.cwd(), 'data', 'json', 'tools', 'category.json');
 
 async function getResourcesFromGitHub() {
   try {
@@ -21,7 +22,7 @@ async function getResourcesFromGitHub() {
     });
 
     const content = Buffer.from(data.content, 'base64').toString('utf8');
-    return JSON.parse(content);
+    return jsonc.parse(content);
   } catch (error) {
     console.error('Error fetching resources from GitHub:', error);
     throw error;
@@ -29,7 +30,7 @@ async function getResourcesFromGitHub() {
 }
 
 function getLocalResources() {
-  return JSON.parse(fs.readFileSync(localPath, 'utf8'));
+  return jsonc.parse(fs.readFileSync(localPath, 'utf8'));
 }
 
 export async function GET(req) {
