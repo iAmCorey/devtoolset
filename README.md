@@ -62,7 +62,7 @@ Before submitting your PR, please ensure you have completed the following:
 ## Prerequisites
 
 - Node.js (version 14 or later)
-- npm (comes with Node.js)
+- npm/pnpm/yarn (comes with Node.js)
 - Git
 - GitHub account
 - Vercel account (for deployment)
@@ -78,6 +78,7 @@ Before submitting your PR, please ensure you have completed the following:
 2. Install dependencies:
    ```
    npm install
+   pnpm install
    ```
 
 3. Create a `.env.local` file in the root directory and add the following:
@@ -96,6 +97,7 @@ Before submitting your PR, please ensure you have completed the following:
 5. Run the development server:
    ```
    npm run dev
+   pnpm dev
    ```
 
 Visit `http://localhost:3000` to see your DevToolset instance running locally.
@@ -130,7 +132,18 @@ DevToolset is open-source software licensed under the [MIT license](link-to-lice
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on the GitHub repository.
+If you find this project helpful, please consider giving it a ⭐ on GitHub!
+
+Feel free to reach out if you have any questions or suggestions:
+
+- **Email:** [iamcoreychiu@gmail.com](mailto:iamcoreychiu@gmail.com)
+- **GitHub:** [iamcorey](https://github.com/iamcorey)
+- **Wechat:** `iAmCor3y`(Please add a note when sending a friend request)
+![iamcorey](https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg) 
+
+
+Thank you for your support!
+
 
 ## Acknowledgements
 
