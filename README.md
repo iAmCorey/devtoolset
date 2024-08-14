@@ -2,7 +2,7 @@
 
 [DevToolset](https://DevToolset.net/) is an open-source developer tools navigator without database
 
-![GitBase](https://toimg.xyz/file/5aa892c8e8385232fcdf3.png)
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
 
 
 ## Adding New Developer Tools to DevToolset
