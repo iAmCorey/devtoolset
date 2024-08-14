@@ -31,7 +31,7 @@ Follow these steps to add new developer tools to DevToolset.
 
 ### Deploy on Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fqiayue%2Fgitbase&project-name=GitBase&repository-name=GitBase&external-id=https%3A%2F%2Fgithub.com%2Fqiayue%2Fgitbase%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiAmCorey%2Fdevtoolset&project-name=devtoolset&repository-name=devtoolset&external-id=https%3A%2F%2Fgithub.com%2FiAmCoreye%2Fdevtoolset%2Ftree%2Fmain)
 
 
 ## Features
@@ -56,8 +56,8 @@ Follow these steps to add new developer tools to DevToolset.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/qiayue/gitbase.git
-   cd gitbase
+   git clone https://github.com/iAmCorey/devtoolset
+   cd devtoolset
    ```
 
 2. Install dependencies:
@@ -83,7 +83,7 @@ Follow these steps to add new developer tools to DevToolset.
    npm run dev
    ```
 
-Visit `http://localhost:3000` to see your GitBase instance running locally.
+Visit `http://localhost:3000` to see your DevToolset instance running locally.
 
 ## Deployment
 
