@@ -6,7 +6,6 @@ export async function POST(request) {
   
   if (password === process.env.ACCESS_PASSWORD) {
     const token = createToken();
-    console.log(password, process.env.ACCESS_PASSWORD)
     const response = NextResponse.json({ message: 'Login successful' }, { status: 200 });
 
     response.cookies.set({
