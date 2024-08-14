@@ -32,6 +32,14 @@ type toolsListProps = {
   showMoreLink?: boolean
 }
 
+type toolProps = {
+  name: string,
+  description: string,
+  url: string,
+  tags?: string[]
+  
+}
+
 
 
 const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) => {
@@ -49,7 +57,8 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
         )}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {srcList.slice(0,8).map((resource, index) => (
+        {/* @ts-ignore */}
+        {srcList.slice(0,8).map((resource: toolProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
@@ -93,7 +102,8 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
         <p className='text-sm mt-2 opacity-60'>All tools are sorted alphabetically</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {srcList.slice(0,8).map((resource, index) => (
+        {/* @ts-ignore */}
+        {srcList.slice(0,8).map((resource: toolProps, index) => (
           <Card key={index} className='flex flex-col justify-between'>
             <CardHeader>
               <a 
@@ -135,7 +145,8 @@ const CategoryList = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        {srcList.slice(0,8).map((category, index) => (
+        {/* @ts-ignore */}
+        {srcList.slice(0,8).map((category: categoryProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 

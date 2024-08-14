@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
 }
 
+type categoryType = { 
+  name: string; 
+  src: string; 
+  link: string; 
+}
+
+
 export default function Home() {
   // categories data
   const categories = getCategories();
@@ -32,7 +39,7 @@ export default function Home() {
           Explore Every Essential Tool for Your Development Journey
         </p>
       </section>
-      {categories.map((category, index) => (
+      {categories.map((category: categoryType, index: React.Key | null | undefined) => (
         <ToolsList key={index} category={category} />
       ))}
       <div className='border-t'></div>

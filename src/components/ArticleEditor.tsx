@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 export default function ArticleEditor() {
   const [article, setArticle] = useState({ title: '', description: '', content: '', path: '' });
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string>("");
   const searchParams = useSearchParams();
   const path = searchParams.get('path');
 
@@ -22,9 +22,9 @@ export default function ArticleEditor() {
     }
   }, [path]);
 
-  const fetchArticle = async (articlePath) => {
+  const fetchArticle = async (articlePath: string | number | boolean) => {
     setIsLoading(true);
-    setError(null);
+    setError("");
     try {
       const response = await fetch(`/api/articles?path=${encodeURIComponent(articlePath)}`);
       if (!response.ok) {
@@ -40,7 +40,7 @@ export default function ArticleEditor() {
     }
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setArticle({ ...article, [name]: value });
   };

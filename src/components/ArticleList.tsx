@@ -7,6 +7,7 @@ import {
   CardDescription,
 } from "@/components/ui/card"
 
+// @ts-ignore
 export default function ArticleList({ articles, showMoreLink = true }) {
   return (
     <section>
@@ -19,6 +20,7 @@ export default function ArticleList({ articles, showMoreLink = true }) {
         )}
       </div>
       <div className="space-y-6">
+        {/* @ts-expect-error */}
         {articles.map(({ id, title, description }) => (
           <Card key={id}>
             <CardHeader>

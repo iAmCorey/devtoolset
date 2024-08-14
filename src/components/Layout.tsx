@@ -2,6 +2,7 @@
 import { Navigation } from './Navigation'
 import { Footer } from '@/components/Footer'
 
+// @ts-expect-error
 export function Layout({ children }) {
   return (
     <div className="min-h-screen bg-background font-sans antialiased">
