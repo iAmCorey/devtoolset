@@ -20,11 +20,26 @@ Follow these steps to add new developer tools to DevToolset.
 
 ### Step 2: Commit Your Changes and Submit a Pull Request
 
-### Important Notes:
+### PR Checklist
 
-1. Ensure all entries are sorted alphabetically; they will be displayed in this order on the site.
-2. Do not include affiliate links.
-3. Do not submit tools that are unrelated to development.
+Before submitting your PR, please ensure you have completed the following:
+
+- [ ] **name**: Provide a brief title describing the tool or data you added.
+- [ ] **description**: Clearly state what tool or data was added and in which category.
+- [ ] **url**: Provide the url of the tool.
+- [ ] **Data Sorting**: Ensure all data in the modified JSON file is sorted alphabetically.
+- [ ] **No Affiliate Links**: Confirm that no affiliate links have been added.
+- [ ] **Relevant Tools Only**: Ensure that only development-related tools are included.
+
+
+
+### Additional Notes
+- Ensure all entries are sorted alphabetically; they will be displayed in this order on the site.
+- Please do not submit tools unrelated to development.
+- Do not include affiliate links.
+- If adding a new category, follow the instructions provided in the contribution guidelines.
+
+
 
 
 ## Deploy your own DevToolset
