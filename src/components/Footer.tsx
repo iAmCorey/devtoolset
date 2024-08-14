@@ -55,16 +55,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          {/* <div>
-            <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Friends</h3>
-            <ul className="mt-4 space-y-4">
-              <li>
-              <Link href="https://gitbase.app/" target='_black' className="text-base text-gray-500 hover:text-gray-900">
-                GitBase
-              </Link>
-              </li>
-            </ul>
-          </div> */}
           <div>
             <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Legal</h3>
             <ul className="mt-4 space-y-4">

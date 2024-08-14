@@ -87,7 +87,7 @@ export function Navigation() {
         </div>
         <div className="flex items-center gap-4">
           <Link
-            href="https://github.com/qiayue/gitbase"
+            href={"https://github.com/iAmCorey/devtoolset"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground"
