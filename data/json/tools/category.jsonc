@@ -54,6 +54,12 @@
   // H
   // I
   {
+    "name": "IDE",
+    "src": "ide.jsonc",
+    "link": "ide",
+    "description": "Integrated Development Environments for writing, testing, and debugging code efficiently."
+  },
+  {
     "name": "Insights",
     "src": "insights.jsonc",
     "link": "insights",
