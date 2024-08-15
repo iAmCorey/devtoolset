@@ -63,7 +63,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
-                href={resource.url} 
+                href={`${resource.url}?utm_source=devtoolset.net`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
@@ -110,7 +110,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
-                href={resource.url} 
+                href={`${resource.url}?utm_source=devtoolset.net`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"

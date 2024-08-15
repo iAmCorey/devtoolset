@@ -47,6 +47,12 @@
   // L
   // M
   {
+    "name": "Microsoft Clarity",
+    "description": "A free analytics tool that provides insights into user behavior through heatmaps, session recordings, and advanced data analytics.",
+    "url": "https://clarity.microsoft.com/",
+    "tags": ["analytics", "heatmaps", "user-behavior"]
+  },
+  {
     "name": "Moz Pro",
     "description": "A comprehensive SEO toolset that helps you with keyword research, site audits, backlink analysis, and more to improve your search engine rankings.",
     "url": "https://moz.com/products/pro",
