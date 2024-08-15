@@ -33,16 +33,16 @@
   // J
   // K
   {
-    "name": "Kodepay",
-    "description": "An all-in-one payment solution for developers, offering APIs for seamless integration into web and mobile applications.",
-    "url": "https://kodepay.com/",
-    "tags": ["payment", "API", "developers"]
-  },
-  {
     "name": "Ko-fi",
     "description": "A platform that allows creators to receive donations and sell content directly to their fans.",
     "url": "https://ko-fi.com/",
     "tags": ["donations", "creators", "community"]
+  },
+  {
+    "name": "Kodepay",
+    "description": "An all-in-one payment solution for developers, offering APIs for seamless integration into web and mobile applications.",
+    "url": "https://kodepay.io/",
+    "tags": ["payment", "API", "developers"]
   },
   // L
   {
@@ -70,6 +70,7 @@
     "url": "https://stripe.com/",
     "tags": ["payment", "global", "API"]
   },
+  // T
   // U
   // V
   // W

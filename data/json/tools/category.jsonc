@@ -15,6 +15,11 @@
 
 [
   // A
+  {
+    "name": "analytics",
+    "src": "analytics.jsonc",
+    "link": "analytics"
+  },
   // B
   // C
   // D
@@ -58,7 +63,17 @@
   // Q
   // R
   // S
+  {
+    "name": "SEO",
+    "src": "seo.jsonc",
+    "link": "seo"
+  },
   // T
+  {
+    "name": "template",
+    "src": "template.jsonc",
+    "link": "template"
+  },
   // U
   {
     "name": "UI",
