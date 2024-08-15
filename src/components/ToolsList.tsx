@@ -1,7 +1,7 @@
 // components/ResourceList.tsx
 import React from 'react'; // 确保导入 React
 import Link from 'next/link'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, ArrowRightIcon } from 'lucide-react'
 import {
   Card,
   CardHeader,
@@ -74,7 +74,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                 <ExternalLink size={16} className='ml-1' />
               </a>
               <CardDescription className='flex flex-col justify-between '>
-                <div className='h-[60px] line-clamp-3 mt-1'>
+                <div className='h-[60px] line-clamp-3 mt-1 tracking-tight text-start'>
                   {resource.description}
                 </div>
                 { resource.tags ? 
@@ -106,7 +106,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {/* @ts-ignore */}
         {srcList.slice(0,8).map((resource: toolProps, index) => (
-          <Card key={index} className='flex flex-col justify-between'>
+          <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
                 href={resource.url} 
@@ -121,13 +121,13 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                 <ExternalLink size={16} className='ml-1' />
               </a>
               <CardDescription className='flex flex-col justify-between '>
-                <div className='h-[60px] line-clamp-3 mt-1'>
+                <div className='h-[60px] line-clamp-3 mt-1 tracking-tight text-start'>
                   {resource.description}
                 </div>
                 { resource.tags ? 
                   <div className='mt-3'>
-                  {resource.tags.slice(0,2).map((tag, i) => (
-                    <Badge key={i} variant="secondary" className='pb-1 mr-1'>{tag}</Badge>
+                  {resource.tags.slice(0,3).map((tag, i) => (
+                    <Badge key={i} variant="secondary" className='text-xs pb-1 mr-1 mt-2 tracking-tighter'>{tag}</Badge>
                   ))}
                 </div> :
                  null
@@ -157,7 +157,14 @@ const CategoryList = () => {
                 href={`/tools/${category.link}`}
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
-                <CardTitle className='capitalize'>{category.name}</CardTitle>
+                <CardTitle className='capitalize'>
+                  <div className='flex flex-row justify-center items-start'>
+                    <div className='text-start'>
+                    {category.name}
+                    </div>
+                    <ArrowRightIcon size={16} className='ml-2'/>
+                  </div>
+                </CardTitle>
               </a>
               {/* <CardDescription></CardDescription> */}
             </CardHeader>
