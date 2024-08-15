@@ -128,7 +128,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                         <ListItem
                           key={category.name}
                           title={category.name}
-                          href={category.link}
+                          href={`/tools/${category.link}`}
                           className='capitalize'
                         >
                           {category.description}
