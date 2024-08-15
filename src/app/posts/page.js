@@ -1,4 +1,4 @@
-import ArticleList from '@/components/ArticleList'
+import { ArticlePage } from '@/components/ArticleList'
 import { getSortedPostsData } from '@/lib/posts';
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default function Articles() {
 
   return (
     <div className="container mx-auto py-12">
-      <ArticleList articles={allPostsData} showMoreLink={false} />
+      <ArticlePage articles={allPostsData} />
     </div>
   )
 }
