@@ -23,6 +23,7 @@ import { getDataList, getCategories } from '@/lib/data';
 type categoryProps = {
   name: string,
   src: string,
+  description: string,
   link: string
 }
 
@@ -150,23 +151,21 @@ const CategoryList = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {/* @ts-ignore */}
-        {srcList.slice(0,8).map((category: categoryProps, index) => (
+        {srcList.map((category: categoryProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
                 href={`/tools/${category.link}`}
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
-                <CardTitle className='capitalize'>
-                  <div className='flex flex-row justify-center items-start'>
-                    <div className='text-start'>
-                    {category.name}
-                    </div>
-                    <ArrowRightIcon size={16} className='ml-2'/>
-                  </div>
-                </CardTitle>
+                <CardTitle className='capitalize'>{category.name}</CardTitle>
+                <ArrowRightIcon size={16} className='ml-2'/>
               </a>
-              {/* <CardDescription></CardDescription> */}
+              <CardDescription className='flex flex-col justify-between'>
+                <div className='h-[40px] line-clamp-2 mt-4 tracking-tight text-start'>
+                {category.description}
+                </div>
+              </CardDescription>
             </CardHeader>
           </Card>
         ))}

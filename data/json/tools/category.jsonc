@@ -18,7 +18,8 @@
   {
     "name": "analytics",
     "src": "analytics.jsonc",
-    "link": "analytics"
+    "link": "analytics",
+    "description": "Tools for tracking and analyzing website data."
   },
   // B
   // C
@@ -26,19 +27,22 @@
   {
     "name": "database",
     "src": "database.jsonc",
-    "link": "database"
+    "link": "database",
+    "description": "Services for storing and managing data."
   },
   {
     "name": "deployment",
     "src": "deployment.jsonc",
-    "link": "deployment"
+    "link": "deployment",
+    "description": "Tools for automating application deployment."
   },
   // E
   // F
   {
     "name": "Frontend Frameworks",
     "src": "frontend-frameworks.jsonc",
-    "link": "frontend-frameworks"
+    "link": "frontend-frameworks",
+    "description": "Libraries for building user interfaces."
   },
   // G
   // H
@@ -53,12 +57,14 @@
   {
     "name": "payment",
     "src": "payment.jsonc",
-    "link": "payment"
+    "link": "payment",
+    "description": "Platforms for processing online payments."
   },
   {
     "name": "promotion",
     "src": "promotion.jsonc",
-    "link": "promotion"
+    "link": "promotion",
+    "description": "Tools for promoting products and content."
   },
   // Q
   // R
@@ -66,29 +72,32 @@
   {
     "name": "SEO",
     "src": "seo.jsonc",
-    "link": "seo"
+    "link": "seo",
+    "description": "Tools for improving search engine visibility."
   },
   // T
   {
     "name": "template",
     "src": "template.jsonc",
-    "link": "template"
+    "link": "template",
+    "description": "Pre-designed website themes and layouts."
   },
   // U
   {
     "name": "UI",
     "src": "ui.jsonc",
-    "link": "ui"
+    "link": "ui",
+    "description": "Components for designing user interfaces."
   },
   // V
   {
     "name": "Version Control",
     "src": "version-control.jsonc",
-    "link": "version-control"
+    "link": "version-control",
+    "description": "Systems for managing code changes."
   },
   // W
   // X
   // Y
   // Z
-  
 ]
