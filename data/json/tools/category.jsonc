@@ -23,6 +23,11 @@
     "src": "deployment.jsonc",
     "link": "deployment"
   },
+  {
+    "name": "database",
+    "src": "database.jsonc",
+    "link": "database"
+  }
   // E
   // F
   {
