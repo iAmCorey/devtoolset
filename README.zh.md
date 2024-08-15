@@ -2,6 +2,15 @@
 
 [DevToolset](https://DevToolset.net/) 是一个开源的、无需数据库的开发者工具导航网站
 
+## Star记录
+
+[![Star History Chart](https://api.star-history.com/svg?repos=iamcorey/devtoolset&type=Date)](https://star-history.com/#iamcorey/devtoolset&Date)
+
+
+## 预览
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
+
+
 ![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
 
 ## 如何添加新开发者工具到 DevToolset
