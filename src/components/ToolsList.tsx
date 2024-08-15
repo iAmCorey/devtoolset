@@ -111,7 +111,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {/* @ts-ignore */}
-        {srcList.slice(0,8).map((resource: toolProps, index) => (
+        {srcList.map((resource: toolProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
