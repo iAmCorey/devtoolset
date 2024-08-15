@@ -137,7 +137,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                       <ListItem
                           title={'More'}
                           href={'/category'}
-                          className='capitalize'
+                          className='capitalize border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'
                         >
                          More Category
                         </ListItem>
@@ -171,7 +171,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                       <ListItem href="/posts/deploy-own-devtoolset" title="Deploy DevToolset">
                         Deploy your own DevToolset
                       </ListItem>
-                      <ListItem href="/posts/" title="More">
+                      <ListItem href="/posts/" title="More" className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
                         More articles
                       </ListItem>
                     </ul>

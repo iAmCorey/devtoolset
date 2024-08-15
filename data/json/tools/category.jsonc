@@ -47,6 +47,12 @@
   // G
   // H
   // I
+  {
+    "name": "Insights",
+    "src": "insights.jsonc",
+    "link": "insights",
+    "description": "Tools for discovering trends, emerging topics, and valuable market insights."
+  },
   // J
   // K
   // L
