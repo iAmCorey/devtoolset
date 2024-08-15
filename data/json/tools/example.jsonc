@@ -3,6 +3,7 @@
 //   "name": "Tailwind CSS",
 //   "description": "A utility-first CSS framework",
 //   "url": "https://tailwindcss.com/",
+//   "icon_url": "icon_path", (Optional)
 //   "tags": ["a", "b"], (Optional, 3tags max)
 //   "add_date": "yyyy-MM-dd" (Optional) 
 //   ...any other key if you want

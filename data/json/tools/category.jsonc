@@ -36,6 +36,12 @@
     "link": "deployment",
     "description": "Tools for automating application deployment."
   },
+  {
+    "name": "domain",
+    "src": "domain.jsonc",
+    "link": "domain",
+    "description": "Managing and analyzing domain names."
+  },
   // E
   // F
   {
