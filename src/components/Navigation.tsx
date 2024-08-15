@@ -9,13 +9,29 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image";
 import IconImage from "../../public/favicon.svg";
 
-const navItems = [
-  { path: '/', label: 'Home' },
-  { path: '/category', label: 'Categories' },
-  { path: '/posts', label: 'Articles' },
-]
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
-export function Navigation() {
+
+type categoriesType = {
+  name: string, 
+  src: string, 
+  description: string,
+  link: string
+}
+
+type navigationProp = {
+  categories: categoriesType[]
+}
+
+export const Navigation: React.FC<navigationProp> = ({ categories }) => {
   const pathname = usePathname()
   const router = useRouter()
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -29,7 +45,6 @@ export function Navigation() {
       try {
         const response = await fetch('/api/check-auth');
         const data = await response.json();
-        console.log('check auth res: ', data)
         if (isMounted) setIsLoggedIn(data.isLoggedIn);
       } catch (error) {
         console.error('Failed to check auth status:', error);
@@ -55,7 +70,31 @@ export function Navigation() {
     }
   };
   const size = 30;
-
+  const ListItem = React.forwardRef<
+    React.ElementRef<"a">,
+    React.ComponentPropsWithoutRef<"a">
+  >(({ className, title, children, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            <div className="text-sm font-medium leading-none">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    )
+  })
+  ListItem.displayName = "ListItem"
   return (
 
     <header className="sticky top-0 z-40 w-full border-b bg-background">
@@ -72,18 +111,74 @@ export function Navigation() {
             <span className="inline-block font-bold">Dev Toolset</span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={cn(
-                  "flex items-center text-sm font-medium text-muted-foreground",
-                  item.path === pathname && "text-foreground"
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link href="/" legacyBehavior passHref>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/' === pathname && "font-extrabold")}>
+                      Home
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn('font-medium', '/category' === pathname && "font-extrabold")}>Category</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                      {categories.map((category) => (
+                        <ListItem
+                          key={category.name}
+                          title={category.name}
+                          href={category.link}
+                          className='capitalize'
+                        >
+                          {category.description}
+                        </ListItem>
+                      ))}
+                      <ListItem
+                          title={'More'}
+                          href={'/category'}
+                          className='capitalize'
+                        >
+                         More Category
+                        </ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn('font-medium', '/posts' === pathname && "font-extrabold")}>
+                    Articles
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                      <li className="row-span-3">
+                        <NavigationMenuLink asChild>
+                          <a
+                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                            href="/"
+                          >
+                            <div className="mb-2 mt-4 text-lg font-medium">
+                              Dev Toolset
+                            </div>
+                            <p className="text-xs leading-tight text-muted-foreground">
+                              Open-Source Database-free Developer Tools Navigator
+                            </p>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <ListItem href="/posts/add-new-developer-tools" title="Add Tools">
+                        Adding New Developer Tools to DevToolset
+                      </ListItem>
+                      <ListItem href="/posts/deploy-own-devtoolset" title="Deploy DevToolset">
+                        Deploy your own DevToolset
+                      </ListItem>
+                      <ListItem href="/posts/" title="More">
+                        More articles
+                      </ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
         </div>
         <div className="flex items-center gap-4">
@@ -99,20 +194,6 @@ export function Navigation() {
           <Link href="/posts/add-new-developer-tools">
             <Button variant="outline">Submit A Tool</Button>
           </Link>
-          {/* {!isLoading && (
-            isLoggedIn ? (
-              <>
-                <Link href="/admin">
-                  <Button variant="ghost">Admin</Button>
-                </Link>
-                <Button onClick={handleLogout} variant="outline">Logout</Button>
-              </>
-            ) : (
-              <Link href="/login">
-                <Button>Login</Button>
-              </Link>
-            )
-          )} */}
         </div>
       </div>
     </header>
