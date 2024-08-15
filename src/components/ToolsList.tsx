@@ -75,7 +75,6 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                     :
                     <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
                   }
-                  
                 </div>
                 <CardTitle className='capitalize'>{resource.name}</CardTitle>
                 <ExternalLink size={16} className='ml-1' />
@@ -122,7 +121,11 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
                 <div className='border border-gray-200 p-1 rounded-md mr-1'>
-                  <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                { resource.icon_url ?
+                    <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    :
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                  }
                 </div>
                 <CardTitle className='capitalize'>{resource.name}</CardTitle>
                 <ExternalLink size={16} className='ml-1' />
