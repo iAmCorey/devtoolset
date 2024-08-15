@@ -32,7 +32,7 @@ export default function Tool({ params: { category } }: CategoryPageProps) {
         <nav className="flex items-center text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <ChevronRightIcon className="mx-2" size={16} />
-          <span className="text-gray-900">{category}</span>
+          <span className="text-gray-900 capitalize">{category}</span>
         </nav>
       </div>
       <ToolsPage category={categoryData} />
