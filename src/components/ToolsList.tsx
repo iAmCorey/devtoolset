@@ -79,8 +79,8 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                 </div>
                 { resource.tags ? 
                   <div className='mt-3'>
-                    {resource.tags.slice(0,2).map((tag, i) => (
-                      <Badge key={i} variant="secondary" className='pb-1 mr-1'>{tag}</Badge>
+                    {resource.tags.slice(0,3).map((tag, i) => (
+                      <Badge key={i} variant="secondary" className='text-xs pb-1 mr-1 mt-2 tracking-tighter'>{tag}</Badge>
                     ))}
                   </div> :
                  null
