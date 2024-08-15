@@ -144,6 +144,7 @@ Feel free to reach out if you have any questions or suggestions:
 
 - **Email:** [iamcoreychiu@gmail.com](mailto:iamcoreychiu@gmail.com)
 - **GitHub:** [iamcorey](https://github.com/iamcorey)
+- **jike:** `阿邱很行` [阿邱很行](https://okjk.co/mFe3NR)
 - **Wechat:** `iAmCor3y`(Please add a note when sending a friend request)
 ![iamcorey](https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg) 
 
