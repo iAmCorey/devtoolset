@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 type categoryType = { 
   name: string; 
   src: string; 
+  description: string;
   link: string; 
 }
 
