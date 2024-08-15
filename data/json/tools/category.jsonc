@@ -45,6 +45,11 @@
   // N
   // O
   // P
+  {
+    "name": "promotion",
+    "src": "promotion.jsonc",
+    "link": "promotion"
+  },
   // Q
   // R
   // S
