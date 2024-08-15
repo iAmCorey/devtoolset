@@ -19,15 +19,15 @@
   // C
   // D
   {
+    "name": "database",
+    "src": "database.jsonc",
+    "link": "database"
+  },
+  {
     "name": "deployment",
     "src": "deployment.jsonc",
     "link": "deployment"
   },
-  {
-    "name": "database",
-    "src": "database.jsonc",
-    "link": "database"
-  }
   // E
   // F
   {
@@ -45,6 +45,11 @@
   // N
   // O
   // P
+  {
+    "name": "payment",
+    "src": "payment.jsonc",
+    "link": "payment"
+  },
   {
     "name": "promotion",
     "src": "promotion.jsonc",
