@@ -106,8 +106,8 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
   return (
     <section>
       <div className="flex flex-col justify-between items-center mb-12">
-        <h2 className="text-3xl font-bold tracking-tighter capitalize">{category.name}</h2>
-        <p className='text-sm mt-2 opacity-60'>All tools are sorted alphabetically</p>
+        <h1 className="text-3xl font-bold tracking-tight capitalize lg:text-5xl">{category.name}</h1>
+        <h2 className='text-sm mt-2 opacity-60 lg:text-lg'>All developer tools are sorted alphabetically</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {/* @ts-ignore */}

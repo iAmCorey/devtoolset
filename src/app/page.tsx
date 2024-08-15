@@ -4,7 +4,7 @@ import { getSortedPostsData } from '@/lib/posts'
 import { getCategories } from '@/lib/data';
 
 import { ToolsList } from '@/components/ToolsList';
-import ArticleList from '@/components/ArticleList'
+import { ArticleList } from '@/components/ArticleList'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
