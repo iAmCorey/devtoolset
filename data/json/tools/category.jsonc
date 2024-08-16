@@ -68,6 +68,12 @@
   // J
   // K
   // L
+  {
+   "name": "Logo",
+    "src": "logo.jsonc",
+    "link": "logo",
+    "description": "Tools for designing, creating, and customizing logos for your brand or project."
+  },
   // M
   // N
   // O

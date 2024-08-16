@@ -1,0 +1,69 @@
+// example data
+// {
+//   "name": "Tailwind CSS",
+//   "description": "A utility-first CSS framework",
+//   "url": "https://tailwindcss.com/",
+//   "icon_url": "icon_path", (Optional)
+//   "tags": ["a", "b"], (Optional, 3tags max)
+//   "add_date": "yyyy-MM-dd" (Optional) 
+//   ...any other key if you want
+// }
+// 
+// Notice:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed
+// 3. Do not submit tools that are unrelated to development.
+
+
+[
+  // A
+  // B
+  {
+    "name": "Brandmark.io",
+    "description": "An AI-driven platform for generating unique and professional logos for your brand.",
+    "url": "https://brandmark.io/",
+    "tags": ["Design", "AI", "Branding"]
+  },
+  // C
+  // D
+  // E
+  // F
+  {
+    "name": "Favicon.io",
+    "description": "A free tool for generating favicons, including text, image, and emoji-based options.",
+    "url": "https://favicon.io/",
+    "tags": ["Design", "Favicon", "Graphics"]
+  },
+  // G
+  // H
+  // I
+  {
+    "name": "Ideogram",
+    "description": "AI-powered tool for creating logos and branding assets quickly and easily.",
+    "url": "https://ideogram.ai/",
+    "tags": ["Design", "AI", "Branding"]
+  },
+  // J
+  // K
+  // L
+  {
+    "name": "Logo.surf",
+    "description": "A tool for creating minimalist and modern logos effortlessly.",
+    "url": "https://logo.surf/",
+    "tags": ["Design", "Minimalist", "Branding"]
+  },
+  // M
+  // N
+  // O
+  // P
+  // Q
+  // R
+  // S
+  // T
+  // U
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]
