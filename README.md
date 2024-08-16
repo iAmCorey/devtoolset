@@ -64,6 +64,7 @@ Before submitting your PR, please ensure you have completed the following:
 - **Responsive Design**: Fully responsive design using Tailwind CSS.
 - **SEO Friendly**: Optimized for search engines with dynamic metadata.
 - **Easy Deployment**: Simple deployment process to Vercel.
+- **Built-in Analytics Support**: Integrated analytics support scripts, compatible with Google Analytics and Plausible Analytics.
 
 ## Prerequisites
 
