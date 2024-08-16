@@ -1,0 +1,100 @@
+// example data
+// {
+//   "name": "Tailwind CSS",
+//   "description": "A utility-first CSS framework",
+//   "url": "https://tailwindcss.com/",
+//   "icon_url": "icon_path", (Optional)
+//   "tags": ["a", "b"], (Optional, 3tags max)
+//   "add_date": "yyyy-MM-dd" (Optional) 
+//   ...any other key if you want
+// }
+// 
+// Notice:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed
+// 3. Do not submit tools that are unrelated to development.
+[
+  // A
+  {
+    "name": "Amazon S3",
+    "description": "Scalable object storage service from Amazon Web Services, providing secure and durable storage for data of all sizes.",
+    "url": "https://aws.amazon.com/s3/",
+    "tags": [
+      "Cloud Storage",
+      "Object Storage"
+    ]
+  },
+  // B
+  {
+    "name": "Backblaze B2",
+    "description": "Affordable and scalable cloud storage solution, offering object storage with easy integration for developers.",
+    "url": "https://www.backblaze.com/b2/cloud-storage.html",
+    "tags": [
+      "Cloud Storage",
+      "Object Storage"
+    ]
+  },
+  // C
+  {
+    "name": "Cloudflare R2",
+    "description": "Cloudflare's object storage solution, providing scalable and affordable storage without egress fees, ideal for developers and businesses.",
+    "url": "https://www.cloudflare.com/products/r2/",
+    "tags": ["Cloud Storage", "Object Storage"]
+},
+  // D
+  {
+    "name": "Dropbox",
+    "description": "Cloud storage solution for file synchronization, sharing, and collaboration, suitable for both personal and business use.",
+    "url": "https://www.dropbox.com/",
+    "tags": [
+      "File Storage",
+      "Cloud Storage"
+    ]
+  },
+  // E
+  // F
+  // G
+  {
+    "name": "Google Cloud Storage",
+    "description": "Unified object storage service from Google Cloud, designed for secure and scalable data storage.",
+    "url": "https://cloud.google.com/storage",
+    "tags": [
+      "Cloud Storage",
+      "Object Storage"
+    ]
+  },
+  // H
+  // I
+  // J
+  // K
+  // L
+  // M
+  {
+    "name": "Microsoft OneDrive",
+    "description": "Cloud-based file storage and synchronization service from Microsoft, integrated with Office 365 for seamless collaboration.",
+    "url": "https://onedrive.live.com/",
+    "tags": [
+      "File Storage",
+      "Cloud Storage"
+    ]
+  },
+  // N
+  // O
+  // P
+  // Q
+  // R
+  // S
+  {
+    "name": "Sanity",
+    "description": "A flexible headless CMS that enables structured content storage and management, tailored for developers and content creators.",
+    "url": "https://www.sanity.io/",
+    "tags": ["Content Storage", "CMS", "Headless CMS"]
+  },
+  // T
+  // U
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]
