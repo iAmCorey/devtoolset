@@ -42,6 +42,10 @@ type toolProps = {
   
 }
 
+type searchPageProps = {
+  searchData: toolProps[]
+}
+
 
 
 const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) => {
@@ -53,7 +57,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold tracking-tight capitalize">{category.name}</h2>
         {showMoreLink && (
-          <Link href={`/tools/${category.link}`} className="capitalize text-blue-600 hover:text-blue-800 transition-colors hover:underline">
+          <Link href={`/category/${category.link}`} className="capitalize text-blue-600 hover:text-blue-800 transition-colors hover:underline">
             More {category.name} tools →
           </Link>
         )}
@@ -70,6 +74,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
                 <div className='border border-gray-200 p-1 rounded-md mr-1'>
+                  {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     :
@@ -106,7 +111,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
   return (
     <section>
       <div className="flex flex-col justify-between items-center mb-12">
-        <h1 className="text-3xl font-bold tracking-tight capitalize lg:text-5xl">{category.name}</h1>
+        <h1 className="text-3xl font-bold tracking-tight capitalize lg:text-5xl pt-10">{category.name}</h1>
         <h2 className='text-sm mt-2 opacity-60 lg:text-lg'>All developer tools are sorted alphabetically</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -121,7 +126,55 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
                 <div className='border border-gray-200 p-1 rounded-md mr-1'>
-                { resource.icon_url ?
+                  {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
+                  { resource.icon_url ?
+                    <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    :
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                  }
+                </div>
+                <CardTitle className='capitalize'>{resource.name}</CardTitle>
+                <ExternalLink size={16} className='ml-1' />
+              </a>
+              <CardDescription className='flex flex-col justify-between '>
+                <div className='h-[60px] line-clamp-3 mt-1 tracking-tight text-start'>
+                  {resource.description}
+                </div>
+                { resource.tags ? 
+                  <div className='mt-3'>
+                  {resource.tags.slice(0,3).map((tag, i) => (
+                    <Badge key={i} variant="secondary" className='text-xs pb-1 mr-1 mt-2 tracking-tighter'>{tag}</Badge>
+                  ))}
+                </div> :
+                 null
+                }     
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+const SearchPage: React.FC<searchPageProps> = ({ searchData }) => {
+
+  return (
+    <section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        {/* @ts-ignore */}
+        {searchData.map((resource: toolProps, index) => (
+          <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
+            <CardHeader>
+              <a 
+                href={`${resource.url}?utm_source=devtoolset.net`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
+              >
+                <div className='border border-gray-200 p-1 rounded-md mr-1'>
+                  {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
+                  { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     :
                     <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
@@ -164,7 +217,7 @@ const CategoryList = () => {
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
-                href={`/tools/${category.link}`}
+                href={`/category/${category.link}`}
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
                 <CardTitle className='capitalize'>{category.name}</CardTitle>
@@ -183,4 +236,4 @@ const CategoryList = () => {
   )
 }
 
-export { ToolsList, ToolsPage, CategoryList };
+export { ToolsList, ToolsPage, CategoryList, SearchPage };

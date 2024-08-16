@@ -9,9 +9,9 @@ export function Footer() {
   const size = 30;
   return (
     <footer className="bg-gray-100 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col justify-center items-center max-w-7xl text-center mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:text-start">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
-          <div>
+          <div className='flex flex-col justify-center items-center lg:items-start lg:justify-start'>
             <h3 className="text-sm font-bold text-gray-600 tracking-normal">
               <Link href="/" className="flex items-center space-x-2">
                 <Image
@@ -45,12 +45,17 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/category" className="text-base text-gray-500 hover:text-gray-900">
-                  Categories
+                  Category
                 </Link>
               </li>
               <li>
-                <Link href="/posts" className="text-base text-gray-500 hover:text-gray-900">
-                  Articles
+                <Link href="/article" className="text-base text-gray-500 hover:text-gray-900">
+                  Article
+                </Link>
+              </li>
+              <li>
+                <Link href="/updatelog" className="text-base text-gray-500 hover:text-gray-900">
+                  Updatelog
                 </Link>
               </li>
             </ul>
@@ -64,7 +69,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/category" className="text-base text-gray-500 hover:text-gray-900">
+                <Link href="/" className="text-base text-gray-500 hover:text-gray-900">
                   Terms of Service
                 </Link>
               </li>

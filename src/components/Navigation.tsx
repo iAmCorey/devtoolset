@@ -123,12 +123,12 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn('font-medium', '/category' === pathname && "font-extrabold")}>Category</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] ">
                       {categories.map((category) => (
                         <ListItem
                           key={category.name}
                           title={category.name}
-                          href={`/tools/${category.link}`}
+                          href={`/category/${category.link}`}
                           className='capitalize'
                         >
                           {category.description}
@@ -145,8 +145,8 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn('font-medium', '/posts' === pathname && "font-extrabold")}>
-                    Articles
+                  <NavigationMenuTrigger className={cn('font-medium', '/article' === pathname && "font-extrabold")}>
+                    Article
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -165,17 +165,24 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem href="/posts/add-new-developer-tools" title="Add Tools">
+                      <ListItem href="/article/add-new-developer-tools" title="Add Tools">
                         Adding New Developer Tools to DevToolset
                       </ListItem>
-                      <ListItem href="/posts/deploy-own-devtoolset" title="Deploy DevToolset">
+                      <ListItem href="/article/deploy-own-devtoolset" title="Deploy DevToolset">
                         Deploy your own DevToolset
                       </ListItem>
-                      <ListItem href="/posts/" title="More" className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
+                      <ListItem href="/article" title="More" className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
                         More articles
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/updatelog" legacyBehavior passHref>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/updatelog' === pathname && "font-extrabold")}>
+                      Updatelog
+                    </NavigationMenuLink>
+                  </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -191,7 +198,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="/posts/add-new-developer-tools">
+          <Link href="/article/add-new-developer-tools">
             <Button variant="outline">Submit A Tool</Button>
           </Link>
         </div>

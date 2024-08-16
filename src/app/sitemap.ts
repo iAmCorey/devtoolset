@@ -15,13 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
       },
     {
-      url: 'category', // blog
+      url: 'category', // category
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-        url: 'posts', // faq
+        url: 'article', // article
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.8,

@@ -60,6 +60,12 @@
     "description": "Integrated Development Environments for writing, testing, and debugging code efficiently."
   },
   {
+    "name": "Infrastructure",
+    "src": "infrastructure.jsonc",
+    "link": "infrastructure",
+    "description": "Services and tools that support the underlying architecture of applications, including computing resources, networking, storage solutions, and cloud-based infrastructure for scalable and efficient operations."
+},
+  {
     "name": "Insights",
     "src": "insights.jsonc",
     "link": "insights",
