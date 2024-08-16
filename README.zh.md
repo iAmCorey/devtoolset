@@ -8,10 +8,8 @@
 
 
 ## 预览
-![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
 
-
-![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png?version=0817)
 
 ## 如何添加新开发者工具到 DevToolset
 

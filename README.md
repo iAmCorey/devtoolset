@@ -8,7 +8,8 @@
 
 
 ## Preview
-![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png)
+
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png?version=0817)
 
 
 ## Adding New Developer Tools to DevToolset
