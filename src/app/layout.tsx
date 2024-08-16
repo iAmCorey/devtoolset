@@ -1,4 +1,5 @@
 import './globals.css'
+import React from 'react';
 import { Inter } from 'next/font/google'
 import { Layout } from '@/components/Layout'
 import { Metadata } from 'next'
@@ -15,9 +16,10 @@ export const metadata: Metadata = {
     template: '%s | DevToolset'
   },
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
+  authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
   keywords: 'developer tools, dev tools, develop tool',
   alternates: { canonical: "https://DevToolset.net/", languages: { 
-    "en-US": "https://DomainScore.ai/",
+    "en-US": "https://DevToolset.net/",
   } },
   icons: [
     { rel: "icon", type: 'image/png',sizes: "16x16", url: "/favicon-16x16.png" }, 
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     { rel: "apple-touch-icon", sizes:"180x180", url: "/favicon-180x180.png" },
     { rel: "android-chrome", sizes:"512x512", url: "/favicon-512x512.png" },
     
-  ]
+  ],
 }
 
 interface RootLayoutProps {
