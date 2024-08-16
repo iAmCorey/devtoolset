@@ -99,6 +99,12 @@
     "link": "seo",
     "description": "Tools for improving search engine visibility."
   },
+  {
+    "name": "Storage",
+    "src": "storage.jsonc",
+    "link": "storage",
+    "description": "Services and tools for storing, managing, and accessing data efficiently."
+  },
   // T
   {
     "name": "template",
