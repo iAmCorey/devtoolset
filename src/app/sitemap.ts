@@ -18,13 +18,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'category', // category
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
         url: 'article', // article
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.8,
+      },
+      {
+        url: 'updatelog', // updatelog
+        lastModified: new Date(),
+        changeFrequency: 'daily',
+        priority: 0.7,
       },
   ];
 
