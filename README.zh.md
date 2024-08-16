@@ -61,6 +61,7 @@
 - **响应式设计**：使用 Tailwind CSS 实现完全响应的设计。
 - **SEO 友好**：通过动态元数据优化搜索引擎。
 - **简单部署**：简单的 Vercel 部署流程。
+- **内置统计支持脚本**：内置统计支持脚本，支持 Google Analytics 和 Plausible Analytics。
 
 ## 先决条件
 
