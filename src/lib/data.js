@@ -61,8 +61,8 @@ export function searchDataByKeyword(keyword) {
 }
 
 // 读取更新日志
-export function getUpdateLogs() {
-    const dataPath = path.join(process.cwd(), 'data', 'json', 'updatelog.jsonc');
+export function getChangelog() {
+    const dataPath = path.join(process.cwd(), 'data', 'json', 'changelog.jsonc');
     const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8'));
     return dataList;
 }

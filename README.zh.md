@@ -130,6 +130,9 @@
 - 在管理面板中管理资源。
 - 所有更改将自动与您的 GitHub 仓库同步。
 
+## 更新日志
+查看 [CHANGELOG.zh.md](./CHANGELOG.zh.md) 获取详细的更新日志。
+
 ## 贡献
 
 我们欢迎对 DevToolset 的贡献！请阅读我们的[贡献指南](/data/md/add-new-developer-tools.md)，了解我们的行为准则和提交PR的流程。
