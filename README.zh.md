@@ -9,7 +9,7 @@
 
 ## 预览
 
-![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png?version=0817)
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset_zh.png?version=0817)
 
 ## 如何添加新开发者工具到 DevToolset
 
@@ -56,10 +56,12 @@
 - **动态内容**：使用 Next.js 服务器端渲染动态呈现内容。
 - **Markdown 支持**：用 Markdown 格式编写内容，便于编辑和版本控制。
 - **管理界面**：内置管理面板用于内容管理。
-- **响应式设计**：使用 Tailwind CSS 实现完全响应的设计。
+- **响应式设计**：适配移动端，使用 Tailwind CSS 实现完全响应的设计。
 - **SEO 友好**：通过动态元数据优化搜索引擎。
 - **简单部署**：简单的 Vercel 部署流程。
 - **内置统计支持脚本**：内置统计支持脚本，支持 Google Analytics 和 Plausible Analytics。
+- **多语言支持**：支持多种语言，且易拓展，通过 Next.js 的 `next-intl` 实现。
+- **多主题支持**：支持暗黑模式等多种自定义主题。
 
 ## 先决条件
 
