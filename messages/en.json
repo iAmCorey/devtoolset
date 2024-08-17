@@ -1,0 +1,83 @@
+{
+  "home": {
+    "meta_title": "DevToolset: Open-Source Database-free Developer Tools Navigator",
+    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "h2": "Open-Source & Database-Free Developer Tools Navigator",
+    "description": "Find Every Essential Developer Tools You Need for Your Development Journey"
+  },
+  "category": {
+    "meta_title": "Category",
+    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "homeBtn": "Home",
+    "categoryBtn": "Category",
+    "h1": "Develop Tools Category",
+    "h2": "Find Every Developer Tools You Need Here",
+    "h2description": "All developer tools are sorted alphabetically"
+  },
+  "article": {
+    "meta_title": "Article",
+    "meta_description": "Read our latest articles on newest developer tools and best practices.",
+    "h1": "Articles",
+    "h2": "Read More About DevToolset",
+    "homeBtn": "Home",
+    "articleBtn": "Article",
+    "backToArticles": "Back to articles"
+  },
+  "changelog": {
+    "meta_title": "Changelog",
+    "meta_description": "Stay up to date with the latest updates in DevToolset.net",
+    "h1": "Changelog",
+    "h2": "Stay up to date with the latest updates in DevToolset.net",
+    "homeBtn": "Home",
+    "changelogBtn": "Changelog"
+  },
+  "tools": {
+    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "h2_1": "All developer tools related to",
+    "h2_2": "",
+    "homeBtn": "Home"
+  },
+  "search": {
+    "input_placeholder": "Search tools by name / tags...",
+    "heading": "Suggestions",
+    "more": "More",
+    "button": "Search"
+  },
+  "navigation": {
+    "homeBtn": "Home",
+    "categoryBtn": "Category",
+    "moreCategoryBtn": "More",
+    "moreCategoryDescription": "More Categories",
+    "articleBtn": "Article",
+    "articleDescription": "Open-Source Database-free Developer Tools Navigator",
+    "article1Title": "Adding New Developer Tools to DevToolset",
+    "article2Title": "Deploy your own DevToolset",
+    "moreArticleBtn": "More",
+    "moreArticleDescription": "More articles",
+    "changelogBtn": "Changelog",
+    "submitToolBtn": "Submit Tool"
+  },
+  "footer": {
+    "description": "OpenSource & Database-free Developer Tools Navigator",
+    "builtWith": "Built with",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "category": "Category",
+    "article": "Article",
+    "changelog": "Changelog",
+    "privacy": "Privacy",
+    "termsOfService": "Terms of Service",
+    "legal": "Legal",
+    "connect": "Connect",
+    "support": "Support",
+    "copyright": "All rights reserved."
+  },
+  "toolsList": {
+    "more": "More",
+    "tools": "tools"
+  },
+  "articleList": {
+    "h2": "Articles",
+    "moreArticles": "More articles"
+  }
+}

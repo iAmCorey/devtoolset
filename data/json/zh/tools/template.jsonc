@@ -1,0 +1,92 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  // B
+  {
+    "name": "BootstrapMade",
+    "description": "一个提供免费和高级Bootstrap模板的供应商，用于轻松构建响应式和现代网站。",
+    "url": "https://bootstrapmade.com/",
+    "tags": ["Bootstrap", "主题", "免费"]
+  },
+  // C
+  {
+    "name": "Creative Tim",
+    "description": "提供各种高质量的UI套件和模板，适用于Bootstrap、Angular和React，适合网页和移动应用开发。",
+    "url": "https://www.creative-tim.com/",
+    "tags": ["UI套件", "主题", "付费"]
+  },
+  // D
+  // E
+  // F
+  // G
+  // H
+  // I
+  // J
+  // K
+  // L
+  // M
+  {
+    "name": "Makerkit",
+    "description": "一个多功能工具包，供创作者高效启动项目，提供可定制的模板和预构建组件，适用于各种应用。",
+    "url": "https://makerkit.dev/",
+    "tags": ["创作者工具", "工具包", "付费"]
+  },
+  // N
+  // O
+  // P
+  // Q
+  // R
+  // S
+  {
+    "name": "Shipfast",
+    "description": "一个现代的SaaS模板，可以快速设置。",
+    "url": "https://shipfa.st/",
+    "tags": ["SaaS应用", "Next.js", "付费"]
+  },
+  {
+    "name": "Supastarter",
+    "description": "一个用于快速构建Web应用的起始模板，提供一系列预设计的组件和布局，以简化开发过程。",
+    "url": "https://supastarter.dev/",
+    "tags": ["Nuxt", "Next.js", "付费"]
+  },
+  // T
+  {
+    "name": "TemplateMonster",
+    "description": "一个市场，提供各种平台的网站模板和主题，包括WordPress、Joomla和Magento。",
+    "url": "https://www.templatemonster.com/",
+    "tags": ["市场", "主题", "付费"]
+  },
+  {
+    "name": "ThemeForest",
+    "description": "一个流行的市场，用于购买高级网站模板和主题，涵盖广泛的行业和CMS平台。",
+    "url": "https://themeforest.net/",
+    "tags": ["市场", "主题", "付费"]
+  },
+  // U
+  // V
+  // W
+  {
+    "name": "Webflow Templates",
+    "description": "一系列专业设计的Webflow模板，允许用户无需编码即可快速构建和自定义网站。",
+    "url": "https://webflow.com/templates",
+    "tags": ["Webflow", "主题", "付费"]
+  },
+  // X
+  // Y
+  // Z
+]

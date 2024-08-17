@@ -3,33 +3,34 @@ import path from 'path'
 import * as jsonc from 'jsonc-parser';
 
 // 读取 categories 数据
-export function getCategories() {
-    const categoriesPath = path.join(process.cwd(), 'data', 'json', 'tools', 'category.jsonc');
+export function getCategories(locale) {
+    const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
     const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8'));
     return categories;
 }
 
 
 // 读取category数据
-export function getCategoryByLink(link) {
-    const categoriesPath = path.join(process.cwd(), 'data', 'json', 'tools', 'category.jsonc');
+export function getCategoryByLink(link, locale) {
+    const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
     const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8'));
+    console.log('categories: ', categories)
     return categories.find(category => category.link === link);
 
 }
 
 // 读取 datalist 数据
-export function getDataList(src) {
-    const dataPath = path.join(process.cwd(), 'data', 'json', 'tools', src);
+export function getDataList(src, locale) {
+    const dataPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', src);
     const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8'));
     return dataList;
 }
 
 // 根据关键词搜索数据
-export function searchDataByKeyword(keyword) {
+export function searchDataByKeyword(keyword, locale) {
     let result = []
     
-    const categories = getCategories();
+    const categories = getCategories(locale);
 
     
     if (!categories || categories.length === 0) return null;
@@ -37,10 +38,10 @@ export function searchDataByKeyword(keyword) {
     
     for (const category of categories) {
         if (category.name.toLowerCase() == keyword.toLowerCase()) {
-             const dataList = getDataList(category.src)
+             const dataList = getDataList(category.src, locale)
              result = result.concat(dataList);
         } else {
-            const dataList = getDataList(category.src)
+            const dataList = getDataList(category.src, locale)
         
             for (const item of dataList) {
                 if (item.name.toLowerCase().includes(keyword.toLowerCase())) {

@@ -1,0 +1,80 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  {
+    "name": "AnswerThePublic",
+    "description": "发现人们围绕某个关键词提出的问题，帮助您发掘新的内容创意和市场洞察。",
+    "url": "https://answerthepublic.com/",
+    "tags": ["创意", "关键词", "内容"]
+  },
+  // B
+  {
+    "name": "BuzzSumo",
+    "description": "一个强大的工具，用于查找社交媒体平台上最受分享的内容和热门话题，提供有价值的内容洞察。",
+    "url": "https://buzzsumo.com/",
+    "tags": ["趋势", "内容", "分析"]
+  },
+  // C
+  {
+    "name": "Chief AI Office",
+    "description": "追踪AI初创公司的融资情况。加入来自OpenAI、a16z、Google的5000多名读者，不错过AI领域的任何交易。",
+    "url": "https://www.chiefaioffice.xyz",
+    "tags": ["风险投资", "AI", "技术"]
+  },
+  // D
+  // E
+  {
+    "name": "Exploding Topics",
+    "description": "在话题成为主流之前识别快速增长的话题，为内容创作和营销提供竞争优势。",
+    "url": "https://explodingtopics.com/",
+    "tags": ["趋势", "新兴", "趋势"]
+  },
+  // F
+  // G
+  {
+    "name": "Google Trends",
+    "description": "分析不同地区和语言的搜索查询的受欢迎程度，提供当前趋势的洞察。",
+    "url": "https://trends.google.com/",
+    "tags": ["趋势", "分析", "搜索"]
+  },
+  // H
+  // I
+  // J
+  // K
+  // L
+  // M
+  // N
+  // O
+  // P
+  // Q
+  // R
+  // S
+  // T
+  {
+    "name": "TrendingKeywords",
+    "description": "发现和追踪最受欢迎的搜索查询，提供新兴趋势和关键词机会的洞察。",
+    "url": "https://trendingkeywords.net/",
+    "tags": ["关键词", "趋势"]
+  },
+  // U
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]
