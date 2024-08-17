@@ -178,9 +178,9 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/updatelog" legacyBehavior passHref>
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/updatelog' === pathname && "font-extrabold")}>
-                      Updatelog
+                  <Link href="/changelog" legacyBehavior passHref>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/changelog' === pathname && "font-extrabold")}>
+                      Changelog
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>

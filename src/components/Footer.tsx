@@ -54,8 +54,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/updatelog" className="text-base text-gray-500 hover:text-gray-900">
-                  Updatelog
+                <Link href="/changelog" className="text-base text-gray-500 hover:text-gray-900">
+                  Changelog
                 </Link>
               </li>
             </ul>
