@@ -35,11 +35,11 @@ export default function Home() {
   return (
     <div className="container mx-auto py-12 space-y-16 ">
       <section className="flex flex-col items-center justify-center text-center space-y-6">
-        <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-7xl tracking-tight">
-          <span className="text-primary">Dev Toolset</span>
+        <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-7xl tracking-tighter">
+          <span className="">Dev Toolset</span>
         </h1>
         <h2 className="text-2xl tracking-tight sm:text-3xl md:text-3xl lg:text-3xl">Open-Source & Database-Free Developer Tools Navigator</h2>
-        <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl">
+        <p className="mx-auto max-w-[700px] md:text-xl tracking-tight">
           Find Every Essential Developer Tools for Your Development Journey
         </p>
         <div className='w-full px-2 pt-10 lg:w-1/2'>

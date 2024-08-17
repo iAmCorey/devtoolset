@@ -65,7 +65,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* @ts-ignore */}
         {srcList.slice(0,8).map((resource: toolProps, index) => (
-          <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
+          <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 '>
             <CardHeader>
               <a 
                 href={`${resource.url}?utm_source=devtoolset.net`} 
@@ -73,7 +73,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
-                <div className='border border-gray-200 p-1 rounded-md mr-1'>
+                <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
@@ -81,7 +81,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
                     <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
                   }
                 </div>
-                <CardTitle className='capitalize'>{resource.name}</CardTitle>
+                <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
                 <ExternalLink size={16} className='ml-1' />
               </a>
               <CardDescription className='flex flex-col justify-between '>
@@ -125,7 +125,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
-                <div className='border border-gray-200 p-1 rounded-md mr-1'>
+                <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
@@ -133,7 +133,7 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
                     <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
                   }
                 </div>
-                <CardTitle className='capitalize'>{resource.name}</CardTitle>
+                <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
                 <ExternalLink size={16} className='ml-1' />
               </a>
               <CardDescription className='flex flex-col justify-between '>
@@ -172,7 +172,7 @@ const SearchPage: React.FC<searchPageProps> = ({ searchData }) => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
               >
-                <div className='border border-gray-200 p-1 rounded-md mr-1'>
+                <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
@@ -180,7 +180,7 @@ const SearchPage: React.FC<searchPageProps> = ({ searchData }) => {
                     <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
                   }
                 </div>
-                <CardTitle className='capitalize'>{resource.name}</CardTitle>
+                <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
                 <ExternalLink size={16} className='ml-1' />
               </a>
               <CardDescription className='flex flex-col justify-between '>

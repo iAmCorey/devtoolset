@@ -10,7 +10,7 @@
       },
       {
         "date": "2024-08-17",
-        "changes": ["🌟 Add feature search supported"],
+        "changes": ["🌟 Add feature search/darkmode supported"],
       },
     ],
     "zh": [
@@ -24,7 +24,7 @@
       },
       {
         "date": "2024-08-17",
-        "changes": ["🌟 增加搜索功能支持"]
+        "changes": ["🌟 增加搜索功能/暗黑模式支持"]
       }
     ]
   }
