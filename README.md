@@ -9,7 +9,7 @@
 
 ## Preview
 
-![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png?version=0817)
+![DevToolset](https://img.magicbox.tools/screenshot_img/devtoolset.png?version=081702)
 
 
 ## Adding New Developer Tools to DevToolset
@@ -66,6 +66,9 @@ Before submitting your PR, please ensure you have completed the following:
 - **SEO Friendly**: Optimized for search engines with dynamic metadata.
 - **Easy Deployment**: Simple deployment process to Vercel.
 - **Built-in Analytics Support**: Integrated analytics support scripts, compatible with Google Analytics and Plausible Analytics.
+- **i18n**: Support multiple languages and can be easily extended to support more languages.
+- **Dark Mode**: Support dark mode and can be easily extended to support more themes.
+
 
 ## Prerequisites
 

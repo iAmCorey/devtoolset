@@ -1,11 +1,12 @@
 'use client'
 import React from 'react'; // 确保导入 React
 import { useState, useEffect } from 'react'
-import { Link }from "@/lib/i18n";
-import { usePathname, useRouter } from 'next/navigation'
-import { Github } from 'lucide-react'
+import { Link, usePathname }from "@/lib/i18n";
+import { useRouter } from 'next/navigation'
+import { Github, MenuIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import IconImage from "../../public/favicon.svg";
 import {
@@ -31,12 +32,40 @@ type navigationProp = {
   categories: categoriesType[]
 }
 
-export const Navigation: React.FC<navigationProp> = ({ categories }) => {
+
+export const Navigation = ({ categories }: navigationProp ) => {
   const pathname = usePathname()
   const router = useRouter()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const t = useTranslations('navigation');
+
+  const menuItems: {
+    label: string;
+    href: string;
+  }[] = [
+    {
+      label: t('homeBtn'),
+      href: "/",
+    },
+    {
+      label: t('categoryBtn'),
+      href: "/category",
+    },
+    {
+      label: t('articleBtn'),
+      href: "/article",
+    },
+    {
+      label: t('changelogBtn'),
+      href: "/changelog",
+    },
+  ];
+  const isMenuItemActive = (href: string) => {
+    // console.log(pathname, href);
+    return pathname === href;
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -60,6 +89,10 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
       isMounted = false;
     };
   }, []);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   const handleLogout = async () => {
     try {
@@ -196,6 +229,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
           <div className="flex items-center gap-1">
             <ThemeModeButton />
             <LocaleButton />
+            
           </div>
           <Link
             href={"https://github.com/iAmCorey/devtoolset"}
@@ -206,6 +240,37 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
             <Github className="h-4 w-4" />
             <span className="sr-only">GitHub</span>
           </Link>
+          <Sheet
+              open={mobileMenuOpen}
+              onOpenChange={(open) => setMobileMenuOpen(open)}
+            >
+              <SheetTrigger asChild>
+                <Button
+                  className="md:hidden"
+                  size="icon"
+                  variant="outline"
+                  aria-label="Menu"
+                >
+                  <MenuIcon className="size-4" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent className="w-[250px]" side="right">
+                <div className="flex flex-col items-start justify-center">
+                  {menuItems.map((menuItem) => (
+                    <Link
+                      key={menuItem.href}
+                      href={menuItem.href}
+                      className={cn(
+                        "block px-3 py-2 text-lg",
+                        isMenuItemActive(menuItem.href) ? "font-bold" : "",
+                      )}
+                    >
+                      {menuItem.label}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
         </div>
       </div>
     </header>
