@@ -1,6 +1,6 @@
 // components/ResourceList.tsx
 import React from 'react'; // 确保导入 React
-import Link from 'next/link'
+import { Link } from "@/lib/i18n";
 import { ExternalLink, ArrowRightIcon } from 'lucide-react'
 import {
   Card,
@@ -11,7 +11,8 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 
-import { getDataList, getCategories } from '@/lib/data';
+import { getDataList } from '@/lib/data';
+import { useTranslations } from 'next-intl';
 
 // type toolProps = {
 //   name: string;
@@ -27,9 +28,14 @@ type categoryProps = {
   link: string
 }
 
+type categoryListProps = {
+  categories: categoryProps[]
+}
+
 
 type toolsListProps = {
   category: categoryProps,
+  locale: string,
   showMoreLink?: boolean
 }
 
@@ -42,14 +48,13 @@ type toolProps = {
   
 }
 
-type searchPageProps = {
-  searchData: toolProps[]
-}
 
 
 
-const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) => {
-  const srcList = getDataList(category.src)
+
+const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) => {
+  const t = useTranslations('toolsList');
+  const srcList = getDataList(category.src, locale)
 
 
   return (
@@ -58,7 +63,7 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
         <h2 className="text-3xl font-bold tracking-tight capitalize">{category.name}</h2>
         {showMoreLink && (
           <Link href={`/category/${category.link}`} className="capitalize text-blue-600 hover:text-blue-800 transition-colors hover:underline">
-            More {category.name} tools →
+            {t('more')} <span className='capitalize font-bold'>{category.name}</span> {t('tools')} →
           </Link>
         )}
       </div>
@@ -105,15 +110,11 @@ const ToolsList: React.FC<toolsListProps> = ({ category, showMoreLink = true }) 
   )
 }
 
-const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
-  const srcList = getDataList(category.src)
+const ToolsPage = ({ category, locale }: { category: categoryProps, locale: string }) => {
+  const srcList = getDataList(category.src, locale);
 
   return (
     <section>
-      <div className="flex flex-col justify-between items-center mb-12">
-        <h1 className="text-3xl font-bold tracking-tight capitalize lg:text-5xl pt-10">{category.name}</h1>
-        <h2 className='text-sm mt-2 opacity-60 lg:text-lg'>All developer tools are sorted alphabetically</h2>
-      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {/* @ts-ignore */}
         {srcList.map((resource: toolProps, index) => (
@@ -157,7 +158,11 @@ const ToolsPage: React.FC<toolsListProps> = ({ category }) => {
   )
 }
 
-const SearchPage: React.FC<searchPageProps> = ({ searchData }) => {
+type searchPageProps = {
+  searchData: toolProps[]
+}
+
+const SearchPage = ({ searchData }: searchPageProps) => {
 
   return (
     <section>
@@ -205,15 +210,13 @@ const SearchPage: React.FC<searchPageProps> = ({ searchData }) => {
 }
 
 
-const CategoryList = () => {
-  const srcList = getCategories()
-
+const CategoryList = ({ categories }: categoryListProps) => {
 
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {/* @ts-ignore */}
-        {srcList.map((category: categoryProps, index) => (
+        {categories.map((category: categoryProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 

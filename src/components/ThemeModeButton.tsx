@@ -1,24 +1,45 @@
 "use client"
 
 import * as React from "react"
-// import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
+import { useState } from "react";
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
 } from "@/components/ui/dropdown-menu"
+
 import {
   HardDriveIcon,
   MoonIcon,
   SunIcon,
 } from "lucide-react";
 
+const colorModeOptions = [
+  {
+    value: "system",
+    label: "System",
+    icon: HardDriveIcon,
+  },
+  {
+    value: "light",
+    label: "Light",
+    icon: SunIcon,
+  },
+  {
+    value: "dark",
+    label: "Dark",
+    icon: MoonIcon,
+  },
+];
+
 export function ThemeModeButton() {
-  const { setTheme } = useTheme()
+  const { setTheme: setCurrentTheme, theme: currentTheme } = useTheme();
+  const [theme, setTheme] = useState<string>(currentTheme ?? "system");
 
   return (
     <DropdownMenu>
@@ -30,18 +51,23 @@ export function ThemeModeButton() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="font-sans opacity-90">
-        <DropdownMenuItem onClick={() => setTheme("light")} className="flex items-center justify-start">
-          <SunIcon size={16} className="mx-2 opacity-70"/>
-          <div className="text-sm">Light</div>
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")} className="flex items-center justify-start">
-          <MoonIcon size={16} className="mx-2 opacity-70"/>
-          <div className="text-sm">Dark</div>
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className="flex items-center justify-start">
-          <HardDriveIcon size={16} className="mx-2 opacity-70"/>
-          <div className="text-sm">System</div>
-        </DropdownMenuItem>
+      <DropdownMenuRadioGroup
+                value={theme}
+                onValueChange={(value) => {
+                  setTheme(value);
+                  setCurrentTheme(value);
+                }}
+              >
+                {colorModeOptions.map((option) => (
+                  <DropdownMenuRadioItem
+                    key={option.value}
+                    value={option.value}
+                  >
+                    <option.icon className="mr-2 size-4 opacity-50" />
+                    {option.label}
+                  </DropdownMenuRadioItem>
+                ))}
+              </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
   )

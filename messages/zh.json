@@ -1,0 +1,83 @@
+{
+  "home": {
+    "meta_title": "DevToolset: 开源、无数据库架构的开发者工具资源导航平台",
+    "meta_description": "在这里找到您在开发旅程中需要的每一种开发者工具",
+    "h2": "开源、无数据库架构的开发者工具资源导航平台",
+    "description": "在这里找到您在开发旅程中需要的每一种开发者工具"
+  },
+  "category": {
+    "meta_title": "分类",
+    "meta_description": "在这里找到您在开发旅程中需要的每一种开发者工具",
+    "homeBtn": "首页",
+    "categoryBtn": "分类",
+    "h1": "开发工具分类",
+    "h2": "在这里找到您在开发旅程中需要的每一种开发者工具",
+    "h2description": "所有开发者工具按字母顺序排列"
+  },
+  "article": {
+    "meta_title": "文章",
+    "meta_description": "阅读文章，了解最新的开发者工具以及开发经验、技巧和最佳实践",
+    "homeBtn": "首页",
+    "articleBtn": "文章",
+    "h1": "文章",
+    "h2": "阅读更多有关DevToolset的文章",
+    "backToArticles": "返回文章列表"
+  },
+  "changelog": {
+    "meta_title": "更新日志",
+    "meta_description": "查看DevToolset的更新日志",
+    "h1": "更新日志",
+    "h2": "查看DevToolset的更新日志",
+    "homeBtn": "首页",
+    "changelogBtn": "更新日志"
+  },
+  "tools": {
+    "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
+    "h2_1": "所有与 ",
+    "h2_2": " 相关的开发者工具",
+    "homeBtn": "首页"
+  },
+  "search": {
+    "input_placeholder": "输入名词、关键词等搜索相关工具",
+    "heading": "建议",
+    "more": "更多",
+    "button": "搜索"
+  },
+  "navigation": { 
+    "homeBtn": "首页",
+    "categoryBtn": "分类",
+    "moreCategoryBtn": "更多",
+    "moreCategoryDescription": "更多分类",
+    "articleBtn": "文章",
+    "articleDescription": "开源、无数据库架构的开发者工具资源导航平台",
+    "article1Title": "添加新的开发者工具到DevToolset",
+    "article2Title": "部署你自己的DevToolset",
+    "moreArticleBtn": "更多",
+    "moreArticleDescription": "更多文章",
+    "changelogBtn": "更新日志",
+    "submitToolBtn": "提交工具"
+  },
+  "footer": { 
+    "description": "开源、无数据库架构的开发者工具资源导航平台",
+    "builtWith": "基于",
+    "quickLinks": "快速链接",
+    "home": "首页",
+    "category": "分类",
+    "article": "文章",
+    "changelog": "更新日志",
+    "privacy": "隐私政策",
+    "termsOfService": "服务条款",
+    "legal": "法律声明",
+    "connect": "联系我们",
+    "support": "支持",
+    "copyright": "版权所有。"
+  },
+  "toolsList": {
+    "more": "更多",
+    "tools": "工具"
+  },
+  "articleList": {
+    "h2": "文章",
+    "moreArticles": "更多文章"
+  }
+}

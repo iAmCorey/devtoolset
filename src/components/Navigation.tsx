@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'; // 确保导入 React
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import { Link }from "@/lib/i18n";
 import { usePathname, useRouter } from 'next/navigation'
 import { Github } from 'lucide-react'
 import { cn } from "@/lib/utils"
@@ -18,10 +18,11 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { ThemeModeButton } from "@/components/ThemeModeButton";
-
+import { LocaleButton } from "@/components/LocaleButton";
+import {useTranslations} from 'next-intl';
 type categoriesType = {
-  name: string, 
-  src: string, 
+  name: string,
+  src: string,
   description: string,
   link: string
 }
@@ -35,6 +36,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
   const router = useRouter()
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const t = useTranslations('navigation');
 
   useEffect(() => {
     let isMounted = true;
@@ -115,12 +117,12 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/' === pathname && "font-extrabold")}>
-                      Home
+                      {t('homeBtn')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn('font-medium', '/category' === pathname && "font-extrabold")}>Category</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className={cn('font-medium', '/category' === pathname && "font-extrabold")}>{t('categoryBtn')}</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] ">
                       {categories.map((category) => (
@@ -134,18 +136,18 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                         </ListItem>
                       ))}
                       <ListItem
-                          title={'More'}
-                          href={'/category'}
-                          className='capitalize border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'
-                        >
-                         More Category
-                        </ListItem>
+                        title={t('moreCategoryBtn')}
+                        href={'/category'}
+                        className='capitalize border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'
+                      >
+                        {t('moreCategoryDescription')}
+                      </ListItem>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn('font-medium', '/article' === pathname && "font-extrabold")}>
-                    Article
+                    {t('articleBtn')}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -159,19 +161,19 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                               Dev Toolset
                             </div>
                             <p className="text-xs leading-tight text-muted-foreground">
-                              Open-Source Database-free Developer Tools Navigator
+                              {t('articleDescription')}
                             </p>
                           </a>
                         </NavigationMenuLink>
                       </li>
                       <ListItem href="/article/add-new-developer-tools" title="Add Tools">
-                        Adding New Developer Tools to DevToolset
+                        {t('article1Title')}
                       </ListItem>
                       <ListItem href="/article/deploy-own-devtoolset" title="Deploy DevToolset">
-                        Deploy your own DevToolset
+                        {t('article2Title')}
                       </ListItem>
-                      <ListItem href="/article" title="More" className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
-                        More articles
+                      <ListItem href="/article" title={t('moreArticleBtn')} className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
+                        {t('moreArticleDescription')}
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>
@@ -179,7 +181,7 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
                 <NavigationMenuItem>
                   <Link href="/changelog" legacyBehavior passHref>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'font-medium', '/changelog' === pathname && "font-extrabold")}>
-                      Changelog
+                      {t('changelogBtn')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -187,16 +189,19 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
             </NavigationMenu>
           </nav>
         </div>
-        <div className="flex items-center gap-4">
-          <Link href="/article/add-new-developer-tools">
-            <Button variant="outline" className='text-sm tracking-tight'>Submit Tool</Button>
+        <div className="flex items-center gap-3">
+          <Link href="/article/add-new-developer-tools" className='hidden md:block'>
+            <Button variant="outline" className='text-sm tracking-tight'>{t('submitToolBtn')}</Button>
           </Link>
-          <ThemeModeButton />
+          <div className="flex items-center gap-1">
+            <ThemeModeButton />
+            <LocaleButton />
+          </div>
           <Link
             href={"https://github.com/iAmCorey/devtoolset"}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground"
+            className="text-muted-foreground hover:text-foreground ml-1"
           >
             <Github className="h-4 w-4" />
             <span className="sr-only">GitHub</span>

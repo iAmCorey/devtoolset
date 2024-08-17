@@ -1,0 +1,68 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  // B
+  // C
+  // D
+  // E
+  // F
+  // G
+  {
+    "name": "Google Analytics",
+    "description": "谷歌提供的强大的网络分析服务，可跟踪和报告网站流量、用户行为和转化率。",
+    "url": "https://analytics.google.com/",
+    "tags": ["分析", "网络", "跟踪"]
+  },
+  // H
+  // I
+  // J
+  // K
+  // L
+  // M
+  // N
+  // O
+  // P
+  {
+    "name": "PostHog",
+    "description": "一个开源的产品分析平台，允许您跟踪和分析网站和应用程序中的用户行为。",
+    "url": "https://posthog.com/",
+    "tags": ["分析", "开源", "产品"]
+  },
+  {
+    "name": "Plausible",
+    "description": "一个简单、注重隐私且开源的网络分析工具，旨在跟踪基本网站指标，同时不侵犯用户隐私。",
+    "url": "https://plausible.io/",
+    "tags": ["分析", "隐私", "开源"]
+  },
+  // Q
+  // R
+  // S
+  // T
+  // U
+  {
+    "name": "Umami",
+    "description": "一个自托管、注重隐私且开源的网络分析解决方案，提供关于您网站性能的详细洞察。",
+    "url": "https://umami.is/",
+    "tags": ["分析", "开源", "隐私"]
+  },
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]

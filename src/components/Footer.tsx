@@ -1,11 +1,12 @@
 // components/Footer.js
-import Link from 'next/link';
+import { Link } from "@/lib/i18n";
 import React from 'react'; // 确保导入 React
 import Image from "next/image";
 import IconImage from "../../public/favicon.svg";
-
+import {useTranslations} from 'next-intl';
 
 export function Footer() {
+  const t = useTranslations('footer');
   const size = 30;
   return (
     <footer className="bg-muted text-muted-foreground border-t">
@@ -25,62 +26,62 @@ export function Footer() {
               </Link>
             </h3>
             <p className="mt-4 text-xs ">
-              Open Source Developer Tools Navigator
+              {t('description')}
               
             </p>
             <div className='mt-4 text-xs '>
-              Built with 
+              {t('builtWith')}
               <Link href="https://gitbase.app/" target='_black' className="ml-1 text-xs underline">
                 GitBase
               </Link>
             </div>
           </div>
           <div className=''>
-            <h3 className="text-sm font-semibold  tracking-wider uppercase">Quick Links</h3>
+            <h3 className="text-sm font-semibold  tracking-wider uppercase">{t('quickLinks')}</h3>
             <ul className="mt-4 space-y-4">
               <li>
                 <Link href="/" className="text-base ">
-                  Home
+                  {t('home')}
                 </Link>
               </li>
               <li>
                 <Link href="/category" className="text-base">
-                  Category
+                  {t('category')}
                 </Link>
               </li>
               <li>
                 <Link href="/article" className="text-base">
-                  Article
+                  {t('article')}
                 </Link>
               </li>
               <li>
                 <Link href="/changelog" className="text-base">
-                  Changelog
+                  {t('changelog')}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase">Legal</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase">{t('legal')}</h3>
             <ul className="mt-4 space-y-4">
             <li>
                 <Link href="/" className="text-base">
-                  Privacy
+                  {t('privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="text-base">
-                  Terms of Service
+                  {t('termsOfService')}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase">Connect</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase">{t('connect')}</h3>
             <ul className="mt-4 space-y-4">
               <li>
                 <Link href={"mailto:iamcoreychiu@gmail.com"} className="text-base">
-                  Support
+                  {t('support')}
                 </Link>
               </li>
              
@@ -89,7 +90,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t pt-8">
           <p className="text-base text-center">
-            &copy; {new Date().getFullYear()} DevToolset. All rights reserved.
+            &copy; {new Date().getFullYear()} DevToolset. {t('copyright')}
           </p>
         </div>
       </div>

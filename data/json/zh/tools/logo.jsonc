@@ -1,0 +1,69 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "icon_url": "图标路径", (可选)
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  // B
+  {
+    "name": "Brandmark.io",
+    "description": "一个由AI驱动的平台，用于为您的品牌生成独特和专业的标志。",
+    "url": "https://brandmark.io/",
+    "tags": ["设计", "AI", "品牌"]
+  },
+  // C
+  // D
+  // E
+  // F
+  {
+    "name": "Favicon.io",
+    "description": "一个免费的工具，用于生成网站图标，包括文本、图像和表情符号选项。",
+    "url": "https://favicon.io/",
+    "tags": ["设计", "网站图标", "图形"]
+  },
+  // G
+  // H
+  // I
+  {
+    "name": "Ideogram",
+    "description": "由AI驱动的工具，用于快速轻松地创建标志和品牌资产。",
+    "url": "https://ideogram.ai/",
+    "tags": ["设计", "AI", "品牌"]
+  },
+  // J
+  // K
+  // L
+  {
+    "name": "Logo.surf",
+    "description": "一个用于轻松创建极简主义和现代标志的工具。",
+    "url": "https://logo.surf/",
+    "tags": ["设计", "极简主义", "品牌"]
+  },
+  // M
+  // N
+  // O
+  // P
+  // Q
+  // R
+  // S
+  // T
+  // U
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]

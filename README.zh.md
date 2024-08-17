@@ -17,11 +17,11 @@
 
 ### 步骤 1：添加新的开发者工具
 
-1. 打开位于 `/data/json/tools/{category}.jsonc` 的相关 JSONC 文件。
+1. 打开位于 `/data/json/[locale]/tools/{category}.jsonc` 的相关 JSONC 文件。
 2. 将新的开发者工具添加在文件中。
 3. 如果 `{category}.jsonc` 文件不存在，请按照以下步骤操作：
-   1. 将新类别添加到 `/data/json/tools/category.jsonc` 中。
-   2. 将 `/data/json/tools/example.jsonc` 文件复制到新路径 `/data/json/tools/{category}.jsonc`。
+   1. 将新类别添加到 `/data/json/[locale]/tools/category.jsonc` 中。
+   2. 将 `/data/json/[locale]/tools/example.jsonc` 文件复制到新路径 `/data/json/[locale]/tools/{category}.jsonc`。
    3. 将开发者工具添加到这个新创建的文件中。
 
 ### 步骤 2：提交更改并提交 Pull Request
