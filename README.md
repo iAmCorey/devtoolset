@@ -136,6 +136,9 @@ For a detailed deployment guide, please refer to our [Installation and Deploymen
 - Manage resources in the admin panel.
 - All changes are automatically synced with your GitHub repository.
 
+## Changelog
+See [CHANGELOG.md](./CHANGELOG.md) for a detailed list of changes.
+
 ## Contributing
 
 We welcome contributions to DevToolset! Please read our [Contributing Guide](/data/md/add-new-developer-tools.md) for details on our code of conduct and the process for submitting pull requests.

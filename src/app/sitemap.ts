@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-        url: 'tools', // updatelog
+        url: 'tools', // tools
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.9,
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       },
       {
-        url: 'updatelog', // updatelog
+        url: 'changelog', // changelog
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.7,
