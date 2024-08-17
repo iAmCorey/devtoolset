@@ -1,0 +1,134 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  {
+    "name": "Awesome Tailwind CSS",
+    "description": "与 Tailwind CSS 相关的精彩内容",
+    "url": "https://github.com/aniftyco/awesome-tailwindcss"
+  },
+  // B
+  // C
+  {
+    "name": "Cruip",
+    "description": "Tailwind CSS 模板和组件",
+    "url": "https://cruip.com/"
+  },
+  // D
+  {
+    "name": "DaisyUI",
+    "description": "一个 Tailwind CSS 组件库",
+    "url": "https://daisyui.com/"
+  },
+  // E
+  // F
+  {
+    "name": "Flowbite",
+    "description": "使用 Tailwind CSS 构建的 UI 组件库",
+    "url": "https://flowbite.com/"
+  },
+  {
+    "name": "Freesets",
+    "description": "Tailwind CSS 的免费组件和设计套件",
+    "url": "https://freesets.vercel.app/"
+  },
+  // G
+  // H
+  // I
+  // J
+  // K
+  // L
+  {
+    "name": "LangUI",
+    "description": "用于多语言应用的 Tailwind CSS 组件",
+    "url": "https://langui.dev/"
+  },
+  // M
+  {
+    "name": "Meraki UI",
+    "description": "免费的 Tailwind CSS 组件库",
+    "url": "https://merakiui.com/"
+  },
+  // N
+  // O
+  // P
+  {
+    "name": "Preline",
+    "description": "Tailwind CSS 组件库",
+    "url": "https://preline.co/"
+  },
+  // Q
+  // R
+  // S
+  {
+    "name": "Sailboat UI",
+    "description": "Tailwind CSS 的 UI 组件",
+    "url": "https://sailboatui.com/"
+  },
+  {
+    "name": "Shadcn/ui",
+    "description": "使用 Radix UI 和 Tailwind CSS 构建的可重用组件",
+    "url": "https://ui.shadcn.com/"
+  },
+  // T
+  {
+    "name": "Tailwind CSS",
+    "description": "一个实用优先的 CSS 框架",
+    "url": "https://tailwindcss.com/"
+  },
+  {
+    "name": "Tailbits",
+    "description": "Tailwind CSS 组件和模板",
+    "url": "https://tailbits.com/"
+  },
+  {
+    "name": "Tailwind Toolbox",
+    "description": "Tailwind CSS 的免费组件和模板",
+    "url": "https://tailwindtoolbox.com/"
+  },
+  {
+    "name": "Tailwind Awesome",
+    "description": "精选的 Tailwind CSS 资源列表",
+    "url": "https://tailwindawesome.com/"
+  },
+  {
+    "name": "TailSpark",
+    "description": "Tailwind CSS 组件和设计资源",
+    "url": "https://tailspark.co/"
+  },
+  {
+    "name": "TailSC",
+    "description": "Tailwind CSS 组件和资源",
+    "url": "https://tailsc.com/"
+  },
+  {
+    "name": "Tailwind Components",
+    "description": "从互联网上收集的组件集合",
+    "url": "https://github.com/unlight/tailwind-components/"
+  },
+  // U
+  {
+    "name": "UIColors",
+    "description": "Tailwind CSS 的调色板",
+    "url": "https://uicolors.app/"
+  },
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]

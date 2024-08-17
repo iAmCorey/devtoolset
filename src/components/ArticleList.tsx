@@ -1,26 +1,24 @@
 // components/ArticleList.tsx
 import React from 'react'; // 确保导入 React
-import Link from 'next/link'
+import { Link } from "@/lib/i18n";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
 } from "@/components/ui/card"
-import {
-  // ArrowLeftIcon,
-  ChevronRightIcon
-} from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 // @ts-ignore
 const ArticleList = ({ articles, showMoreLink = true }) => {
+  const t = useTranslations('articleList');
   return (
     <section>
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-bold tracking-tight">Articles</h2>
+        <h2 className="text-3xl font-bold tracking-tight">{t('h2')}</h2>
         {showMoreLink && (
           <Link href="/article" className="text-blue-600 hover:text-blue-800 transition-colors">
-            More articles →
+            {t('moreArticles')} →
           </Link>
         )}
       </div>
@@ -49,12 +47,6 @@ const ArticleList = ({ articles, showMoreLink = true }) => {
 const ArticlePage = ({ articles }) => {
   return (
     <section>
-      <div className="flex flex-col justify-between items-center mb-6">
-        <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-5xl tracking-tight">
-          <span className="text-primary pt-10">Article</span>
-        </h1>
-        <h2 className="mx-auto max-w-[700px] text-gray-500 md:text-xl my-6">Read More About DevToolset</h2>
-      </div>
       <div className="space-y-6">
         {/* @ts-expect-error */}
         {articles.map(({ id, title, description }) => (

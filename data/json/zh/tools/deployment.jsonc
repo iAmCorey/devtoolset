@@ -1,0 +1,108 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+[
+  // A
+  // B
+  // C
+  {
+    "name": "Cloudflare Pages",
+    "description": "Cloudflare 的 JAMstack 平台，供前端开发者协作并在全球范围内部署网站",
+    "url": "https://pages.cloudflare.com/"
+  },
+  {
+    "name": "Coolify",
+    "description": "自托管和开源的 PaaS，用于部署应用程序和数据库",
+    "url": "https://coolify.io/",
+    "tags": ["开源"]
+  },
+  // D
+  {
+    "name": "Dokploy",
+    "description": "简单、快速且安全的基于 Docker 的 PaaS，用于部署您的应用",
+    "url": "https://dokploy.com/",
+    "tags": ["开源"]
+  },
+  {
+    "name": "Dokku",
+    "description": "基于 Docker 的迷你 Heroku，帮助您构建和管理应用程序",
+    "url": "https://dokku.com/",
+    "tags": ["开源", "PaaS"]
+  },
+  // E
+  // F
+  {
+    "name": "Firebase",
+    "description": "Google 的移动平台，帮助您快速开发高质量应用",
+    "url": "https://firebase.google.com/"
+  },
+  // G
+  // H
+  {
+    "name": "Heroku",
+    "description": "平台即服务，使开发者能够完全在云中构建、运行和操作应用程序",
+    "url": "https://www.heroku.com/"
+  },
+  // I
+  // J
+  // K
+  // L
+  // M
+  // N
+  {
+    "name": "Netlify",
+    "description": "用于部署静态网站和现代 Web 应用程序的平台",
+    "url": "https://www.netlify.com/"
+  },
+  // O
+  // P
+  // Q
+  // R
+  {
+    "name": "Railway",
+    "description": "使部署变得简单快捷的云基础设施平台",
+    "url": "https://railway.app/"
+  },
+  {
+    "name": "Render",
+    "description": "统一的云平台，用于构建和运行所有应用程序和网站",
+    "url": "https://render.com/"
+  },
+  // S
+  {
+    "name": "SST",
+    "description": "Serverless Stack (SST) 是一个使构建无服务器应用变得容易的框架",
+    "url": "https://sst.dev/",
+    "tags": ["开源", "无服务器"]
+  },
+  // T
+  // U
+  // V
+  {
+    "name": "Vercel",
+    "description": "用于静态站点和无服务器函数的云平台",
+    "url": "https://vercel.com/"
+  },
+  // W
+  // X
+  // Y
+  // Z
+  {
+    "name": "Zeabur",
+    "description": "轻松部署和管理应用程序的云平台",
+    "url": "https://zeabur.com/"
+  },
+  
+]

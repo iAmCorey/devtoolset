@@ -1,0 +1,74 @@
+// 示例数据
+// {
+//   "name": "Tailwind CSS",
+//   "description": "一个实用优先的 CSS 框架",
+//   "url": "https://tailwindcss.com/",
+//   "tags": ["a", "b"], (可选，最多3个标签)
+//   "add_date": "yyyy-MM-dd" (可选) 
+//   ...如果需要可以添加其他键
+// }
+// 
+// 注意：
+// 1. 所有数据应按字母顺序排序。
+// 2. 不允许使用联盟链接
+// 3. 请勿提交与开发无关的工具。
+
+
+[
+  // A
+  // B
+  // C
+  // D
+  // E
+  // F
+  // G
+  // H
+  {
+    "name": "Hacker News",
+    "description": "一个流行的平台，开发者和科技爱好者在这里讨论最新的科技趋势、产品和创新。",
+    "url": "https://news.ycombinator.com/",
+    "tags": ["社区", "新闻", "讨论"]
+  },
+  // I
+  // J
+  // K
+  // L
+  {
+    "name": "Linux.do",
+    "description": "一个开发者和科技爱好者的社区，你可以在这里分享和讨论产品、想法和技术。",
+    "url": "https://linux.do/",
+    "tags": ["讨论", "社区"]
+  },
+  // M
+  // N
+  // O
+  // P
+  {
+    "name": "Product Hunt",
+    "description": "一个发现和分享新产品的平台，社区会对最佳新技术进行投票。",
+    "url": "https://www.producthunt.com/",
+    "tags": ["推广", "社区", "发布"]
+  },
+  // Q
+  // R
+  {
+    "name": "Reddit",
+    "description": "一个庞大的社区驱动平台，拥有各种子版块，非常适合向特定受众推广产品。",
+    "url": "https://www.reddit.com/",
+    "tags": ["社区", "推广", "讨论"]
+  },
+  // S
+  // T
+  // U
+  // V
+  {
+    "name": "V2EX",
+    "description": "一个开发者和科技爱好者的社区，你可以在这里分享和讨论产品、想法和技术。",
+    "url": "https://www.v2ex.com/",
+    "tags": ["讨论", "社区"]
+  },
+  // W
+  // X
+  // Y
+  // Z
+]
