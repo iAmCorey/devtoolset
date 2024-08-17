@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
 import IconImage from "../../public/favicon.svg";
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,7 +17,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-
+import { ThemeModeButton } from "@/components/ThemeModeButton";
 
 type categoriesType = {
   name: string, 
@@ -189,17 +188,18 @@ export const Navigation: React.FC<navigationProp> = ({ categories }) => {
           </nav>
         </div>
         <div className="flex items-center gap-4">
+          <Link href="/article/add-new-developer-tools">
+            <Button variant="outline" className='text-sm tracking-tight'>Submit Tool</Button>
+          </Link>
+          <ThemeModeButton />
           <Link
             href={"https://github.com/iAmCorey/devtoolset"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground"
           >
-            <Github className="h-5 w-5" />
+            <Github className="h-4 w-4" />
             <span className="sr-only">GitHub</span>
-          </Link>
-          <Link href="/article/add-new-developer-tools">
-            <Button variant="outline">Submit A Tool</Button>
           </Link>
         </div>
       </div>

@@ -1,5 +1,57 @@
 import type { Config } from "tailwindcss"
 
+export const lightVariables = {
+  colors: {
+    border: "#e2e8f0",
+    input: "#e2e8f0",
+    ring: "#6a66c4",
+    background: "#ffffff",
+    foreground: "#020817",
+    primary: "#6a66c4",
+    "primary-foreground": "#ffffff",
+    secondary: "#f1f5f9",
+    "secondary-foreground": "#0f172a",
+    destructive: "#ef4444",
+    "destructive-foreground": "#ffffff",
+    success: "#39a561",
+    "success-foreground": "#ffffff",
+    muted: "#f8fafc",
+    "muted-foreground": "#64748b",
+    accent: "#f1f5f9",
+    "accent-foreground": "#0f172a",
+    popover: "#ffffff",
+    "popover-foreground": "#020817",
+    card: "#ffffff",
+    "card-foreground": "#020817",
+  },
+};
+
+export const darkVariables = {
+  colors: {
+    border: "#2f3e57",
+    input: "#1e293b",
+    ring: "#837fdf",
+    background: "#121924",
+    foreground: "#f8fafc",
+    primary: "#837fdf",
+    "primary-foreground": "#111",
+    secondary: "#1e293b",
+    "secondary-foreground": "#f8fafc",
+    destructive: "#ef4444",
+    "destructive-foreground": "#ffffff",
+    success: "#39a561",
+    "success-foreground": "#f8fafc",
+    muted: "#020817",
+    "muted-foreground": "#94a3b8",
+    accent: "#1e293b",
+    "accent-foreground": "#f8fafc",
+    popover: "#121924",
+    "popover-foreground": "#f8fafc",
+    card: "#121924",
+    "card-foreground": "#f8fafc",
+  },
+};
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -53,6 +105,9 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-sans)", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -73,8 +128,14 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    variables: {
+      DEFAULT: lightVariables,
+    },
+    darkVariables: {
+      DEFAULT: darkVariables,
+    },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography')],
 } satisfies Config
 
 export default config

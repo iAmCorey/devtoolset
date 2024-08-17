@@ -1,14 +1,20 @@
 import './globals.css'
+import '@radix-ui/themes/styles.css';
 import React from 'react';
 import { Inter } from 'next/font/google'
 import { Layout } from '@/components/Layout'
 import { Metadata } from 'next'
 import { GoogleAnalyticsScript } from "@/components/analytics/GoogleAnalyticsScript";
 import { PlausibleAnalyticsScript } from "@/components/analytics/PlausibleAnalyticsScript";
-
+import { ThemeProvider } from "next-themes"
+import { DM_Sans } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ['latin'] })
-
+const sansFont = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -37,12 +43,33 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Layout>{children}</Layout>
-        <GoogleAnalyticsScript />
-        <PlausibleAnalyticsScript />
-      </body>
-    </html>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body className={cn(inter.className,sansFont.variable,
+        )}>
+          <ThemeProvider
+            attribute="class"
+           
+          >
+            <Layout>{children}</Layout>
+            <GoogleAnalyticsScript />
+           <PlausibleAnalyticsScript />
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   )
 }
+
+// export default function RootLayout({ children }: RootLayoutProps) {
+//   return (
+//     <html lang="en">
+//       <body className={inter.className}>
+//         <Layout>{children}</Layout>
+//         <GoogleAnalyticsScript />
+//         <PlausibleAnalyticsScript />
+//       </body>
+//     </html>
+//   )
+// }
