@@ -60,7 +60,7 @@ export default async function Post({ params }: PostParams) {
 
       {/* Article content */}
       <div
-        className="prose prose-lg max-w-none"
+        className="prose prose-lg dark:prose-invert max-w-none"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
 

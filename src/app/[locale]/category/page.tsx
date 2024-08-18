@@ -48,9 +48,9 @@ export default async function Category() {
         </Breadcrumb>
 
         <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-5xl tracking-tight pt-10">
-          <span className="text-primary">{t('h1')}</span>
+          <span className="">{t('h1')}</span>
         </h1>
-        <h2 className="mx-auto max-w-[700px] text-gray-500 md:text-xl">{t('h2')}</h2>
+        <h2 className="mx-auto max-w-[700px] opacity-60 md:text-xl">{t('h2')}</h2>
       </section>
       <CategoryList categories={categories} />
     </div>
