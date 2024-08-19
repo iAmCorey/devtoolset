@@ -1,4 +1,4 @@
-🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
+🌍 *[English](README.md) ∙ [简体中文](README.zh.md)*
 
 # DevToolset
 
@@ -200,6 +200,6 @@ DevToolset 使用以下工具和库构建：
 
 <a href='https://ko-fi.com/X8X2WF1V8' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='在 ko-fi.com 上给我买杯咖啡' /></a>
 
-<img src="./public/buymeacoffee.jpeg" alt="请阿邱喝咖啡" style="height: 200px; width: 200px">
+<img src="./public/buymeacoffee.jpg" alt="请阿邱喝咖啡" style="height: 200px; width: 200px">
 
 感谢您的支持！
