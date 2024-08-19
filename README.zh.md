@@ -189,7 +189,7 @@ DevToolset 使用以下工具和库构建：
 - **GitHub：** [iamcorey](https://github.com/iamcorey)
 - **即刻：** `阿邱很行` [阿邱很行](https://okjk.co/mFe3NR)
 - **微信：** `iAmCor3y`（添加好友时请注明）
-![iamcorey](https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg) 
+<img src="https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg" alt="加我为好友" style="height: 200px; width: 200px">
 
 
 ## 支持 
