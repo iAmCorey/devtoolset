@@ -83,7 +83,7 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -131,7 +131,7 @@ const ToolsPage = ({ category, locale }: { category: categoryProps, locale: stri
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -182,7 +182,7 @@ const SearchPage = ({ searchData }: searchPageProps) => {
                   { resource.icon_url ?
                     <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
