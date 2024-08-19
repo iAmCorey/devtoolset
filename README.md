@@ -189,7 +189,7 @@ Feel free to reach out if you have any questions or suggestions:
 - **GitHub:** [iamcorey](https://github.com/iamcorey)
 - **jike:** `阿邱很行` [阿邱很行](https://okjk.co/mFe3NR)
 - **Wechat:** `iAmCor3y`(Please add a note when sending a friend request)
-![iamcorey](https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg) 
+<img src="https://img.magicbox.tools/screenshot_img/iamcoreywechat.jpg" alt="加我为好友" style="height: 200px; width: 200px">
 
 
 ## Support 
