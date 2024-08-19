@@ -1,0 +1,69 @@
+// example data
+// {
+//   "name": "Tailwind CSS",
+//   "description": "A utility-first CSS framework",
+//   "url": "https://tailwindcss.com/",
+//   "icon_url": "icon_path", (Optional)
+//   "tags": ["a", "b"], (Optional, 3tags max)
+//   "add_date": "yyyy-MM-dd" (Optional) 
+//   ...any other key if you want
+// }
+// 
+// Notice:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed
+// 3. Do not submit tools that are unrelated to development.
+
+
+[
+  // A
+  // B
+  // C
+  // D
+  {
+    "name": "dns.fish",
+    "description": "一个用于查询DNS记录的工具，帮助您快速获取任何域名的DNS信息。",
+    "url": "https://dns.fish/",
+    "tags": ["DNS", "查询"]
+  },
+  // E
+  // F
+  {
+    "name": "favicon.im",
+    "description": "一个轻松获取任何网站favicon的工具。",
+    "url": "https://favicon.im/",
+    "tags": ["Favicon", "网页开发"]
+  },
+  // G
+  // H
+  // I
+  {
+    "name": "ip.network",
+    "description": "一个简单的工具，用于查看您当前的IP地址和相关网络信息。",
+    "url": "https://ip.network/",
+    "tags": ["IP", "网络"]
+  },
+  // J
+  // K
+  // L
+  // M
+  // N
+  // O
+  // P
+  // Q
+  // R
+  {
+    "name": "Redirect Check",
+    "description": "一个用于检查和分析URL重定向的工具，帮助您追踪完整的重定向路径。",
+    "url": "https://www.redirectcheck.org/",
+    "tags": ["重定向", "分析"]
+  },
+  // S
+  // T
+  // U
+  // V
+  // W
+  // X
+  // Y
+  // Z
+]
