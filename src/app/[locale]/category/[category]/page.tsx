@@ -56,7 +56,7 @@ export default async function Tool({ params: { category } }: CategoryPageProps) 
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage className='capitalize'>{category}</BreadcrumbPage>
+            <BreadcrumbPage className='capitalize'>{categoryData.name}</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
