@@ -13,12 +13,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-    CommandSeparator,
+    // CommandSeparator,
 } from "@/components/ui/command"
 import { Button } from "@/components/ui/button"
 
 import { cn } from "@/lib/utils";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export function Search({ className }: { className?: string }) {
     const [search, setSearch] = useState('');
@@ -30,7 +30,7 @@ export function Search({ className }: { className?: string }) {
                 <CommandInput placeholder={t('input_placeholder')} value={search} onValueChange={setSearch} />
                 <CommandList>
                     <CommandGroup heading={t('heading')}>
-                    <CommandItem onSelect={() => window.location.href = '/tools/ai'}>
+                        <CommandItem onSelect={() => window.location.href = '/tools/ai'}>
                             <LightningBoltIcon className="mr-2 h-4 w-4" />
                             <span>AI</span>
                         </CommandItem>
@@ -43,13 +43,12 @@ export function Search({ className }: { className?: string }) {
                             <span>{t('more')}</span>
                         </CommandItem>
                     </CommandGroup>
-                    <CommandSeparator />
                 </CommandList>
             </Command>
-            { search && 
-            <Button variant="outline" className='mt-6' onClick={() => window.location.href = `/tools/${encodeURIComponent(search)}`}>
-                <SearchIcon size={16} className='mr-2 opacity-80' />{t('button')}
-            </Button> }
+            {search &&
+                <Button variant="outline" className='mt-6' onClick={() => window.location.href = `/tools/${encodeURIComponent(search)}`}>
+                    <SearchIcon size={16} className='mr-2 opacity-80' />{t('button')}
+                </Button>}
         </div>
     )
 }
