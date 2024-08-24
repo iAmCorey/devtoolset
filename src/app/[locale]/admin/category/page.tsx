@@ -15,7 +15,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
-export default function AdminPage() {
+
+export default function CategoryPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
@@ -40,7 +41,6 @@ export default function AdminPage() {
     checkAuth();
   }, [checkAuth]);
 
-
   if (isLoading) {
     return <div className="container mx-auto p-4">Loading...</div>;
   }
@@ -58,6 +58,7 @@ export default function AdminPage() {
     }
   }
 
+
   return (
     <div className="container mx-auto p-4">
       <div className='mt-6'>
@@ -67,21 +68,20 @@ export default function AdminPage() {
               <BreadcrumbLink href="/admin">Admin</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/admin/category">Category</BreadcrumbLink>
+            </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
 
-      <h1 className="text-2xl font-bold my-6">Admin Dashboard</h1>
-      <h2 className="text-xl font-bold my-4">Articles Management</h2>
-      <div className="mb-4 pb-8 border-b">
-        <Link href="/admin/articles">
-          <Button>Manage Articles</Button>
+      <h1 className="text-2xl font-bold mb-4 mt-6">Category Management</h1>
+      <div className="mb-4 pb-8 border-b flex gap-4">
+        <Link href="/admin/category/en">
+          <Button>en</Button>
         </Link>
-      </div>
-      <h2 className="text-xl font-bold mb-4">Category Management</h2>
-      <div className="mb-8">
-        <Link href="/admin/category">
-          <Button>Manage Category</Button>
+        <Link href="/admin/category/zh">
+          <Button>zh</Button>
         </Link>
       </div>
       <div className="my-8">

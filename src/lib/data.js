@@ -6,6 +6,15 @@ import * as jsonc from 'jsonc-parser';
 export function getCategories(locale) {
     const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
     const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8'));
+    if (typeof categories === 'string') {
+        // 如果解析后仍是字符串，可能需要二次解析
+        try {
+            return jsonc.parse(categories);
+        } catch (error) {
+            console.error('二次解析失败:', error);
+            return categories; // 如果二次解析失败，返回原始解析结果
+        }
+    }
     return categories;
 }
 
@@ -23,6 +32,16 @@ export function getCategoryByLink(link, locale) {
 export function getDataList(src, locale) {
     const dataPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', src);
     const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8'));
+    if (typeof dataList === 'string') {
+        // 如果解析后仍是字符串，可能需要二次解析
+        try {
+            return jsonc.parse(dataList);
+        } catch (error) {
+            console.error('二次解析失败:', error);
+            return dataList; // 如果二次解析失败，返回原始解析结果
+        }
+    }
+
     return dataList;
 }
 
