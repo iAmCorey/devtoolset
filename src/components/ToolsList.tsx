@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 
 import { getDataList } from '@/lib/data';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 // type toolProps = {
 //   name: string;
@@ -80,9 +81,10 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
                 <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
-                    <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    // <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -128,9 +130,9 @@ const ToolsPage = ({ category, locale }: { category: categoryProps, locale: stri
                 <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
-                    <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -179,9 +181,9 @@ const SearchPage = ({ searchData }: searchPageProps) => {
                 <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
                   {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
                   { resource.icon_url ?
-                    <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
+                    <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
