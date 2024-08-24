@@ -35,7 +35,7 @@
     "name": "domainscore.ai",
     "description": "基于各种指标评估和评分域名的AI驱动平台。",
     "url": "https://domainscore.ai/",
-    "icon_url": "https://domainscore.ai/icon.png",
+    // "icon_url": "https://domainscore.ai/icon.png",
     "tags": ["域名评分", "AI"]
   },
   {

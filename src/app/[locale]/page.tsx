@@ -1,5 +1,5 @@
 // pages/index.js
-import React from 'react'; // 确保导入 React
+import React, { Suspense } from 'react'; // 确保导入 React
 import { getSortedPostsData } from '@/lib/posts'
 import { getCategories } from '@/lib/data';
 
@@ -8,7 +8,6 @@ import { ArticleList } from '@/components/ArticleList'
 
 import { Search } from '@/components/Search';
 import {getTranslations, getLocale} from 'next-intl/server';
-import {useTranslations} from 'next-intl';
 
 export async function generateMetadata() {
   const t = await getTranslations('home');
@@ -42,7 +41,7 @@ export default async function Home() {
     <div className="container mx-auto py-12 space-y-16 ">
       <section className="flex flex-col items-center justify-center text-center space-y-6">
         <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-7xl tracking-tighter">
-          <span className="">Dev Toolset</span>
+          <span className="inline-block">Dev Toolset</span>
         </h1>
         <h2 className="text-2xl tracking-tight sm:text-3xl md:text-3xl lg:text-3xl">{t("h2")}</h2>
         <p className="mx-auto max-w-[700px] md:text-xl tracking-tight">
@@ -57,7 +56,9 @@ export default async function Home() {
         <ToolsList key={index} category={category} locale={locale} />
       ))}
       <div className='border-t'></div>
-      <ArticleList articles={allPostsData} />
+      <Suspense fallback={<div>Loading editor...</div>}>
+        <ArticleList articles={allPostsData} />
+      </Suspense>
     </div>
   )
 }

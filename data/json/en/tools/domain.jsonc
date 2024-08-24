@@ -35,7 +35,7 @@
     "name": "domainscore.ai",
     "description": "AI-driven platform for evaluating and scoring domain names based on various metrics.",
     "url": "https://domainscore.ai/",
-    "icon_url": "https://domainscore.ai/icon.png",
+    // "icon_url": "https://domainscore.ai/icon.png",
     "tags": ["Domain Scoring", "AI"]
   },
   {
