@@ -56,7 +56,6 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
   const t = useTranslations('toolsList');
   const srcList = getDataList(category.src, locale)
 
-
   return (
     <section>
       <div className="flex justify-between items-center mb-6">

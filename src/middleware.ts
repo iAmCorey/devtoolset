@@ -19,10 +19,11 @@ export function middleware(request: NextRequest) {
   if (path.startsWith('/admin')) {
     const token = request.cookies.get('auth_token')?.value;
     const isLoggedIn = token && verifyToken(token);
-
+    console.log('isLoggedIn', isLoggedIn);
     if (!isLoggedIn) {
+      console.log('Not authenticated');
       // Redirect to login page if not authenticated
-      return NextResponse.redirect(new URL('/login', request.url));
+      // return NextResponse.redirect(new URL('/login', request.url));
     }
   }
 
