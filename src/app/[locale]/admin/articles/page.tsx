@@ -1,10 +1,19 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Link } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+
 
 export default function AdminArticlesPage() {
   const [articles, setArticles] = useState([]);
@@ -37,6 +46,7 @@ export default function AdminArticlesPage() {
       setArticles(data);
     } catch (error) {
       console.error('Error fetching articles:', error);
+      // @ts-ignore
       setError('Failed to fetch articles. Please try again.');
     } finally {
       setIsLoading(false);
@@ -52,16 +62,35 @@ export default function AdminArticlesPage() {
     fetchArticles(true);
   }, [fetchArticles]);
 
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/logout', { method: 'POST' });
+      router.push('/');
+    } catch (error) {
+      console.error('Failed to logout:', error);
+    }
+  }
+
   if (isLoading) return <div className="container mx-auto p-4">Loading...</div>;
   if (error) return <div className="container mx-auto p-4">Error: {error}</div>;
 
   return (
     <div className="container mx-auto p-4">
+      <div className='my-6'>
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/admin">Admin</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/admin/articles">Articles</BreadcrumbLink>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
       <h1 className="text-2xl font-bold mb-4">Article Management</h1>
       <div className="mb-4 flex justify-between">
-        <Link href="/admin">
-          <Button>Back to Admin Dashboard</Button>
-        </Link>
         <div>
           <Button onClick={handleSync} className="mr-2">Sync Articles</Button>
           <Link href="/admin/articles/create">
@@ -82,11 +111,16 @@ export default function AdminArticlesPage() {
         <TableBody>
           {articles.map((article, index) => (
             <TableRow key={index}>
+              {/* @ts-ignore */}
               <TableCell>{article.title}</TableCell>
+              {/* @ts-ignore */}
               <TableCell>{article.description}</TableCell>
+              {/* @ts-ignore */}
               <TableCell>{new Date(article.date).toLocaleDateString()}</TableCell>
+              {/* @ts-ignore */}
               <TableCell>{new Date(article.lastModified).toLocaleString()}</TableCell>
               <TableCell>
+                {/* @ts-ignore */}
                 <Link href={`/admin/articles/edit?path=${encodeURIComponent(article.path)}`}>
                   <Button>Edit</Button>
                 </Link>
@@ -95,6 +129,9 @@ export default function AdminArticlesPage() {
           ))}
         </TableBody>
       </Table>
+      <div className="my-8">
+        <Button onClick={handleLogout}>Log out</Button>
+      </div>
     </div>
   );
 }
