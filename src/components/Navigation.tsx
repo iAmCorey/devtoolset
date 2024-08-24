@@ -2,7 +2,6 @@
 import React from 'react'; // 确保导入 React
 import { useState, useEffect } from 'react'
 import { Link, usePathname }from "@/lib/i18n";
-import { useRouter } from 'next/navigation'
 import { Github, MenuIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -35,10 +34,7 @@ type navigationProp = {
 
 export const Navigation = ({ categories }: navigationProp ) => {
   const pathname = usePathname()
-  const router = useRouter()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
   const t = useTranslations('navigation');
 
   const menuItems: {
@@ -68,41 +64,10 @@ export const Navigation = ({ categories }: navigationProp ) => {
   };
 
   useEffect(() => {
-    let isMounted = true;
-    const checkLoginStatus = async () => {
-      if (!isMounted) return;
-      setIsLoading(true);
-      try {
-        const response = await fetch('/api/check-auth');
-        const data = await response.json();
-        if (isMounted) setIsLoggedIn(data.isLoggedIn);
-      } catch (error) {
-        console.error('Failed to check auth status:', error);
-      } finally {
-        if (isMounted) setIsLoading(false);
-      }
-    };
-
-    checkLoginStatus();
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
-  useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const handleLogout = async () => {
-    try {
-      await fetch('/api/logout', { method: 'POST' });
-      setIsLoggedIn(false);
-      router.push('/');
-    } catch (error) {
-      console.error('Failed to logout:', error);
-    }
-  };
+  
   const size = 30;
   const ListItem = React.forwardRef<
     React.ElementRef<"a">,
