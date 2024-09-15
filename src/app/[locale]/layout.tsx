@@ -63,6 +63,8 @@ export default async function RootLayout({
           >
             <Layout>{children}</Layout>
             <GoogleAnalyticsScript />
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588097392840588"
+        crossOrigin="anonymous"></script>
            <PlausibleAnalyticsScript />
           </ThemeProvider>
           </NextIntlClientProvider>
