@@ -25,7 +25,7 @@
 - **Built-in Analytics Support**: Integrated analytics support scripts, compatible with Google Analytics and Plausible Analytics.
 - **i18n**: Support multiple languages and can be easily extended to support more languages.
 - **Dark Mode**: Support dark mode and can be easily extended to support more themes.
-
+- **Ads Support**: Support Google Adsense and can be easily extended to support more ads.
 
 ### Tech Stack
 - Next.js - Framework
@@ -34,7 +34,7 @@
 - Vercel - Deployment
 - Next-Intl - Internationalization
 - Analytics - Google Analytics & Plausible Analytics & ...
-
+- Ads - Google Adsense & ...
 
 ---
 
@@ -108,6 +108,7 @@ Follow the format below:
    JWT_SECRET=your_secret_key_here(Optional)
    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your_google_analytics(G-xxx)(Optional)
    NEXT_PUBLIC_PLAUSIBLE_URL=your_plausible_data_domain(Optional)
+   NEXT_PUBLIC_GOOGLE_ADSENSE_ID=your_google_adsense_id(Optional)
    ```
 
 4. Set up your GitHub repository:
@@ -136,6 +137,7 @@ Visit `http://localhost:3000` to see your DevToolset instance running locally.
    - `JWT_SECRET`(Optional)
    - `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`(Optional)
    - `NEXT_PUBLIC_PLAUSIBLE_URL`(Optional)
+   - `NEXT_PUBLIC_GOOGLE_ADSENSE_ID`(Optional)
 4. Deploy the project.
 
 For a detailed deployment guide, please refer to our [Installation and Deployment Guide](/data/md/deploy-own-devtoolset.md).
