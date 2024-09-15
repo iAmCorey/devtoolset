@@ -6,6 +6,7 @@ import { Layout } from '@/components/Layout';
 import { Metadata } from 'next'
 import { GoogleAnalyticsScript } from "@/components/analytics/GoogleAnalyticsScript";
 import { PlausibleAnalyticsScript } from "@/components/analytics/PlausibleAnalyticsScript";
+import GoogleAdsenseScript from "@/components/ads/GoogleAdsenseScript";
 import { ThemeProvider } from "next-themes"
 import { DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -64,8 +65,7 @@ export default async function RootLayout({
 
             >
               <Layout>{children}</Layout>
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588097392840588"
-                crossOrigin="anonymous"></script>
+              <GoogleAdsenseScript />
               <GoogleAnalyticsScript />
               <PlausibleAnalyticsScript />
             </ThemeProvider>
