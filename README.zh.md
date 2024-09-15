@@ -25,6 +25,7 @@
 - **内置分析支持**：集成分析支持脚本，兼容 Google Analytics 和 Plausible Analytics。
 - **国际化**：支持多语言，可轻松扩展以支持更多语言。
 - **深色模式**：支持深色模式，可轻松扩展以支持更多主题。
+- **广告支持**：支持 Google Adsense 和可以轻松扩展以支持更多广告。
 
 
 ### 技术栈
@@ -34,7 +35,7 @@
 - Vercel - 部署
 - Next-Intl - 国际化
 - Analytics - Google Analytics & Plausible Analytics & ...
-
+- Ads - Google Adsense & ...
 
 ---
 
@@ -108,6 +109,7 @@
    JWT_SECRET=你的密钥（可选）
    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=你的google分析ID(G-xxx)（可选）
    NEXT_PUBLIC_PLAUSIBLE_URL=你的plausible数据域（可选）
+   NEXT_PUBLIC_GOOGLE_ADSENSE_ID=你的google广告ID(ca-pub-xxx)（可选）
    ```
 
 4. 设置你的 GitHub 仓库：
@@ -136,6 +138,7 @@
    - `JWT_SECRET`（可选）
    - `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`（可选）
    - `NEXT_PUBLIC_PLAUSIBLE_URL`（可选）
+   - `NEXT_PUBLIC_GOOGLE_ADSENSE_ID`（可选）
 4. 部署项目。
 
 有关详细的部署指南，请参阅我们的[安装和部署指南](/data/md/deploy-own-devtoolset.md)。
