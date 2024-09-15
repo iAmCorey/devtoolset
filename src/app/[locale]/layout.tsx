@@ -10,8 +10,8 @@ import { ThemeProvider } from "next-themes"
 import { DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 
 const inter = Inter({ subsets: ['latin'] })
 const sansFont = DM_Sans({
@@ -27,26 +27,28 @@ export const metadata: Metadata = {
   description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
   authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
   keywords: 'developer tools, dev tools, develop tool',
-  alternates: { canonical: "https://DevToolset.net/", languages: { 
-    "en-US": "https://DevToolset.net/en/",
-    "zh-CN": "https://DevToolset.net/zh/",
-  } },
+  alternates: {
+    canonical: "https://DevToolset.net/", languages: {
+      "en-US": "https://DevToolset.net/en/",
+      "zh-CN": "https://DevToolset.net/zh/",
+    }
+  },
   icons: [
-    { rel: "icon", type: 'image/png',sizes: "16x16", url: "/favicon-16x16.png" }, 
-    { rel: "icon", type: 'image/png',sizes: "32x32", url: "/favicon-32x32.png" },
+    { rel: "icon", type: 'image/png', sizes: "16x16", url: "/favicon-16x16.png" },
+    { rel: "icon", type: 'image/png', sizes: "32x32", url: "/favicon-32x32.png" },
     { rel: "icon", type: 'image/ico', url: "/favicon.ico" },
-    { rel: "apple-touch-icon", sizes:"180x180", url: "/favicon-180x180.png" },
-    { rel: "android-chrome", sizes:"512x512", url: "/favicon-512x512.png" },
-    
+    { rel: "apple-touch-icon", sizes: "180x180", url: "/favicon-180x180.png" },
+    { rel: "android-chrome", sizes: "512x512", url: "/favicon-512x512.png" },
+
   ],
 }
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params: { locale }
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   const messages = await getMessages();
 
@@ -54,19 +56,19 @@ export default async function RootLayout({
     <>
       <html lang={locale} suppressHydrationWarning>
         <head />
-        <body className={cn(inter.className,sansFont.variable,
+        <body className={cn(inter.className, sansFont.variable,
         )}>
           <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-           
-          >
-            <Layout>{children}</Layout>
-            <GoogleAnalyticsScript />
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588097392840588"
-        crossOrigin="anonymous"></script>
-           <PlausibleAnalyticsScript />
-          </ThemeProvider>
+            <ThemeProvider
+              attribute="class"
+
+            >
+              <Layout>{children}</Layout>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588097392840588"
+                crossOrigin="anonymous"></script>
+              <GoogleAnalyticsScript />
+              <PlausibleAnalyticsScript />
+            </ThemeProvider>
           </NextIntlClientProvider>
         </body>
       </html>
