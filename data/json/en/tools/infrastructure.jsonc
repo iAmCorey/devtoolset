@@ -29,7 +29,6 @@
     "name": "LLM GPU Helper",
     "description": "Large model resource platform: Provides GPU memory calculation, personalized model recommendations, and comprehensive knowledge base, helping you accurately select and efficiently apply AI models.",
     "url": "https://llmgpuhelper.com",
-    "icon_url": "https://llmgpuhelper.com/static/pic/logo2.ico",
     "tags": [
       "LLM","GPU","Agent"
     ]
