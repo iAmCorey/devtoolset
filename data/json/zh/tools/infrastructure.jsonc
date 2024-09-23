@@ -29,7 +29,6 @@
     "name": "LLM GPU Helper",
     "description": "大模型资源平台：提供GPU内存计算、个性化模型推荐和全面知识库，助您精准选择和高效应用AI模型。",
     "url": "https://llmgpuhelper.com",
-    "icon_url": "https://llmgpuhelper.com/static/pic/logo2.ico",
     "tags": [
       "LLM","GPU","Agent"
     ]

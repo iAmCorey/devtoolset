@@ -10,7 +10,20 @@ const withNextIntl = createNextIntlPlugin(
 const nextConfig = {
   images: {
     // 允许加载图片的host
-    domains: ['favicon.im', 'domainscore.ai', 'llmgpuhelper.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'favicon.im',
+      },
+      {
+        protocol: 'https',
+        hostname: 'domainscore.ai',
+      },
+      {
+        protocol: 'https',
+        hostname: 'llmgpuhelper.com',
+      },
+    ],
     // 允许加载svg图片
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
