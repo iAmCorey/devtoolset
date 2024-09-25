@@ -188,7 +188,7 @@ DevToolset 使用以下工具和库构建：
 
 如果您有任何问题或建议，请随时联系：
 
-- **电子邮件：** [iamcoreychiu@gmail.com](mailto:iamcoreychiu@gmail.com)
+- **电子邮件：** [iamcoreychiu+devtoolset@gmail.com](mailto:iamcoreychiu+devtoolset@gmail.com)
 - **GitHub：** [iamcorey](https://github.com/iamcorey)
 - **即刻：** `阿邱很行` [阿邱很行](https://okjk.co/mFe3NR)
 - **微信：** `iAmCor3y`（添加好友时请注明）
