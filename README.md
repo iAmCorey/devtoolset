@@ -187,7 +187,7 @@ If you want a secondary development, want to customize this project or want to c
 
 Feel free to reach out if you have any questions or suggestions:
 
-- **Email:** [iamcoreychiu@gmail.com](mailto:iamcoreychiu@gmail.com)
+- **Email:** [iamcoreychiu+devtoolset@gmail.com](mailto:iamcoreychiu+devtoolset@gmail.com)
 - **GitHub:** [iamcorey](https://github.com/iamcorey)
 - **jike:** `阿邱很行` [阿邱很行](https://okjk.co/mFe3NR)
 - **Wechat:** `iAmCor3y`(Please add a note when sending a friend request)
