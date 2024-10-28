@@ -10,7 +10,7 @@ Follow these steps to add new developer tools to DevToolset.
 
 ## Step 1: Add the New Developer Tool
 
-1. Open the DevToolset repository: [DevToolset](https://DevToolset.net/)
+1. Open the DevToolset repository: [DevToolset](https://github.com/iAmCorey/devtoolset/)
 2. Open the relevant JSONC file in `/data/json/[locale]/tools/{category}.jsonc`.
 3. Insert the new developer tool into the file.
 4. If the `{category}.jsonc` file doesn’t exist, follow these steps:
