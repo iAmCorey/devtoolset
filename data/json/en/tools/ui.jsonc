@@ -49,6 +49,11 @@
   // G
   // H
   // I
+  {
+    "name": "InclusiveColors palette creator",
+    "description": "Creates WCAG accessible custom color palettes for Tailwind/CSS",
+    "url": "https://www.inclusivecolors.com/"
+  },
   // J
   // K
   // L
