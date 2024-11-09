@@ -54,6 +54,12 @@
     "description": "Creates WCAG accessible custom color palettes for Tailwind/CSS",
     "url": "https://www.inclusivecolors.com/"
   },
+  {
+    "name": "Interactive Shadcn Flip Cards",
+    "description": "Nice-looking stat cards that rotate when you hover over them to save space on your dashboard and make things more awesome. There are bright backgrounds on the front of the card that make the numbers that are most important to you stand out. There is a useful bar chart on the back of the card. Made using Shadcn UI components.",
+    "url": "https://shadcn-widgets.xyz/widget/interactive-flip-cards-with-statistical-charts",
+    "tags": ["stat-card", "dashboard", "shadcn-ui"]
+  },
   // J
   // K
   // L
