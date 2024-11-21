@@ -65,6 +65,12 @@
     "tags": ["saas app", "nextjs", "paid"]
   },
   {
+    "name": "StartupBolt",
+    "description": "A Next.js boilerplate to launch SaaS quickly with features like database, authentication, SEO, payments, and more.",
+    "url": "https://www.startupbolt.com/",
+    "tags": ["nextjs", "themes", "paid"]
+  },
+  {
     "name": "Supastarter",
     "description": "A starter template designed for building web applications quickly, with a range of pre-designed components and layouts to streamline development.",
     "url": "https://supastarter.dev/",
