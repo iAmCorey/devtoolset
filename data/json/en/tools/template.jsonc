@@ -39,6 +39,12 @@
   // J
   // K
   // L
+  {
+    "name": "Launchway",
+    "description": "Remix starter kit that provides developers with pre-built features like authentication, payment processing, and UI components, aiming to save 40-65+ hours of development time without any vendor lock-in to help products launch faster.",
+    "url": "https://www.launuchway.dev/",
+    "tags": ["creator tools", "kit", "paid", "remix", "saas app"]
+  },
   // M
   {
     "name": "Makerkit",
@@ -57,6 +63,12 @@
     "description": "A modern saas template that enables rapid setup.",
     "url": "https://shipfa.st/",
     "tags": ["saas app", "nextjs", "paid"]
+  },
+  {
+    "name": "StartupBolt",
+    "description": "A Next.js boilerplate to launch SaaS quickly with features like database, authentication, SEO, payments, and more.",
+    "url": "https://www.startupbolt.com/",
+    "tags": ["nextjs", "themes", "paid"]
   },
   {
     "name": "Supastarter",
