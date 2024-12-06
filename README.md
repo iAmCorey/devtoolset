@@ -109,6 +109,7 @@ Follow the format below:
    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your_google_analytics(G-xxx)(Optional)
    NEXT_PUBLIC_PLAUSIBLE_URL=your_plausible_data_domain(Optional)
    NEXT_PUBLIC_GOOGLE_ADSENSE_ID=your_google_adsense_id(Optional)
+   DOMAIN=your_domain(localhost / YOUR_DOMAIN.tld)
    ```
 
 4. Set up your GitHub repository:
@@ -138,6 +139,7 @@ Visit `http://localhost:3000` to see your DevToolset instance running locally.
    - `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`(Optional)
    - `NEXT_PUBLIC_PLAUSIBLE_URL`(Optional)
    - `NEXT_PUBLIC_GOOGLE_ADSENSE_ID`(Optional)
+   - `DOMAIN`(localhost / YOUR_DOMAIN.tld)
 4. Deploy the project.
 
 For a detailed deployment guide, please refer to our [Installation and Deployment Guide](/data/md/deploy-own-devtoolset.md).
