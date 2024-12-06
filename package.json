@@ -20,7 +20,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",
-    "cookie": "^0.6.0",
+    "cookie": "^0.7.0",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "jsonc-parser": "^3.3.1",
