@@ -110,6 +110,7 @@
    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=你的google分析ID(G-xxx)（可选）
    NEXT_PUBLIC_PLAUSIBLE_URL=你的plausible数据域（可选）
    NEXT_PUBLIC_GOOGLE_ADSENSE_ID=你的google广告ID(ca-pub-xxx)（可选）
+   DOMAIN=localhost/你的域名
    ```
 
 4. 设置你的 GitHub 仓库：
@@ -139,6 +140,7 @@
    - `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID`（可选）
    - `NEXT_PUBLIC_PLAUSIBLE_URL`（可选）
    - `NEXT_PUBLIC_GOOGLE_ADSENSE_ID`（可选）
+   - `DOMAIN`(localhost / 你的域名)
 4. 部署项目。
 
 有关详细的部署指南，请参阅我们的[安装和部署指南](/data/md/deploy-own-devtoolset.md)。
