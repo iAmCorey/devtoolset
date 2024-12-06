@@ -20,8 +20,10 @@ export async function generateMetadata({ params: { keyword } }: CategoryPageProp
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   }
 
+  const decodeKeyword = decodeURIComponent(keyword)
+
   return {
-    title: capitalize(keyword) + ' Developer Tools',
+    title: capitalize(decodeKeyword) + ' Developer Tools',
     description: t('meta_description')
   }
 }
@@ -33,8 +35,10 @@ type CategoryPageProps = {
 }
 
 export default async function Tool({ params: { keyword } }: CategoryPageProps) {
+  const decodeKeyword = decodeURIComponent(keyword)
+
   const locale = await getLocale();
-  const searchData = searchDataByKeyword(keyword, locale)
+  const searchData = searchDataByKeyword(decodeKeyword, locale)
   const t = await getTranslations('tools');
 
   return (
@@ -47,14 +51,14 @@ export default async function Tool({ params: { keyword } }: CategoryPageProps) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className='capitalize'>{keyword}</BreadcrumbPage>
+              <BreadcrumbPage className='capitalize'>{decodeKeyword}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
       <div className="flex flex-col justify-between items-center mb-12">
-        <h1 className="text-3xl font-bold tracking-tight uppercase lg:text-5xl  pt-10">{keyword}</h1>
-        <h2 className='text-sm mt-2 opacity-60 lg:text-lg'>{t('h2_1')} <span className='uppercase'>{keyword}</span>{t('h2_2')}</h2>
+        <h1 className="text-3xl font-bold tracking-tight uppercase lg:text-5xl  pt-10">{decodeKeyword}</h1>
+        <h2 className='text-sm mt-2 opacity-60 lg:text-lg'>{t('h2_1')} <span className='uppercase'>{decodeKeyword}</span>{t('h2_2')}</h2>
       </div>
       {searchData && <SearchPage searchData={searchData} />}
     </div>
