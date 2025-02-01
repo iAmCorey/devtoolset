@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card"
 
 import { Badge } from "@/components/ui/badge";
-import { Favicon } from "favicon-stealer";
+
 import { getDataList } from '@/lib/data';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -84,7 +84,7 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
                     // <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
                     <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <Favicon url={resource.url} lazy={true} size={24} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -132,7 +132,7 @@ const ToolsPage = ({ category, locale }: { category: categoryProps, locale: stri
                   { resource.icon_url ?
                     <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <Favicon url={resource.url} lazy={true} size={24} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
@@ -183,7 +183,7 @@ const SearchPage = ({ searchData }: searchPageProps) => {
                   { resource.icon_url ?
                     <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
                     :
-                    <Favicon url={resource.url} lazy={true} size={24} />
+                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
                   }
                 </div>
                 <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
