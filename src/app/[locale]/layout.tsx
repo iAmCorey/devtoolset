@@ -22,16 +22,16 @@ const sansFont = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'DevToolset: Open-Source Database-free Developer Tools Navigator',
-    template: '%s | DevToolset'
+    default: 'runtoweb3.com: 快速上手区块链开发,应用,咨询',
+    template: '%s | Runtoweb3'
   },
-  description: 'Explore Every Essential Developer Tools You Need For Your Development Journey',
-  authors: { name: 'DevToolset', url: 'https://DevToolset.net/' },
-  keywords: 'developer tools, dev tools, develop tool',
+  description: 'a comminuty of blockchain developer tools, web3, blockchain',
+  authors: { name: 'runtoweb3.com', url: 'https://runtoweb3.com/' },
+  keywords: 'developer tools, web3, blockchain',
   alternates: {
-    canonical: "https://DevToolset.net/", languages: {
-      "en-US": "https://DevToolset.net/en/",
-      "zh-CN": "https://DevToolset.net/zh/",
+    canonical: "https://runtoweb3.com/", languages: {
+      "en-US": "https://runtoweb3.com/en/",
+      "zh-CN": "https://runtoweb3.com/zh/",
     }
   },
   icons: [

@@ -16,130 +16,28 @@
 [
   // A
   {
-    "name": "分析",
-    "src": "analytics.jsonc",
-    "link": "analytics",
-    "description": "用于跟踪和分析网站数据的工具。"
+    "name": "小白入门",
+    "src": "roadmap.jsonc",
+    "link": "roadmap",
+    "description": "指导区块链小白快速开始。"
   },
   // B
   // C
   // D
   {
-    "name": "数据库",
-    "src": "database.jsonc",
-    "link": "database",
-    "description": "用于存储和管理数据的服务。"
+    "name": "区块链电子书",
+    "src": "ebook.jsonc",
+    "link": "ebook",
+    "description": "区块链相关的电子书籍"
   },
-  {
-    "name": "部署",
-    "src": "deployment.jsonc",
-    "link": "deployment",
-    "description": "用于自动化应用程序部署的工具。"
-  },
-  {
-    "name": "域名",
-    "src": "domain.jsonc",
-    "link": "domain",
-    "description": "管理和分析域名。"
-  },
-  // E
-  // F
-  {
-    "name": "前端框架",
-    "src": "frontend-frameworks.jsonc",
-    "link": "frontend-frameworks",
-    "description": "用于构建用户界面的库。"
-  },
-  // G
-  // H
-  // I
-  {
-    "name": "集成开发环境",
-    "src": "ide.jsonc",
-    "link": "ide",
-    "description": "用于高效编写、测试和调试代码的集成开发环境。"
-  },
-  {
-    "name": "基础设施",
-    "src": "infrastructure.jsonc",
-    "link": "infrastructure",
-    "description": "支持应用程序底层架构的服务和工具，包括计算资源、网络、存储解决方案和用于可扩展和高效运营的云基础设施。"
-  },
-  {
-    "name": "洞察",
-    "src": "insights.jsonc",
-    "link": "insights",
-    "description": "用于发现趋势、新兴主题和有价值的市场洞察的工具。"
-  },
-  // J
-  // K
-  // L
-  {
-   "name": "标志",
-    "src": "logo.jsonc",
-    "link": "logo",
-    "description": "用于为您的品牌或项目设计、创建和定制标志的工具。"
-  },
-  // M
-  // N
-  // O
-  // P
-  {
-    "name": "支付",
-    "src": "payment.jsonc",
-    "link": "payment",
-    "description": "用于处理在线支付的平台。"
-  },
-  {
-    "name": "推广",
-    "src": "promotion.jsonc",
-    "link": "promotion",
-    "description": "用于推广产品和内容的工具。"
-  },
-  // Q
-  // R
-  // S
-  {
-    "name": "搜索引擎优化",
-    "src": "seo.jsonc",
-    "link": "seo",
-    "description": "用于提高搜索引擎可见性的工具。"
-  },
-  {
-    "name": "存储",
-    "src": "storage.jsonc",
-    "link": "storage",
-    "description": "用于高效存储、管理和访问数据的服务和工具。"
-  },
-  // T
-  {
-    "name": "模板",
-    "src": "template.jsonc",
-    "link": "template",
-    "description": "预设计的网站主题和布局。"
-  },
-  // U
-  {
-    "name": "用户界面",
-    "src": "ui.jsonc",
-    "link": "ui",
-    "description": "用于设计用户界面的组件。"
-  },
-  // V
-  {
-    "name": "版本控制",
-    "src": "version-control.jsonc",
-    "link": "version-control",
-    "description": "用于管理代码变更的系统。"
-  },
-  // W
-  {
-    "name": "实用工具",
-    "src": "utils.jsonc",
-    "link": "utils",
-    "description": "用于提升和优化你的产品的实用工具。"
-  }
+  
   // X
   // Y
   // Z
+  {
+    "name": "AI工具",
+    "src": "aitool.jsonc",
+    "link": "aitool",
+    "description": "AI工具"
+  }
 ]

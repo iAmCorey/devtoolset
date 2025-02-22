@@ -1,27 +1,11 @@
 {
     "en": [
       {
-        "date": "2024-08-15",
-        "changes": ["💡 Idea come up"],
-      },
-      {
-        "date": "2024-08-16",
-        "changes": ["🚀 Product launched"],
-      },
-      {
         "date": "2024-08-17",
         "changes": ["🌟 Add feature search/darkmode/i18n supported"],
-      },
+      }
     ],
     "zh": [
-      {
-        "date": "2024-08-15",
-        "changes": ["💡 灵感迸发"]
-      },
-      {
-        "date": "2024-08-16",
-        "changes": ["🚀 产品发布"]
-      },
       {
         "date": "2024-08-17",
         "changes": ["🌟 增加搜索功能/暗黑模式/多语言支持"]

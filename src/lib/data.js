@@ -5,6 +5,7 @@ import * as jsonc from 'jsonc-parser';
 // 读取 categories 数据
 export function getCategories(locale) {
     const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
+    console.log('categoriesPath: ', categoriesPath)
     const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8'));
     if (typeof categories === 'string') {
         // 如果解析后仍是字符串，可能需要二次解析

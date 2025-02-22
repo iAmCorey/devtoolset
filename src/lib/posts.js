@@ -39,6 +39,7 @@ export function getSortedPostsData() {
 }
 
 export async function getPostData(slug) {
+  console.log('postsDirectory', postsDirectory)
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 

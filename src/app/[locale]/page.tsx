@@ -41,7 +41,7 @@ export default async function Home() {
     <div className="container mx-auto py-12 space-y-16 ">
       <section className="flex flex-col items-center justify-center text-center space-y-6">
         <h1 className="mx-auto max-w-3xl text-3xl font-bold lg:text-7xl tracking-tighter">
-          <span className="inline-block">Dev Toolset</span>
+          <span className="inline-block">Dev1 Toolset</span>
         </h1>
         <h2 className="text-2xl tracking-tight sm:text-3xl md:text-3xl lg:text-3xl">{t("h2")}</h2>
         <p className="mx-auto max-w-[700px] md:text-xl tracking-tight">
