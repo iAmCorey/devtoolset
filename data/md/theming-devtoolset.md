@@ -1,11 +1,11 @@
 ---
-title: Theming DevToolset
-description: How to theme DevToolset
+title: Theming runtoweb3
+description: How to theme runtoweb3
 date: '2024-08-17T13:20:40.737Z'
 ---
 
 
-# Theming DevToolset
+# Theming runtoweb3
 
 
 ## Update existing theme

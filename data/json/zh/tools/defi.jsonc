@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Aave",
+        "description": "去中心化借贷平台，支持多种加密资产的借贷服务.",
+        "url": "https://aave.com/",
+        "tags": ["去中心化借贷", "加密资产", "借贷服务"]
+    },
+    {
+        "name": "Compound",
+        "description": "基于智能合约的借贷协议，用户可在平台上借贷及赚取利息.",
+        "url": "https://compound.finance/",
+        "tags": ["智能合约", "借贷协议", "借贷", "赚取利息"]
+    },
+    {
+        "name": "MakerDAO",
+        "description": "去中心化借贷平台，通过抵押资产来生成稳定币 DAI.",
+        "url": "https://makerdao.com/",
+        "tags": ["去中心化借贷", "抵押资产", "稳定币DAI"]
+    },
+    {
+        "name": "Yearn Finance",
+        "description": "提供 DeFi 自动化收益优化工具，并支持借贷与流动性提供.",
+        "url": "https://yearn.finance/",
+        "tags": ["DeFi", "自动化收益优化", "借贷", "流动性提供"]
+    },
+    {
+        "name": "Venus Protocol",
+        "description": "跨链借贷平台，支持多链资产借贷和流动性挖矿.",
+        "url": "https://venus.io/",
+        "tags": ["跨链借贷", "多链资产", "借贷", "流动性挖矿"]
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "name": "DefiLlama",
+        "description": "聚焦 DeFi 项目数据与 TVL 指标分析。",
+        "url": "http://defillama.com/",
+        "tags": ["DeFi", "TVL指标", "数据分析"]
+    },
+    {
+        "name": "DappRadar",
+        "description": "实时跟踪 DApp 数据及用户活跃度。",
+        "url": "http://dappradar.com/",
+        "tags": ["DApp", "用户活跃度", "实时跟踪"]
+    },
+    {
+        "name": "NFTPriceFloor",
+        "description": "分析 NFT 市场价格、交易数据及底价趋势。",
+        "url": "http://nftpricefloor.com/",
+        "tags": ["NFT", "市场价格", "交易数据", "底价趋势"]
+    },
+    {
+        "name": "Arkham Intelligence",
+        "description": "链上地址与交易追踪工具，适合安全监控。",
+        "url": "http://arkhamintelligence.com/",
+        "tags": ["链上地址", "交易追踪", "安全监控"]
+    },
+    {
+        "name": "CoinGecko",
+        "description": "提供全面数字货币市场数据查询，支持多语言。",
+        "url": "http://coingecko.com/",
+        "tags": ["数字货币", "市场数据", "多语言"]
+    },
+    {
+        "name": "MCT Gas 查询",
+        "description": "实时监控各链 Gas 价格，帮助用户制定交易策略。",
+        "url": "http://mct.xyz/gasnow?mode=btc",
+        "tags": ["Gas价格", "实时监控", "交易策略"]
+    },
+    {
+        "name": "Dune Analytics",
+        "description": "支持自定义链上数据仪表盘，适合专业数据分析。",
+        "url": "https://dune.com/",
+        "tags": ["链上数据", "自定义仪表盘", "数据分析"]
+    },
+    {
+        "name": "Nansen",
+        "description": "基于链上数据的智能分析平台，提供市场洞察与投资决策支持。",
+        "url": "https://www.nansen.ai/",
+        "tags": ["链上数据", "智能分析", "市场洞察", "投资决策"]
+    },
+    {
+        "name": "Blockchain",
+        "description": "比特币、以太坊等链上地址与交易数据查询工具。",
+        "url": "https://www.blockchain.com/explorer",
+        "tags": ["比特币", "以太坊", "链上地址", "交易数据"]
+    },
+    {
+        "name": "Etherscan",
+        "description": "以太坊链上交易与合约信息查询首选工具。",
+        "url": "https://etherscan.io/",
+        "tags": ["以太坊", "链上交易", "合约信息"]
+    },
+    {
+        "name": "BscScan",
+        "description": "专注 Binance Smart Chain 数据查询，信息详尽。",
+        "url": "https://bscscan.com/",
+        "tags": ["Binance Smart Chain", "数据查询"]
+    },
+    {
+        "name": "PolygonScan",
+        "description": "用于查询 Polygon 链上交易与合约数据。",
+        "url": "https://polygonscan.com/",
+        "tags": ["Polygon", "链上交易", "合约数据"]
+    },
+    {
+        "name": "FTMScan",
+        "description": "Fantom 网络数据与交易追踪工具。",
+        "url": "https://ftmscan.com/",
+        "tags": ["Fantom", "网络数据", "交易追踪"]
+    },
+    {
+        "name": "Solana Explorer",
+        "description": "Solana 链上数据浏览工具，界面直观。",
+        "url": "https://explorer.solana.com/",
+        "tags": ["Solana", "链上数据", "浏览工具"]
+    },
+    {
+        "name": "Mempool",
+        "description": "比特币区块链浏览器，提供实时交易和未确认交易数据。",
+        "url": "https://mempool.space/",
+        "tags": ["比特币", "区块链浏览器", "实时交易", "未确认交易"]
+    },
+    {
+        "name": "OKLink",
+        "description": "支持多链查询的区块浏览器，覆盖范围广。",
+        "url": "https://www.oklink.com/zh-cn",
+        "tags": ["多链查询", "区块浏览器", "广泛覆盖"]
+    }
+]

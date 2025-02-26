@@ -107,7 +107,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
               height={size}
               alt="DomainScore"
             />
-            <span className="inline-block font-bold">Dev Toolset</span>
+            <span className="inline-block font-bold">runtoweb3</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavigationMenu>
@@ -156,7 +156,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
                             href="/"
                           >
                             <div className="mb-2 mt-4 text-lg font-medium">
-                              Dev Toolset
+                              runtoweb3
                             </div>
                             <p className="text-xs leading-tight text-muted-foreground">
                               {t('articleDescription')}
@@ -167,7 +167,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
                       <ListItem href="/article/add-new-developer-tools" title="Add Tools">
                         {t('article1Title')}
                       </ListItem>
-                      <ListItem href="/article/deploy-own-devtoolset" title="Deploy DevToolset">
+                      <ListItem href="/article/deploy-own-runtoweb3" title="Deploy runtoweb3">
                         {t('article2Title')}
                       </ListItem>
                       <ListItem href="/article" title={t('moreArticleBtn')} className='border border-muted  bg-gradient-to-b  from-muted/50 to-muted/20'>
@@ -197,7 +197,7 @@ export const Navigation = ({ categories }: navigationProp ) => {
             
           </div>
           <Link
-            href={"https://github.com/iAmCorey/devtoolset"}
+            href={"https://github.com/iAmCorey/runtoweb3"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground ml-1"

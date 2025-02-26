@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Daylight",
+        "description": "实时更新各项目空投数据的聚合平台.",
+        "url": "https://daylight.xyz/",
+        "tags": ["空投数据", "聚合平台", "实时更新"]
+    },
+    {
+        "name": "Earni",
+        "description": "空投信息及分发工具，适合参与空投活动.",
+        "url": "https://earni.fi/",
+        "tags": ["空投信息", "分发工具", "空投活动"]
+    },
+    {
+        "name": "Earndrop",
+        "description": "整合空投数据，确保不错过任何空投机会.",
+        "url": "https://earndrop.io/",
+        "tags": ["空投数据", "空投机会", "整合"]
+    },
+    {
+        "name": "CoinMarketCap Airdrops",
+        "description": "流量最高的综合性空投平台，覆盖已完成、进行中和未来空投，支持通知订阅。",
+        "url": "https://coinmarketcap.com/airdrop/",
+        "tags": ["综合性空投平台", "通知订阅", "已完成空投", "进行中空投", "未来空投"]
+    },
+    {
+        "name": "AirdropAlert",
+        "description": "全球头部空投信息平台，提供空投教程、项目筛选指南及社区验证机制。",
+        "url": "https://airdropalert.com/",
+        "tags": ["空投信息", "空投教程", "项目筛选指南", "社区验证"]
+    },
+    {
+        "name": "Airdrops.io",
+        "description": "免费聚合器，倒计时功能精准跟踪空投时间节点，支持多链生态。",
+        "url": "https://airdrops.io/",
+        "tags": ["空投聚合器", "倒计时功能", "多链生态", "时间节点"]
+    },
+    {
+        "name": "Solana Airdrop Checker",
+        "description": "查询 Solana 生态内空投活动及资格.",
+        "url": "https://solana-airdrop-checker.solworks.dev/",
+        "tags": ["Solana", "空投活动", "资格查询"]
+    },
+    {
+        "name": "Streamflow Airdrop",
+        "description": "Solana 链上空投项目信息查询平台.",
+        "url": "https://app.streamflow.finance/airdrop",
+        "tags": ["Solana", "空投项目", "信息查询"]
+    },
+    {
+        "name": "LeapWallet 空投",
+        "description": "专注 Cosmos 生态的空投信息查询工具.",
+        "url": "https://cosmos.leapwallet.io/airdrops",
+        "tags": ["Cosmos", "空投信息", "查询工具"]
+    }
+]

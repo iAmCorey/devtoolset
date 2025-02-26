@@ -1,15 +1,15 @@
 ---
-title: Deploy Your Own DevToolset
-description: How to Deploy Your Own DevToolset
+title: Deploy Your Own runtoweb3
+description: How to Deploy Your Own runtoweb3
 date: '2024-08-15T01:14:40.737Z'
 ---
 
 
-# Deploy your own DevToolset
+# Deploy your own runtoweb3
 
 ## Deploy on Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiAmCorey%2Fdevtoolset&project-name=devtoolset&repository-name=devtoolset&external-id=https%3A%2F%2Fgithub.com%2FiAmCoreye%2Fdevtoolset%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiAmCorey%2Fruntoweb3&project-name=runtoweb3&repository-name=runtoweb3&external-id=https%3A%2F%2Fgithub.com%2FiAmCoreye%2Fruntoweb3%2Ftree%2Fmain)
 
 
 ## Features
@@ -34,8 +34,8 @@ date: '2024-08-15T01:14:40.737Z'
 
 1. Clone the repository:
    ```
-   git clone https://github.com/iAmCorey/devtoolset
-   cd devtoolset
+   git clone https://github.com/iAmCorey/runtoweb3
+   cd runtoweb3
    ```
 
 2. Install dependencies:
@@ -63,7 +63,7 @@ date: '2024-08-15T01:14:40.737Z'
    pnpm dev
    ```
 
-Visit `http://localhost:3000` to see your DevToolset instance running locally.
+Visit `http://localhost:3000` to see your runtoweb3 instance running locally.
 
 ## Deployment
 

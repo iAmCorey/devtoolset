@@ -30,7 +30,60 @@
     "link": "ebook",
     "description": "区块链相关的电子书籍"
   },
-  
+  {
+    "name": "项目融资",
+    "src": "project.jsonc",
+    "link": "project",
+    "description": "区块链项目融资"
+  },
+  {
+    "name": "代币与市场数据",
+    "src": "coinmarket.jsonc",
+    "link": "coinmarket",
+    "description": "代币信息及市场数据"
+  },
+  {
+    "name": "区块链媒体与资讯",
+    "src": "coinmedia.jsonc",
+    "link": "coinmedia",
+    "description": "区块链媒体与资讯"
+  },
+  {
+    "name": "链上数据分析",
+    "src": "chaindata.jsonc",
+    "link": "chaindata",
+    "description": "链上数据分析"
+  },
+  {
+    "name": "NFT工具 & 交易市场",
+    "src": "nftmarket.jsonc",
+    "link": "nftmarket",
+    "description": "NFT工具 & 交易市场"
+  },
+  {
+    "name": "跨链工具",
+    "src": "crasschain.jsonc",
+    "link": "crasschain",
+    "description": "跨链工具"
+  },
+  {
+    "name": "借贷平台",
+    "src": "defi.jsonc",
+    "link": "defi",
+    "description": "借贷平台"
+  },
+  {
+    "name": "去中心化交易所 (DEX)",
+    "src": "dex.jsonc",
+    "link": "dex",
+    "description": "去中心化交易所 (DEX)"
+  },
+  {
+    "name": "空投信息&工具",
+    "src": "airdrop.jsonc",
+    "link": "airdrop",
+    "description": "空投信息&工具"
+  },
   // X
   // Y
   // Z

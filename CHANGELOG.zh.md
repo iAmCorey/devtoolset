@@ -1,4 +1,4 @@
-# DevToolset Changelog
+# runtoweb3 Changelog
 
 - **2024.08.16** - 初次发布
 - **2024.08.17** - 添加搜索功能，暗黑模式支持，改善 UI/UX

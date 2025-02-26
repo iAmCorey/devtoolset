@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Uniswap",
+        "description": "以太坊上最知名的 DEX，直接在钱包内兑换 ERC-20 代币.",
+        "url": "https://app.uniswap.org/#/swap",
+        "tags": ["DEX", "以太坊", "ERC-20", "代币兑换"]
+    },
+    {
+        "name": "PancakeSwap",
+        "description": "基于 BSC 的热门 DEX，交易费用低，支持流动性挖矿.",
+        "url": "https://pancakeswap.finance/swap?chainId=1",
+        "tags": ["DEX", "BSC", "交易费用低", "流动性挖矿"]
+    },
+    {
+        "name": "SushiSwap",
+        "description": "跨链 DEX，提供交易、流动性挖矿及借贷服务.",
+        "url": "https://sushi.com/",
+        "tags": ["跨链DEX", "交易", "流动性挖矿", "借贷服务"]
+    },
+    {
+        "name": "1inch",
+        "description": "多链交易聚合器，自动搜索各大 DEX 以获得最佳兑换汇率.",
+        "url": "https://app.1inch.io/",
+        "tags": ["交易聚合器", "多链", "最佳兑换汇率", "DEX"]
+    },
+    {
+        "name": "Curve Finance",
+        "description": "专注于稳定币互换的 DEX，滑点低，适合大额稳定币兑换.",
+        "url": "https://curve.fi/",
+        "tags": ["稳定币互换", "DEX", "低滑点", "大额兑换"]
+    },
+    {
+        "name": "Balancer",
+        "description": "自调式流动性池平台，既支持交易也能自动化资产管理.",
+        "url": "https://balancer.fi/",
+        "tags": ["流动性池", "交易", "资产管理", "自调式"]
+    },
+    {
+        "name": "Orderly",
+        "description": "聚焦于高效跨链交易及流动性池，专为 Web3 生态设计.",
+        "url": "https://www.orderly.network/",
+        "tags": ["跨链交易", "流动性池", "Web3", "高效"]
+    },
+    {
+        "name": "HYPT",
+        "description": "一个创新的去中心化交易所，支持加密资产的无缝交易.",
+        "url": "https://app.hyperliquid.xyz/trade",
+        "tags": ["去中心化交易所", "加密资产", "无缝交易", "创新"]
+    },
+    {
+        "name": "CowSw",
+        "description": "无滑点的去中心化交易平台，优化交易价格。",
+        "url": "https://cow.fi/",
+        "tags": ["去中心化交易平台", "无滑点", "交易价格优化"]
+    },
+    {
+        "name": "OKX DEX",
+        "description": "提供基于区块链的去中心化交易解决方案，支持多链资产交易。",
+        "url": "https://www.okx.com/",
+        "tags": ["去中心化交易", "区块链", "多链资产交易", "解决方案"]
+    }
+]

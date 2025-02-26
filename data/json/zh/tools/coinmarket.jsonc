@@ -1,0 +1,50 @@
+[
+    {
+        "name": "CoinMarketCap",
+        "description": "提供代币基础数据、价格、流通量等全面信息查询.",
+        "url": "http://coinmarketcap.com/",
+        "tags": ["代币", "价格", "流通量", "市场数据"]
+    },
+    {
+        "name": "TokenTerminal",
+        "description": "深入分析代币财务指标和项目运营数据的平台.",
+        "url": "http://tokenterminal.com/",
+        "tags": ["代币", "财务指标", "项目运营", "数据分析"]
+    },
+    {
+        "name": "Coinglass",
+        "description": "提供炒币指标、交易所流动性等数据，帮助把握市场动态.",
+        "url": "http://coinglass.com/",
+        "tags": ["炒币指标", "流动性", "市场动态", "交易"]
+    },
+    {
+        "name": "Glassnode",
+        "description": "专业链上数据与指标分析平台，适合深度市场研究.",
+        "url": "http://glassnode.com/",
+        "tags": ["链上数据", "市场研究", "深度分析", "指标"]
+    },
+    {
+        "name": "CryptoBubbles",
+        "description": "实时加密市场动态图表，展示币种涨跌及市值变化.",
+        "url": "https://cryptobubbles.net/",
+        "tags": ["加密市场", "动态图表", "涨跌", "市值"]
+    },
+    {
+        "name": "Coin360",
+        "description": "提供加密市场实时数据、热力图和多种市场分析功能.",
+        "url": "https://coin360.com/",
+        "tags": ["加密市场", "实时数据", "热力图", "市场分析"]
+    },
+    {
+        "name": "Tokenomist",
+        "description": "追踪代币解锁信息及锁仓数据，预防市场风险.",
+        "url": "https://tokenomist.ai/",
+        "tags": ["代币解锁", "锁仓数据", "市场风险", "追踪"]
+    },
+    {
+        "name": "CryptoRank ICO",
+        "description": "查看即将上线的 IDO/IEO 项目信息，提前布局投资.",
+        "url": "https://cryptorank.io/upcoming-ico",
+        "tags": ["IDO", "IEO", "项目信息", "投资布局"]
+    }
+]

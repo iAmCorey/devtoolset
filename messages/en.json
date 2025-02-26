@@ -1,6 +1,6 @@
 {
   "home": {
-    "meta_title": "DevToolset: Open-Source Database-free Developer Tools Navigator",
+    "meta_title": "runtoweb3: Open-Source Database-free Developer Tools Navigator",
     "meta_description": "Find Every Essential Developer Tools You Need For Your Development Journey",
     "h2": "Open-Source & Database-Free Developer Tools Navigator",
     "description": "Find Every Essential Developer Tools You Need for Your Development Journey"
@@ -18,16 +18,16 @@
     "meta_title": "Article",
     "meta_description": "Read our latest articles on newest developer tools and best practices.",
     "h1": "Articles",
-    "h2": "Read More About DevToolset",
+    "h2": "Read More About runtoweb3",
     "homeBtn": "Home",
     "articleBtn": "Article",
     "backToArticles": "Back to articles"
   },
   "changelog": {
     "meta_title": "Changelog",
-    "meta_description": "Stay up to date with the latest updates in DevToolset.net",
+    "meta_description": "Stay up to date with the latest updates in runtoweb3.net",
     "h1": "Changelog",
-    "h2": "Stay up to date with the latest updates in DevToolset.net",
+    "h2": "Stay up to date with the latest updates in runtoweb3.net",
     "homeBtn": "Home",
     "changelogBtn": "Changelog"
   },
@@ -50,8 +50,8 @@
     "moreCategoryDescription": "More Categories",
     "articleBtn": "Article",
     "articleDescription": "Open-Source Database-free Developer Tools Navigator",
-    "article1Title": "Adding New Developer Tools to DevToolset",
-    "article2Title": "Deploy your own DevToolset",
+    "article1Title": "Adding New Developer Tools to runtoweb3",
+    "article2Title": "Deploy your own runtoweb3",
     "moreArticleBtn": "More",
     "moreArticleDescription": "More articles",
     "changelogBtn": "Changelog",

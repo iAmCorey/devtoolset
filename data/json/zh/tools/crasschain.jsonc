@@ -1,0 +1,38 @@
+[
+    {
+        "name": "LayerZero",
+        "description": "全链互操作性协议，实现不同区块链间的无缝通信.",
+        "url": "https://layerzero.network/",
+        "tags": ["全链互操作性", "区块链通信", "无缝"]
+    },
+    {
+        "name": "Wormhole",
+        "description": "跨链协议，提供区块链间的安全桥接，支持多个链之间的资产转移.",
+        "url": "https://wormhole.com/",
+        "tags": ["跨链协议", "安全桥接", "资产转移"]
+    },
+    {
+        "name": "Thorchain",
+        "description": "去中心化跨链流动性协议，允许无需信任的资产跨链交易.",
+        "url": "https://thorchain.org/",
+        "tags": ["跨链流动性", "无需信任", "资产交易"]
+    },
+    {
+        "name": "Celer Network",
+        "description": "提供高速跨链流动性，支持跨链资产转移和智能合约交互.",
+        "url": "https://cbridge.celer.network/",
+        "tags": ["高速跨链", "流动性", "资产转移", "智能合约"]
+    },
+    {
+        "name": "Hop Exchange",
+        "description": "实现不同链之间资产快速转移，操作简便.",
+        "url": "https://app.hop.exchange/",
+        "tags": ["跨链资产转移", "快速", "简便"]
+    },
+    {
+        "name": "Orbiter Finance",
+        "description": "支持多链互通的跨链桥接与交易平台.",
+        "url": "https://www.orbiter.finance/",
+        "tags": ["多链互通", "跨链桥接", "交易"]
+    }
+]

@@ -1,16 +1,16 @@
 ---
-title: Add New Developer Tools To DevToolset
-description: How to add new developer tools to DevToolset
+title: Add New Developer Tools To runtoweb3
+description: How to add new developer tools to runtoweb3
 date: '2024-08-14T13:14:40.737Z'
 ---
 
-# Adding New Developer Tools to DevToolset
+# Adding New Developer Tools to runtoweb3
 
-Follow these steps to add new developer tools to DevToolset.
+Follow these steps to add new developer tools to runtoweb3.
 
 ## Step 1: Add the New Developer Tool
 
-1. Open the DevToolset repository: [DevToolset](https://github.com/iAmCorey/devtoolset/)
+1. Open the runtoweb3 repository: [runtoweb3](https://github.com/iAmCorey/runtoweb3/)
 2. Open the relevant JSONC file in `/data/json/[locale]/tools/{category}.jsonc`.
 3. Insert the new developer tool into the file.
 4. If the `{category}.jsonc` file doesn’t exist, follow these steps:

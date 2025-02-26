@@ -1,0 +1,44 @@
+[
+    {
+        "name": "OpenSea",
+        "description": "早期大型 NFT 市场，数字藏品交易平台.",
+        "url": "https://opensea.io/",
+        "tags": ["NFT市场", "数字藏品", "交易平台"]
+    },
+    {
+        "name": "Blur",
+        "description": "NFT 市场与分析平台，提供高级交易工具与分析功能.",
+        "url": "https://blur.io/",
+        "tags": ["NFT市场", "分析平台", "高级交易工具"]
+    },
+    {
+        "name": "Magic Eden",
+        "description": "专注 Solana 和 BTC 生态的头部 NFT 市场。",
+        "url": "https://magiceden.io/",
+        "tags": ["Solana", "BTC生态", "NFT市场"]
+    },
+    {
+        "name": "Mint.fun",
+        "description": "查看当前热门 NFT 铸造活动与趋势.",
+        "url": "https://mint.fun/feed/trending",
+        "tags": ["NFT铸造", "热门趋势", "活动"]
+    },
+    {
+        "name": "TofuNFT",
+        "description": "支持中文界面的 NFT 交易平台，用户体验友好.",
+        "url": "https://tofunft.com/zh",
+        "tags": ["NFT交易", "中文界面", "用户体验"]
+    },
+    {
+        "name": "NFTrade",
+        "description": "跨链 NFT 平台，便捷进行数字艺术交易.",
+        "url": "https://nftrade.com/",
+        "tags": ["跨链NFT", "数字艺术交易", "便捷"]
+    },
+    {
+        "name": "Element Market",
+        "description": "NFT 交易及社区互动平台，项目资源丰富.",
+        "url": "https://www.element.market/",
+        "tags": ["NFT交易", "社区互动", "项目资源"]
+    }
+]

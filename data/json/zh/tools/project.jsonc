@@ -1,0 +1,20 @@
+[
+    {
+        "name": "RootData",
+        "description": "项目详情与融资信息查询平台，帮助全面掌握项目数据.",
+        "url": "http://rootdata.com/",
+        "tags": ["项目", "融资", "数据"]
+    },
+    {
+        "name": "ICO Analytics",
+        "description": "聚焦融资信息、交易流数据及项目进展分析.",
+        "url": "http://icoanalytics.org/",
+        "tags": ["融资", "交易", "分析", "项目进展"]
+    },
+    {
+        "name": "Chainbroker",
+        "description": "提供项目详情与融资数据，便于投资者了解项目情况.",
+        "url": "http://chainbroker.io/",
+        "tags": ["项目", "融资", "投资"]
+    }
+]

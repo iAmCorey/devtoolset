@@ -1,0 +1,74 @@
+[
+    {
+        "name": "星球日报",
+        "description": "最新区块链新闻与深度报道，信息权威及时。",
+        "url": "https://www.odaily.news/",
+        "tags": ["区块链新闻", "深度报道", "权威"]
+    },
+    {
+        "name": "深潮",
+        "description": "聚焦 Web3 与区块链技术趋势的专业媒体。",
+        "url": "https://www.techflowpost.com/",
+        "tags": ["Web3", "区块链技术", "趋势"]
+    },
+    {
+        "name": "律动",
+        "description": "提供详实区块链资讯的平台，公信力较高。",
+        "url": "https://theblockbeats.info/",
+        "tags": ["区块链资讯", "公信力"]
+    },
+    {
+        "name": "FN咨讯",
+        "description": "聚合区块链新闻与项目点评，视角独到。",
+        "url": "https://foresightnews.pro/article",
+        "tags": ["区块链新闻", "项目点评", "视角"]
+    },
+    {
+        "name": "链捕手",
+        "description": "提供行业数据与链上动态分析，方便关注市场趋势。",
+        "url": "https://www.chaincatcher.com/",
+        "tags": ["行业数据", "链上动态", "市场趋势"]
+    },
+    {
+        "name": "PanewsLab",
+        "description": "币圈新闻、市场评论及深度解析，紧跟市场脉动。",
+        "url": "https://www.panewslab.com/",
+        "tags": ["币圈新闻", "市场评论", "深度解析"]
+    },
+    {
+        "name": "Followin",
+        "description": "区块链媒体 & 资讯聚合器。",
+        "url": "https://followin.io/zh-Hans",
+        "tags": ["区块链媒体", "资讯聚合"]
+    },
+    {
+        "name": "CryptoPanic",
+        "description": "加密货币新闻聚合器，支持按关键词与情绪筛选内容。",
+        "url": "https://cryptopanic.com/",
+        "tags": ["加密货币新闻", "新闻聚合", "关键词筛选", "情绪筛选"]
+    },
+    {
+        "name": "CoinDesk",
+        "description": "成立于2013年，专注于比特币和数字货币的新闻网站，提供行业新闻、行情分析等服务。",
+        "url": "https://www.coindesk.com/",
+        "tags": ["比特币", "数字货币", "行业新闻", "行情分析"]
+    },
+    {
+        "name": "CoinTelegraph",
+        "description": "成立于2013年，提供区块链技术、加密货币资产和新兴金融科技趋势的广泛新闻。",
+        "url": "https://cointelegraph.com/",
+        "tags": ["区块链技术", "加密货币资产", "金融科技趋势"]
+    },
+    {
+        "name": "Bitcoin Magazine",
+        "description": "第一本专门用于比特币的出版物，提供比特币、区块链技术和加密货币产业的新闻和专家评论。",
+        "url": "https://bitcoinmagazine.com/",
+        "tags": ["比特币", "区块链技术", "加密货币产业", "专家评论"]
+    },
+    {
+        "name": "Decrypt",
+        "description": "提供易懂的加密货币与区块链新闻，注重深度故事和行业趋势。",
+        "url": "https://decrypt.co/",
+        "tags": ["加密货币新闻", "区块链新闻", "深度故事", "行业趋势"]
+    }
+]
