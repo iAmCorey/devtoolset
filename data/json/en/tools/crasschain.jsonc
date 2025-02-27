@@ -1,0 +1,38 @@
+[
+    {
+        "name": "LayerZero",
+        "description": "A cross-chain interoperability protocol enabling seamless communication between different blockchains.",
+        "url": "https://layerzero.network/",
+        "tags": ["Cross-chain Interoperability", "Blockchain Communication", "Seamless"]
+    },
+    {
+        "name": "Wormhole",
+        "description": "A cross-chain protocol providing secure bridging between blockchains, supporting asset transfers across multiple chains.",
+        "url": "https://wormhole.com/",
+        "tags": ["Cross-chain Protocol", "Secure Bridge", "Asset Transfer"]
+    },
+    {
+        "name": "Thorchain",
+        "description": "A decentralized cross-chain liquidity protocol enabling trustless asset transfers across chains.",
+        "url": "https://thorchain.org/",
+        "tags": ["Cross-chain Liquidity", "Trustless", "Asset Trading"]
+    },
+    {
+        "name": "Celer Network",
+        "description": "Provides high-speed cross-chain liquidity, supporting cross-chain asset transfers and smart contract interactions.",
+        "url": "https://cbridge.celer.network/",
+        "tags": ["High-speed Cross-chain", "Liquidity", "Asset Transfer", "Smart Contract"]
+    },
+    {
+        "name": "Hop Exchange",
+        "description": "Enables quick asset transfers between different chains with simple operations.",
+        "url": "https://app.hop.exchange/",
+        "tags": ["Cross-chain Asset Transfer", "Quick", "Simple"]
+    },
+    {
+        "name": "Orbiter Finance",
+        "description": "A multi-chain compatible bridge and trading platform supporting cross-chain transactions.",
+        "url": "https://www.orbiter.finance/",
+        "tags": ["Multi-chain", "Cross-chain Bridge", "Trading"]
+    }
+]

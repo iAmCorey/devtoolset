@@ -1,145 +1,96 @@
-// example data
+// Example data
 // {
 //   "name": "Tailwind CSS",
 //   "description": "A utility-first CSS framework",
 //   "url": "https://tailwindcss.com/",
-//   "tags": ["a", "b"], (Optional, 3tags max)
-//   "add_date": "yyyy-MM-dd" (Optional) 
-//   ...any other key if you want
+//   "tags": ["a", "b"], (optional, max 3 tags)
+//   "add_date": "yyyy-MM-dd" (optional) 
+//   ...other keys can be added if needed
 // }
 // 
-// Notice:
+// Note:
 // 1. All data should be sorted alphabetically.
 // 2. Affiliate links are not allowed
-// 3. Do not submit tools that are unrelated to development.
+// 3. Please do not submit tools unrelated to development.
 
 [
   // A
   {
-    "name": "analytics",
-    "src": "analytics.jsonc",
-    "link": "analytics",
-    "description": "Tools for tracking and analyzing website data."
+    "name": "Beginner's Guide",
+    "src": "roadmap.jsonc",
+    "link": "roadmap",
+    "description": "Guide for blockchain beginners to get started quickly."
   },
   // B
   // C
   // D
   {
-    "name": "database",
-    "src": "database.jsonc",
-    "link": "database",
-    "description": "Services for storing and managing data."
+    "name": "Blockchain E-books",
+    "src": "ebook.jsonc",
+    "link": "ebook",
+    "description": "Blockchain-related e-books"
   },
   {
-    "name": "deployment",
-    "src": "deployment.jsonc",
-    "link": "deployment",
-    "description": "Tools for automating application deployment."
+    "name": "Project Funding",
+    "src": "project.jsonc",
+    "link": "project",
+    "description": "Blockchain project funding"
   },
   {
-    "name": "domain",
-    "src": "domain.jsonc",
-    "link": "domain",
-    "description": "Managing and analyzing domain names."
-  },
-  // E
-  // F
-  {
-    "name": "Frontend Frameworks",
-    "src": "frontend-frameworks.jsonc",
-    "link": "frontend-frameworks",
-    "description": "Libraries for building user interfaces."
-  },
-  // G
-  // H
-  // I
-  {
-    "name": "IDE",
-    "src": "ide.jsonc",
-    "link": "ide",
-    "description": "Integrated Development Environments for writing, testing, and debugging code efficiently."
+    "name": "Token & Market Data",
+    "src": "coinmarket.jsonc",
+    "link": "coinmarket",
+    "description": "Token information and market data"
   },
   {
-    "name": "Infrastructure",
-    "src": "infrastructure.jsonc",
-    "link": "infrastructure",
-    "description": "Services and tools that support the underlying architecture of applications, including computing resources, networking, storage solutions, and cloud-based infrastructure for scalable and efficient operations."
-},
-  {
-    "name": "Insights",
-    "src": "insights.jsonc",
-    "link": "insights",
-    "description": "Tools for discovering trends, emerging topics, and valuable market insights."
-  },
-  // J
-  // K
-  // L
-  {
-   "name": "Logo",
-    "src": "logo.jsonc",
-    "link": "logo",
-    "description": "Tools for designing, creating, and customizing logos for your brand or project."
-  },
-  // M
-  // N
-  // O
-  // P
-  {
-    "name": "payment",
-    "src": "payment.jsonc",
-    "link": "payment",
-    "description": "Platforms for processing online payments."
+    "name": "Blockchain Media & News",
+    "src": "coinmedia.jsonc",
+    "link": "coinmedia",
+    "description": "Blockchain media and news"
   },
   {
-    "name": "promotion",
-    "src": "promotion.jsonc",
-    "link": "promotion",
-    "description": "Tools for promoting products and content."
-  },
-  // Q
-  // R
-  // S
-  {
-    "name": "SEO",
-    "src": "seo.jsonc",
-    "link": "seo",
-    "description": "Tools for improving search engine visibility."
+    "name": "On-chain Data Analysis",
+    "src": "chaindata.jsonc",
+    "link": "chaindata",
+    "description": "On-chain data analysis"
   },
   {
-    "name": "Storage",
-    "src": "storage.jsonc",
-    "link": "storage",
-    "description": "Services and tools for storing, managing, and accessing data efficiently."
+    "name": "NFT Tools & Marketplaces",
+    "src": "nftmarket.jsonc",
+    "link": "nftmarket",
+    "description": "NFT tools and marketplaces"
   },
-  // T
   {
-    "name": "template",
-    "src": "template.jsonc",
-    "link": "template",
-    "description": "Pre-designed website themes and layouts."
+    "name": "Cross-chain Tools",
+    "src": "crasschain.jsonc",
+    "link": "crasschain",
+    "description": "Cross-chain tools"
   },
-  // U
   {
-    "name": "UI",
-    "src": "ui.jsonc",
-    "link": "ui",
-    "description": "Components for designing user interfaces."
+    "name": "Lending Platforms",
+    "src": "defi.jsonc",
+    "link": "defi",
+    "description": "Lending platforms"
   },
-  // V
   {
-    "name": "Version Control",
-    "src": "version-control.jsonc",
-    "link": "version-control",
-    "description": "Systems for managing code changes."
+    "name": "Decentralized Exchanges (DEX)",
+    "src": "dex.jsonc",
+    "link": "dex",
+    "description": "Decentralized Exchanges (DEX)"
   },
-  // W
   {
-    "name": "Utils",
-    "src": "utils.jsonc",
-    "link": "utils",
-    "description": "Essential tools for enhancing and optimizing your products"
-  }
+    "name": "Airdrop Info & Tools",
+    "src": "airdrop.jsonc",
+    "link": "airdrop",
+    "description": "Airdrop information and tools"
+  },
   // X
   // Y
   // Z
+  {
+    "name": "AI Tools",
+    "src": "aitool.jsonc",
+    "link": "aitool",
+    "description": "AI tools"
+  }
 ]

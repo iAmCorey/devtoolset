@@ -1,0 +1,44 @@
+[
+    {
+        "name": "OpenSea",
+        "description": "Early and large-scale NFT marketplace, a digital collectibles trading platform.",
+        "url": "https://opensea.io/",
+        "tags": ["NFT Marketplace", "Digital Collectibles", "Trading Platform"]
+    },
+    {
+        "name": "Blur",
+        "description": "NFT marketplace and analytics platform, offering advanced trading tools and analysis features.",
+        "url": "https://blur.io/",
+        "tags": ["NFT Marketplace", "Analytics Platform", "Advanced Trading Tools"]
+    },
+    {
+        "name": "Magic Eden",
+        "description": "Leading NFT marketplace focused on Solana and BTC ecosystems.",
+        "url": "https://magiceden.io/",
+        "tags": ["Solana", "BTC Ecosystem", "NFT Marketplace"]
+    },
+    {
+        "name": "Mint.fun",
+        "description": "View current trending NFT minting activities and trends.",
+        "url": "https://mint.fun/feed/trending",
+        "tags": ["NFT Minting", "Trending", "Activities"]
+    },
+    {
+        "name": "TofuNFT",
+        "description": "User-friendly NFT trading platform with Chinese interface support.",
+        "url": "https://tofunft.com/zh",
+        "tags": ["NFT Trading", "Chinese Interface", "User Experience"]
+    },
+    {
+        "name": "NFTrade",
+        "description": "Cross-chain NFT platform for convenient digital art trading.",
+        "url": "https://nftrade.com/",
+        "tags": ["Cross-chain NFT", "Digital Art Trading", "Convenient"]
+    },
+    {
+        "name": "Element Market",
+        "description": "NFT trading and community interaction platform with rich project resources.",
+        "url": "https://www.element.market/",
+        "tags": ["NFT Trading", "Community Interaction", "Project Resources"]
+    }
+]

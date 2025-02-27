@@ -1,0 +1,97 @@
+
+// 
+// Note:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed
+// 3. Please do not submit tools unrelated to development.
+
+[
+    // A
+    // B
+    // C
+    // D
+    // E
+    // F
+    // G
+    {
+      "name": "sketch.metademolab.com",
+      "description": "Upload images to generate animations",
+      "url": "https://sketch.metademolab.com/canvas",
+      "tags": ["game", "animation"]
+    },
+    {
+      "name": "holopix",
+      "description": "Generate game characters based on descriptions",
+      "url": "https://holopix.cn/",
+      "tags": ["game", "animation"]
+    },
+    {
+        "name": "RootData",
+        "description": "Project details and financing information query platform, helping to fully grasp project data.",
+        "url": "http://rootdata.com",
+        "tags": ["project financing", "data analysis"]
+    },
+    {
+        "name": "ICO Analytics",
+        "description": "Focus on financing information, transaction flow data and project progress analysis.",
+        "url": "http://icoanalytics.org",
+        "tags": ["project financing", "data analysis"]
+    },
+    {
+        "name": "Chainbroker",
+        "description": "Provides project details and financing data for investors to understand project status.",
+        "url": "http://chainbroker.io",
+        "tags": ["project financing", "data analysis"]
+    },
+    {
+        "name": "CoinMarketCap",
+        "description": "Provides comprehensive information query for token basic data, price, circulation, etc.",
+        "url": "http://coinmarketcap.com",
+        "tags": ["token data", "market analysis"]
+    },
+    {
+        "name": "TokenTerminal",
+        "description": "Platform for in-depth analysis of token financial metrics and project operation data.",
+        "url": "http://tokenterminal.com",
+        "tags": ["token data", "market analysis"]
+    },
+    {
+        "name": "Coinglass",
+        "description": "Provides trading indicators, exchange liquidity and other data to help grasp market dynamics.",
+        "url": "http://coinglass.com",
+        "tags": ["market data", "market analysis"]
+    },
+    {
+        "name": "Glassnode",
+        "description": "Professional on-chain data and metrics analysis platform, suitable for in-depth market research.",
+        "url": "http://glassnode.com",
+        "tags": ["market data", "deep analysis"]
+    },
+    {
+        "name": "CryptoBubbles",
+        "description": "Real-time crypto market dynamic charts, showing currency rises, falls and market cap changes.",
+        "url": "https://cryptobubbles.net/",
+        "tags": ["market dynamics", "visualization"]
+    },
+    {
+        "name": "Coin360",
+        "description": "Provides real-time crypto market data, heat maps and various market analysis functions.",
+        "url": "https://coin360.com/",
+        "tags": ["market data", "visualization", "market analysis"]
+    }
+    // H
+    // I
+    // J
+    // K
+    // L
+    // M
+    // N
+    // O
+    // P
+ 
+    // V
+    // W
+    // X
+    // Y
+    // Z
+  ]

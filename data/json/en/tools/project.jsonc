@@ -1,0 +1,20 @@
+[
+    {
+        "name": "RootData",
+        "description": "Project details and financing information query platform, helping to fully grasp project data.",
+        "url": "http://rootdata.com/",
+        "tags": ["project", "financing", "data"]
+    },
+    {
+        "name": "ICO Analytics",
+        "description": "Focus on financing information, transaction flow data and project progress analysis.",
+        "url": "http://icoanalytics.org/",
+        "tags": ["financing", "transaction", "analysis", "project progress"]
+    },
+    {
+        "name": "Chainbroker",
+        "description": "Provides project details and financing data for investors to understand project status.",
+        "url": "http://chainbroker.io/",
+        "tags": ["project", "financing", "investment"]
+    }
+]

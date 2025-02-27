@@ -1,0 +1,98 @@
+[
+    {
+        "name": "DefiLlama",
+        "description": "Focuses on DeFi project data and TVL metrics analysis.",
+        "url": "http://defillama.com/",
+        "tags": ["DeFi", "TVL Metrics", "Data Analysis"]
+    },
+    {
+        "name": "DappRadar",
+        "description": "Real-time tracking of DApp data and user activity.",
+        "url": "http://dappradar.com/",
+        "tags": ["DApp", "User Activity", "Real-time Tracking"]
+    },
+    {
+        "name": "NFTPriceFloor",
+        "description": "Analyzes NFT market prices, trading data, and floor price trends.",
+        "url": "http://nftpricefloor.com/",
+        "tags": ["NFT", "Market Price", "Trading Data", "Floor Price Trends"]
+    },
+    {
+        "name": "Arkham Intelligence",
+        "description": "On-chain address and transaction tracking tool, suitable for security monitoring.",
+        "url": "http://arkhamintelligence.com/",
+        "tags": ["On-chain Address", "Transaction Tracking", "Security Monitoring"]
+    },
+    {
+        "name": "CoinGecko",
+        "description": "Provides comprehensive cryptocurrency market data queries with multi-language support.",
+        "url": "http://coingecko.com/",
+        "tags": ["Cryptocurrency", "Market Data", "Multi-language"]
+    },
+    {
+        "name": "MCT Gas Query",
+        "description": "Real-time monitoring of cross-chain Gas prices to help users formulate trading strategies.",
+        "url": "http://mct.xyz/gasnow?mode=btc",
+        "tags": ["Gas Price", "Real-time Monitoring", "Trading Strategy"]
+    },
+    {
+        "name": "Dune Analytics",
+        "description": "Supports customized on-chain data dashboards, suitable for professional data analysis.",
+        "url": "https://dune.com/",
+        "tags": ["On-chain Data", "Custom Dashboard", "Data Analysis"]
+    },
+    {
+        "name": "Nansen",
+        "description": "Smart analytics platform based on on-chain data, providing market insights and investment decision support.",
+        "url": "https://www.nansen.ai/",
+        "tags": ["On-chain Data", "Smart Analytics", "Market Insights", "Investment Decisions"]
+    },
+    {
+        "name": "Blockchain",
+        "description": "Tool for querying on-chain addresses and transaction data for Bitcoin, Ethereum, and more.",
+        "url": "https://www.blockchain.com/explorer",
+        "tags": ["Bitcoin", "Ethereum", "On-chain Address", "Transaction Data"]
+    },
+    {
+        "name": "Etherscan",
+        "description": "Premier tool for querying Ethereum on-chain transactions and contract information.",
+        "url": "https://etherscan.io/",
+        "tags": ["Ethereum", "On-chain Transactions", "Contract Info"]
+    },
+    {
+        "name": "BscScan",
+        "description": "Focused on Binance Smart Chain data queries with comprehensive information.",
+        "url": "https://bscscan.com/",
+        "tags": ["Binance Smart Chain", "Data Query"]
+    },
+    {
+        "name": "PolygonScan",
+        "description": "Used for querying Polygon on-chain transactions and contract data.",
+        "url": "https://polygonscan.com/",
+        "tags": ["Polygon", "On-chain Transactions", "Contract Data"]
+    },
+    {
+        "name": "FTMScan",
+        "description": "Fantom network data and transaction tracking tool.",
+        "url": "https://ftmscan.com/",
+        "tags": ["Fantom", "Network Data", "Transaction Tracking"]
+    },
+    {
+        "name": "Solana Explorer",
+        "description": "Solana on-chain data browsing tool with an intuitive interface.",
+        "url": "https://explorer.solana.com/",
+        "tags": ["Solana", "On-chain Data", "Browsing Tool"]
+    },
+    {
+        "name": "Mempool",
+        "description": "Bitcoin blockchain explorer providing real-time and unconfirmed transaction data.",
+        "url": "https://mempool.space/",
+        "tags": ["Bitcoin", "Blockchain Explorer", "Real-time Transactions", "Unconfirmed Transactions"]
+    },
+    {
+        "name": "OKLink",
+        "description": "Multi-chain query blockchain explorer with extensive coverage.",
+        "url": "https://www.oklink.com/zh-cn",
+        "tags": ["Multi-chain Query", "Blockchain Explorer", "Extensive Coverage"]
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Odaily",
+        "description": "Latest blockchain news and in-depth reports with authoritative and timely information.",
+        "url": "https://www.odaily.news/",
+        "tags": ["blockchain news", "in-depth reports", "authoritative"]
+    },
+    {
+        "name": "TechFlow",
+        "description": "Professional media focusing on Web3 and blockchain technology trends.",
+        "url": "https://www.techflowpost.com/",
+        "tags": ["Web3", "blockchain technology", "trends"]
+    },
+    {
+        "name": "BlockBeats",
+        "description": "A highly credible platform providing detailed blockchain information.",
+        "url": "https://theblockbeats.info/",
+        "tags": ["blockchain information", "credibility"]
+    },
+    {
+        "name": "Foresight News",
+        "description": "Aggregates blockchain news and project reviews with unique perspectives.",
+        "url": "https://foresightnews.pro/article",
+        "tags": ["blockchain news", "project reviews", "perspective"]
+    },
+    {
+        "name": "ChainCatcher",
+        "description": "Provides industry data and on-chain dynamic analysis for tracking market trends.",
+        "url": "https://www.chaincatcher.com/",
+        "tags": ["industry data", "on-chain dynamics", "market trends"]
+    },
+    {
+        "name": "PanewsLab",
+        "description": "Cryptocurrency news, market commentary, and in-depth analysis following market pulse.",
+        "url": "https://www.panewslab.com/",
+        "tags": ["crypto news", "market commentary", "in-depth analysis"]
+    },
+    {
+        "name": "Followin",
+        "description": "Blockchain media & news aggregator.",
+        "url": "https://followin.io/zh-Hans",
+        "tags": ["blockchain media", "news aggregator"]
+    },
+    {
+        "name": "CryptoPanic",
+        "description": "Cryptocurrency news aggregator with content filtering by keywords and sentiment.",
+        "url": "https://cryptopanic.com/",
+        "tags": ["crypto news", "news aggregator", "keyword filtering", "sentiment filtering"]
+    },
+    {
+        "name": "CoinDesk",
+        "description": "Established in 2013, a news site focused on Bitcoin and digital currencies, providing industry news and market analysis.",
+        "url": "https://www.coindesk.com/",
+        "tags": ["Bitcoin", "digital currency", "industry news", "market analysis"]
+    },
+    {
+        "name": "CoinTelegraph",
+        "description": "Founded in 2013, provides extensive news coverage on blockchain technology, crypto assets, and emerging fintech trends.",
+        "url": "https://cointelegraph.com/",
+        "tags": ["blockchain technology", "crypto assets", "fintech trends"]
+    },
+    {
+        "name": "Bitcoin Magazine",
+        "description": "The first publication dedicated to Bitcoin, offering news and expert commentary on Bitcoin, blockchain technology, and the cryptocurrency industry.",
+        "url": "https://bitcoinmagazine.com/",
+        "tags": ["Bitcoin", "blockchain technology", "crypto industry", "expert commentary"]
+    },
+    {
+        "name": "Decrypt",
+        "description": "Provides easy-to-understand cryptocurrency and blockchain news, focusing on in-depth stories and industry trends.",
+        "url": "https://decrypt.co/",
+        "tags": ["crypto news", "blockchain news", "in-depth stories", "industry trends"]
+    }
+]

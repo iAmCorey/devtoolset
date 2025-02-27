@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Uniswap",
+        "description": "The most well-known DEX on Ethereum, allowing direct ERC-20 token swaps within wallets.",
+        "url": "https://app.uniswap.org/#/swap",
+        "tags": ["DEX", "Ethereum", "ERC-20", "Token Swap"]
+    },
+    {
+        "name": "PancakeSwap",
+        "description": "Popular DEX on BSC with low transaction fees, supporting liquidity mining.",
+        "url": "https://pancakeswap.finance/swap?chainId=1",
+        "tags": ["DEX", "BSC", "Low Fees", "Liquidity Mining"]
+    },
+    {
+        "name": "SushiSwap",
+        "description": "Cross-chain DEX offering trading, liquidity mining, and lending services.",
+        "url": "https://sushi.com/",
+        "tags": ["Cross-chain DEX", "Trading", "Liquidity Mining", "Lending Services"]
+    },
+    {
+        "name": "1inch",
+        "description": "Multi-chain aggregator that automatically searches across DEXs for the best exchange rates.",
+        "url": "https://app.1inch.io/",
+        "tags": ["DEX Aggregator", "Multi-chain", "Best Exchange Rates", "DEX"]
+    },
+    {
+        "name": "Curve Finance",
+        "description": "DEX focused on stablecoin swaps with low slippage, ideal for large-volume stablecoin exchanges.",
+        "url": "https://curve.fi/",
+        "tags": ["Stablecoin Swaps", "DEX", "Low Slippage", "Large Volume Trading"]
+    },
+    {
+        "name": "Balancer",
+        "description": "Self-balancing liquidity pool platform supporting both trading and automated asset management.",
+        "url": "https://balancer.fi/",
+        "tags": ["Liquidity Pools", "Trading", "Asset Management", "Self-balancing"]
+    },
+    {
+        "name": "Orderly",
+        "description": "Focuses on efficient cross-chain trading and liquidity pools, designed specifically for Web3 ecosystem.",
+        "url": "https://www.orderly.network/",
+        "tags": ["Cross-chain Trading", "Liquidity Pools", "Web3", "Efficient"]
+    },
+    {
+        "name": "HYPT",
+        "description": "An innovative decentralized exchange supporting seamless trading of crypto assets.",
+        "url": "https://app.hyperliquid.xyz/trade",
+        "tags": ["Decentralized Exchange", "Crypto Assets", "Seamless Trading", "Innovation"]
+    },
+    {
+        "name": "CowSw",
+        "description": "Zero-slippage decentralized trading platform with optimized trading prices.",
+        "url": "https://cow.fi/",
+        "tags": ["Decentralized Trading Platform", "Zero Slippage", "Price Optimization"]
+    },
+    {
+        "name": "OKX DEX",
+        "description": "Provides blockchain-based decentralized trading solutions supporting multi-chain asset trading.",
+        "url": "https://www.okx.com/",
+        "tags": ["Decentralized Trading", "Blockchain", "Multi-chain Assets", "Trading Solution"]
+    }
+]

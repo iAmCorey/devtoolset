@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Daylight",
+        "description": "A real-time aggregation platform for project airdrop data updates.",
+        "url": "https://daylight.xyz/",
+        "tags": ["Airdrop Data", "Aggregation Platform", "Real-time Updates"]
+    },
+    {
+        "name": "Earni",
+        "description": "Airdrop information and distribution tool, suitable for participating in airdrop activities.",
+        "url": "https://earni.fi/",
+        "tags": ["Airdrop Info", "Distribution Tool", "Airdrop Activities"]
+    },
+    {
+        "name": "Earndrop",
+        "description": "Integrates airdrop data to ensure you don't miss any airdrop opportunities.",
+        "url": "https://earndrop.io/",
+        "tags": ["Airdrop Data", "Airdrop Opportunities", "Integration"]
+    },
+    {
+        "name": "CoinMarketCap Airdrops",
+        "description": "The highest traffic comprehensive airdrop platform, covering completed, ongoing, and future airdrops with notification subscription support.",
+        "url": "https://coinmarketcap.com/airdrop/",
+        "tags": ["Comprehensive Airdrop Platform", "Notification Subscription", "Completed Airdrops", "Ongoing Airdrops", "Future Airdrops"]
+    },
+    {
+        "name": "AirdropAlert",
+        "description": "Global leading airdrop information platform, providing airdrop tutorials, project screening guides, and community verification mechanisms.",
+        "url": "https://airdropalert.com/",
+        "tags": ["Airdrop Information", "Airdrop Tutorials", "Project Screening Guide", "Community Verification"]
+    },
+    {
+        "name": "Airdrops.io",
+        "description": "Free aggregator with countdown functionality for precise tracking of airdrop timing, supporting multi-chain ecosystems.",
+        "url": "https://airdrops.io/",
+        "tags": ["Airdrop Aggregator", "Countdown Feature", "Multi-chain Ecosystem", "Time Tracking"]
+    },
+    {
+        "name": "Solana Airdrop Checker",
+        "description": "Check airdrop activities and eligibility within the Solana ecosystem.",
+        "url": "https://solana-airdrop-checker.solworks.dev/",
+        "tags": ["Solana", "Airdrop Activities", "Eligibility Check"]
+    },
+    {
+        "name": "Streamflow Airdrop",
+        "description": "Information query platform for Solana on-chain airdrop projects.",
+        "url": "https://app.streamflow.finance/airdrop",
+        "tags": ["Solana", "Airdrop Projects", "Information Query"]
+    },
+    {
+        "name": "LeapWallet Airdrops",
+        "description": "Airdrop information query tool focused on the Cosmos ecosystem.",
+        "url": "https://cosmos.leapwallet.io/airdrops",
+        "tags": ["Cosmos", "Airdrop Information", "Query Tool"]
+    }
+]

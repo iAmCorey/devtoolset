@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Aave",
+        "description": "A decentralized lending platform supporting lending services for various crypto assets.",
+        "url": "https://aave.com/",
+        "tags": ["Decentralized Lending", "Crypto Assets", "Lending Services"]
+    },
+    {
+        "name": "Compound",
+        "description": "A smart contract-based lending protocol where users can lend and earn interest.",
+        "url": "https://compound.finance/",
+        "tags": ["Smart Contract", "Lending Protocol", "Lending", "Interest Earning"]
+    },
+    {
+        "name": "MakerDAO",
+        "description": "A decentralized lending platform that generates the DAI stablecoin through asset collateralization.",
+        "url": "https://makerdao.com/",
+        "tags": ["Decentralized Lending", "Asset Collateral", "DAI Stablecoin"]
+    },
+    {
+        "name": "Yearn Finance",
+        "description": "Provides DeFi yield optimization tools with support for lending and liquidity provision.",
+        "url": "https://yearn.finance/",
+        "tags": ["DeFi", "Yield Optimization", "Lending", "Liquidity Provision"]
+    },
+    {
+        "name": "Venus Protocol",
+        "description": "A cross-chain lending platform supporting multi-chain asset lending and liquidity mining.",
+        "url": "https://venus.io/",
+        "tags": ["Cross-chain Lending", "Multi-chain Assets", "Lending", "Liquidity Mining"]
+    }
+]

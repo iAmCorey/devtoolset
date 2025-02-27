@@ -1,0 +1,38 @@
+[
+    {
+        "name": "CoinMarketCap",
+        "description": "Provides comprehensive information query for token basic data, price, circulation and more.",
+        "url": "http://coinmarketcap.com/",
+        "tags": ["token", "price", "circulation", "market data"]
+    },
+    {
+        "name": "TokenTerminal",
+        "description": "Platform for in-depth analysis of token financial metrics and project operation data.",
+        "url": "http://tokenterminal.com/",
+        "tags": ["token", "financial metrics", "project operation", "data analysis"]
+    },
+    {
+        "name": "Coinglass",
+        "description": "Provides trading indicators, exchange liquidity and other data to help track market dynamics.",
+        "url": "http://coinglass.com/",
+        "tags": ["trading indicators", "liquidity", "market dynamics", "trading"]
+    },
+    {
+        "name": "Glassnode",
+        "description": "Professional on-chain data and metrics analysis platform, suitable for in-depth market research.",
+        "url": "http://glassnode.com/",
+        "tags": ["on-chain data", "market research", "deep analysis", "metrics"]
+    },
+    {
+        "name": "CryptoBubbles",
+        "description": "Real-time crypto market dynamic charts, showing currency fluctuations and market cap changes.",
+        "url": "https://cryptobubbles.net/",
+        "tags": ["crypto market", "dynamic charts", "price changes", "market cap"]
+    },
+    {
+        "name": "Coin360",
+        "description": "Provides real-time crypto market data, heat maps and various market analysis features.",
+        "url": "https://coin360.com/",
+        "tags": ["crypto market", "real-time data", "heat maps", "market analysis"]
+    }
+]

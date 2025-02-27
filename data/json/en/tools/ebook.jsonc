@@ -1,0 +1,53 @@
+
+[
+    // A
+    // B
+    // C
+    // D
+    // E
+    // F
+    // G
+    {
+      "name": "Google Analytics",
+      "description": "A powerful web analytics service by Google that tracks and reports website traffic, user behavior, and conversion rates.",
+      "url": "https://analytics.google.com/",
+      "tags": ["analytics", "web", "tracking"]
+    },
+    // H
+    // I
+    // J
+    // K
+    // L
+    // M
+    // N
+    // O
+    // P
+    {
+      "name": "PostHog",
+      "description": "An open-source product analytics platform that allows you to track and analyze user behavior in your websites and applications.",
+      "url": "https://posthog.com/",
+      "tags": ["analytics", "open-source", "product"]
+    },
+    {
+      "name": "Plausible",
+      "description": "A simple, privacy-focused, open-source web analytics tool designed to track basic website metrics without compromising user privacy.",
+      "url": "https://plausible.io/",
+      "tags": ["analytics", "privacy", "open-source"]
+    },
+    // Q
+    // R
+    // S
+    // T
+    // U
+    {
+      "name": "Umami",
+      "description": "A self-hosted, privacy-focused, open-source web analytics solution that provides detailed insights about your website performance.",
+      "url": "https://umami.is/",
+      "tags": ["analytics", "open-source", "privacy"]
+    }
+    // V
+    // W
+    // X
+    // Y
+    // Z
+  ]
