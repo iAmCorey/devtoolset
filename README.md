@@ -2,7 +2,7 @@
 
 # runtoweb3
 
-[runtoweb3](https://runtoweb3.net/) is an open-source database-free developer tools navigator
+[runtoweb3](https://runtoweb3.com/) is an open-source database-free developer tools navigator
 
 ## Star History
 

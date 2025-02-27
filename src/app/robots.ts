@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = 'https://runtoweb3.net';
+const BASE_URL = 'https://runtoweb3.com';
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const routeUrl = route.url === '' ? '' : `/${route.url}`;
     return {
         ...route,
-        url: `https://runtoweb3.net${routeUrl}`,
+        url: `https://runtoweb3.com${routeUrl}`,
       };
     }
   );

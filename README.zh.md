@@ -2,7 +2,7 @@
 
 # runtoweb3
 
-[runtoweb3](https://runtoweb3.net/) 是一个开源的无数据库架构的开发者工具导航网站
+[runtoweb3](https://runtoweb3.com/) 是一个开源的无数据库架构的开发者工具导航网站
 
 ## Star 历史
 
