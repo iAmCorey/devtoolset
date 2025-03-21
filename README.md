@@ -176,7 +176,7 @@ DevToolset is open-source software licensed under the [MIT license](./LICENSE).
 
 DevToolset is built with the following tools and libraries:
 - [GitBase](https://gitbase.app/) 
-- [Favicon.im](https://favicon.im/) 
+- [Favicon Stealer](https://github.com/iAmCorey/favicon-stealer) 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Shadcn/UI](https://ui.shadcn.com/)
