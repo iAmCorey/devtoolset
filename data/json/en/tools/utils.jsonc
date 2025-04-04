@@ -19,6 +19,12 @@
   // A
   // B
   // C
+  {
+    "name": "Cert Decoder",
+    "description": "A free online tool to decode X.509 SSL/TLS certificates in PEM format.",
+    "url": "https://certdecoder.com/",
+    "tags": ["SSL", "TLS", "Certificate Decoder"]
+  },
   // D
   {
     "name": "dns.fish",
