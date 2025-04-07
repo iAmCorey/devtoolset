@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^20.17.30",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.6",
