@@ -2,16 +2,32 @@ import { NextResponse } from 'next/server';
 import { Octokit } from '@octokit/rest';
 import matter from 'gray-matter';
 
+interface Article {
+  title: string;
+  description: string;
+  date: string;
+  lastModified: string;
+  path: string;
+  content?: string;
+}
+
+interface GithubContent {
+  path: string;
+  sha: string;
+  content: string;
+  name?: string;
+}
+
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN
 });
 
-const owner = process.env.GITHUB_OWNER;
-const repo = process.env.GITHUB_REPO;
+const owner = process.env.GITHUB_OWNER as string;
+const repo = process.env.GITHUB_REPO as string;
 const articlesJsonPath = 'data/json/articles.json';
 const mdFolderPath = 'data/md';
 
-export async function GET(request) {
+export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const sync = searchParams.get('sync');
   const path = searchParams.get('path');
@@ -26,13 +42,13 @@ export async function GET(request) {
           path: decodeURIComponent(path),
         });
 
-        const content = Buffer.from(data.content, 'base64').toString('utf8');
+        const content = Buffer.from((data as GithubContent).content, 'base64').toString('utf8');
         const { data: frontMatter, content: articleContent } = matter(content);
 
         return NextResponse.json({
           ...frontMatter,
           content: articleContent,
-          path: data.path,
+          path: (data as GithubContent).path,
         });
       } catch (error) {
         console.error('Error fetching article:', error);
@@ -48,7 +64,7 @@ export async function GET(request) {
       path: articlesJsonPath,
     });
 
-    const content = Buffer.from(data.content, 'base64').toString('utf8');
+    const content = Buffer.from((data as GithubContent).content, 'base64').toString('utf8');
     const articles = JSON.parse(content);
 
     return NextResponse.json(articles);
@@ -58,8 +74,8 @@ export async function GET(request) {
   }
 }
 
-export async function POST(request) {
-  const { article } = await request.json();
+export async function POST(request: Request) {
+  const { article } = await request.json() as { article: Article };
 
   try {
     // Update the MD file
@@ -84,17 +100,17 @@ async function syncArticles() {
       path: mdFolderPath,
     });
 
-    const mdFiles = files.filter(file => file.name.endsWith('.md'));
+    const mdFiles = (files as GithubContent[]).filter(file => file.name?.endsWith('.md'));
 
-    const articles = await Promise.all(mdFiles.map(async file => {
+    const articles = await Promise.all(mdFiles.map(async (file) => {
       const { data } = await octokit.repos.getContent({
         owner,
         repo,
         path: file.path,
       });
 
-      const content = Buffer.from(data.content, 'base64').toString('utf8');
-      const { data: frontMatter, content: articleContent } = matter(content);
+      const content = Buffer.from((data as GithubContent).content, 'base64').toString('utf8');
+      const { data: frontMatter } = matter(content);
 
       // Fetch the last commit for this file
       const { data: commits } = await octokit.repos.listCommits({
@@ -104,7 +120,7 @@ async function syncArticles() {
         per_page: 1
       });
 
-      const lastModified = commits[0]?.commit.committer.date || data.sha;
+      const lastModified = commits[0]?.commit?.committer?.date || (data as GithubContent).sha;
 
       return {
         title: frontMatter.title,
@@ -128,7 +144,7 @@ async function syncArticles() {
       path: articlesJsonPath,
       message: 'Sync articles',
       content: Buffer.from(JSON.stringify(articles, null, 2)).toString('base64'),
-      sha: currentFile.sha,
+      sha: (currentFile as GithubContent).sha,
     });
 
   } catch (error) {
@@ -137,7 +153,7 @@ async function syncArticles() {
   }
 }
 
-async function updateMdFile(article) {
+async function updateMdFile(article: Article) {
   try {
     const { data: currentFile } = await octokit.repos.getContent({
       owner,
@@ -145,8 +161,8 @@ async function updateMdFile(article) {
       path: article.path,
     });
 
-    const currentContent = Buffer.from(currentFile.content, 'base64').toString('utf8');
-    const { data: frontMatter, content: articleContent } = matter(currentContent);
+    const currentContent = Buffer.from((currentFile as GithubContent).content, 'base64').toString('utf8');
+    const { data: frontMatter } = matter(currentContent);
 
     const updatedFrontMatter = {
       ...frontMatter,
@@ -155,7 +171,7 @@ async function updateMdFile(article) {
       lastModified: new Date().toISOString(),
     };
 
-    const updatedContent = matter.stringify(article.content, updatedFrontMatter);
+    const updatedContent = matter.stringify(article.content || '', updatedFrontMatter);
 
     await octokit.repos.createOrUpdateFileContents({
       owner,
@@ -163,11 +179,11 @@ async function updateMdFile(article) {
       path: article.path,
       message: `Update article: ${article.title}`,
       content: Buffer.from(updatedContent).toString('base64'),
-      sha: currentFile.sha,
+      sha: (currentFile as GithubContent).sha,
     });
 
   } catch (error) {
     console.error('Error updating MD file:', error);
     throw error;
   }
-}
+} 

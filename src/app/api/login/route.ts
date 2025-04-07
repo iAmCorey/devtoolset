@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createToken } from '@/lib/auth';
+import { NextRequest } from 'next/server';
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
   const { password } = await request.json();
   
   if (password === process.env.ACCESS_PASSWORD) {
@@ -22,4 +23,4 @@ export async function POST(request) {
   } else {
     return NextResponse.json({ message: 'Invalid password' }, { status: 401 });
   }
-}
+} 
