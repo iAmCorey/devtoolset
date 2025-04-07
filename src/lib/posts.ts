@@ -3,10 +3,30 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import process from 'process'
 
 const postsDirectory = path.join(process.cwd(), 'data', 'md')
 
-export function getSortedPostsData() {
+interface PostData {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+}
+
+interface PostWithHtml extends PostData {
+  contentHtml: string;
+  slug?: string;
+}
+
+interface MatterResultData {
+  title: string;
+  description: string;
+  date: string;
+  [key: string]: unknown;
+}
+
+export function getSortedPostsData(): PostData[] {
   // Get file names under /data/md
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map((fileName) => {
@@ -38,12 +58,13 @@ export function getSortedPostsData() {
   })
 }
 
-export async function getPostData(slug) {
+export async function getPostData(slug: string): Promise<PostWithHtml> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
+  const matterData = matterResult.data as MatterResultData;
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
@@ -53,21 +74,22 @@ export async function getPostData(slug) {
 
   // Combine the data with the id and contentHtml
   return {
+    id: slug,
     slug,
     contentHtml,
-    title: matterResult.data.title,
-    description: matterResult.data.description,
-    date: matterResult.data.date,
-    // ... any other fields you want to include
+    title: matterData.title,
+    description: matterData.description,
+    date: matterData.date,
   };
 }
 
-export async function getPostData2(id) {
+export async function getPostData2(id: string): Promise<PostWithHtml> {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
+  const matterData = matterResult.data as MatterResultData;
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
@@ -79,6 +101,8 @@ export async function getPostData2(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    title: matterData.title,
+    description: matterData.description,
+    date: matterData.date
   }
-}
+} 
