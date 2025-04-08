@@ -15,46 +15,12 @@ import { getDataList } from '@/lib/data';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Favicon } from "favicon-stealer";
-
-// type toolProps = {
-//   name: string;
-//   description: string;
-//   url: string;
-//   tags: string[]
-// }
-
-type categoryProps = {
-  name: string,
-  src: string,
-  description: string,
-  link: string
-}
-
-type categoryListProps = {
-  categories: categoryProps[]
-}
-
-
-type toolsListProps = {
-  category: categoryProps,
-  locale: string,
-  showMoreLink?: boolean
-}
-
-type toolProps = {
-  name: string,
-  description: string,
-  url: string,
-  icon_url?: string,
-  tags?: string[]
-  
-}
+import { CategoryListProps, CategoryProps, type ToolProps, type ToolsListProps } from '@/lib/type';
 
 
 
 
-
-const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) => {
+const ToolsList = ({ category, locale, showMoreLink = true }: ToolsListProps) => {
   const t = useTranslations('toolsList');
   const srcList = getDataList(category.src, locale)
 
@@ -69,8 +35,7 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
         )}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {/* @ts-ignore */}
-        {srcList.slice(0,8).map((resource: toolProps, index) => (
+        {srcList.slice(0,8).map((resource: ToolProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 '>
             <CardHeader>
               <a 
@@ -113,14 +78,13 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
   )
 }
 
-const ToolsPage = ({ category, locale }: { category: categoryProps, locale: string }) => {
+const ToolsPage = ({ category, locale }: { category: CategoryProps, locale: string }) => {
   const srcList = getDataList(category.src, locale);
 
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {/* @ts-ignore */}
-        {srcList.map((resource: toolProps, index) => (
+        {srcList.map((resource: ToolProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
@@ -163,7 +127,7 @@ const ToolsPage = ({ category, locale }: { category: categoryProps, locale: stri
 }
 
 type searchPageProps = {
-  searchData: toolProps[]
+  searchData: ToolProps[]
 }
 
 const SearchPage = ({ searchData }: searchPageProps) => {
@@ -171,8 +135,7 @@ const SearchPage = ({ searchData }: searchPageProps) => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {/* @ts-ignore */}
-        {searchData.map((resource: toolProps, index) => (
+        {searchData.map((resource: ToolProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 
@@ -215,13 +178,12 @@ const SearchPage = ({ searchData }: searchPageProps) => {
 }
 
 
-const CategoryList = ({ categories }: categoryListProps) => {
+const CategoryList = ({ categories }: CategoryListProps) => {
 
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        {/* @ts-ignore */}
-        {categories.map((category: categoryProps, index) => (
+        {categories.map((category: CategoryProps, index) => (
           <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105'>
             <CardHeader>
               <a 

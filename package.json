@@ -17,6 +17,8 @@
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/themes": "^3.2.1",
     "@tailwindcss/typography": "^0.5.16",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",

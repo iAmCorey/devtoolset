@@ -1,11 +1,8 @@
 import { formatDate, formatDistance, parseISO } from "date-fns";
 import { cn } from "@/lib/utils"; 
 import React from 'react'; // 确保导入 React
+import { type ChangelogItem } from '@/lib/type';
 
-type ChangelogItem = {
-  date: string;
-  changes: string[];
-};
 export function ChangelogSection({ items, className }: { items: ChangelogItem[], className?: string }) {
   return (
     <section id="更新日志" className={cn(className)}>

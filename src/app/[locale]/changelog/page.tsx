@@ -11,7 +11,6 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import {getTranslations, getLocale} from 'next-intl/server';
-import {useLocale} from 'next-intl';
 
 export async function generateMetadata() {
     const t = await getTranslations('changelog');

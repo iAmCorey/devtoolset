@@ -2,32 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import * as jsonc from 'jsonc-parser';
 import process from 'process';
+import { type CategoryProps, type ToolProps, type Changelog } from '@/lib/type';
 
-// 定义类型
-interface Category {
-  name: string;
-  link: string;
-  src: string;
-  description?: string;
-  icon?: string;
-}
-
-interface ToolItem {
-  name: string;
-  tags?: string[];
-  description?: string;
-  url?: string;
-  icon?: string;
-}
-
-interface ChangelogItem {
-  version: string;
-  date: string;
-  changes: string[];
-}
 
 // 读取 categories 数据
-export function getCategories(locale: string): Category[] {
+export function getCategories(locale: string): CategoryProps[] {
     const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
     const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8'));
     if (typeof categories === 'string') {
@@ -36,23 +15,23 @@ export function getCategories(locale: string): Category[] {
             return jsonc.parse(categories);
         } catch (error) {
             console.error('二次解析失败:', error);
-            return categories as unknown as Category[]; // 如果二次解析失败，返回原始解析结果
+            return categories as unknown as CategoryProps[]; // 如果二次解析失败，返回原始解析结果
         }
     }
-    return categories as Category[];
+    return categories as CategoryProps[];
 }
 
 
 // 读取category数据
-export function getCategoryByLink(link: string, locale: string): Category | undefined {
+export function getCategoryByLink(link: string, locale: string): CategoryProps | undefined {
     const categoriesPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', 'category.jsonc');
-    const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8')) as Category[];
+    const categories = jsonc.parse(fs.readFileSync(categoriesPath, 'utf8')) as CategoryProps[];
     console.log('categories: ', categories);
     return categories.find(category => category.link === link);
 }
 
 // 读取 datalist 数据
-export function getDataList(src: string, locale: string): ToolItem[] {
+export function getDataList(src: string, locale: string): ToolProps[] {
     const dataPath = path.join(process.cwd(), 'data', 'json', locale, 'tools', src);
     const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8'));
     if (typeof dataList === 'string') {
@@ -61,16 +40,16 @@ export function getDataList(src: string, locale: string): ToolItem[] {
             return jsonc.parse(dataList);
         } catch (error) {
             console.error('二次解析失败:', error);
-            return dataList as unknown as ToolItem[]; // 如果二次解析失败，返回原始解析结果
+            return dataList as unknown as ToolProps[]; // 如果二次解析失败，返回原始解析结果
         }
     }
 
-    return dataList as ToolItem[];
+    return dataList as ToolProps[];
 }
 
 // 根据关键词搜索数据
-export function searchDataByKeyword(keyword: string, locale: string): ToolItem[] | null {
-    let result: ToolItem[] = [];
+export function searchDataByKeyword(keyword: string, locale: string): ToolProps[] | null {
+    let result: ToolProps[] = [];
     
     const categories = getCategories(locale);
     
@@ -102,8 +81,8 @@ export function searchDataByKeyword(keyword: string, locale: string): ToolItem[]
 }
 
 // 读取更新日志
-export function getChangelog(): ChangelogItem[] {
+export function getChangelog(): Changelog {
     const dataPath = path.join(process.cwd(), 'data', 'json', 'changelog.jsonc');
-    const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8')) as ChangelogItem[];
+    const dataList = jsonc.parse(fs.readFileSync(dataPath, 'utf8')) as Changelog;
     return dataList;
 } 
