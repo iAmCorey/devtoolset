@@ -47,6 +47,12 @@
   // F
   // G
   {
+    "name": "Glimpse",
+    "description": "Supercharge Google Trends with absolute search volume numbers, rich insights, advanced tracking, superior trend discovery, and more.",
+    "url": "https://meetglimpse.com/",
+    "tags": ["trends", "analytics", "search"]
+  },
+  {
     "name": "Google Trends",
     "description": "Analyze the popularity of search queries across different regions and languages, providing insights into current trends.",
     "url": "https://trends.google.com/",
