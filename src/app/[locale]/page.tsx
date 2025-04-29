@@ -47,9 +47,9 @@ export default async function Home() {
         <p className="mx-auto max-w-[700px] md:text-xl tracking-tight">
           {t("description")}
         </p>
-        <div className='w-full px-2 pt-10 lg:w-1/2'>
+        {/* <div className='w-full px-2 pt-10 lg:w-1/2'>
           <Search />
-        </div>
+        </div> */}
       </section>
       
       {categories.map((category: categoryType, index: React.Key | null | undefined) => (
