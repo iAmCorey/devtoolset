@@ -24,12 +24,12 @@
   // B
   // C
   // D
-  // {
-  //   "name": "区块链电子书",
-  //   "src": "ebook.jsonc",
-  //   "link": "ebook",
-  //   "description": "区块链相关的电子书籍"
-  // },
+  {
+    "name": "区块链招聘",
+    "src": "hiring.jsonc",
+    "link": "ebook",
+    "description": "区块链相关的电子书籍"
+  },
   {
     "name": "项目融资",
     "src": "project.jsonc",
