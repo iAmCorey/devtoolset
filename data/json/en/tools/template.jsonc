@@ -90,6 +90,12 @@
   },
   // T
   {
+    "name": "Tailwindadmin",
+    "description": "Free Shadcn Dashboard Template Built On React and Tailwind CSS.",
+    "url": "https://tailwind-admin.com/",
+    "tags": ["react", "nextjs", "paid", "templates"]
+  },
+  {
     "name": "TemplateMonster",
     "description": "A marketplace offering a wide range of website templates and themes for various platforms, including WordPress, Joomla, and Magento.",
     "url": "https://www.templatemonster.com/",
