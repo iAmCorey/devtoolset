@@ -95,6 +95,11 @@
     "description": "Re-usable components built with Radix UI and Tailwind CSS",
     "url": "https://ui.shadcn.com/"
   },
+  {
+    "name": "Shadcn Space",
+    "description": "Craft modern UIs faster with our extra-ordinary designed Shadcn UI components, blocks & templates.",
+    "url": "https://shadcnspace.com/"
+  },
   // T
   {
     "name": "Tailwind CSS",
