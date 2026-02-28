@@ -39,6 +39,12 @@
   // J
   // K
   // L
+  {
+    "name": "LaunchSaaS",
+    "description": "Next.js SaaS 全功能启动模板（生产级） —— 内置 Better Auth 用户认证、Stripe/Creem 在线支付集成、博客系统、技术文档模块与管理后台 Dashboard。快速构建并上线你的 SaaS 平台、AI 工具或 Web 应用程序，大幅缩短开发周期，从数周压缩至数小时。",
+    "url": "https://launchsaas.org/",
+    "tags": ["SaaS应用", "Next.js", "付费"]
+  },
   // M
   {
     "name": "Makerkit",
