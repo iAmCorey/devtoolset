@@ -40,6 +40,12 @@
   // K
   // L
   {
+    "name": "LaunchSaaS",
+    "description": "Production-ready Next.js SaaS starter kit with Better Auth, Stripe/Creem payments, blog, docs, and admin dashboard. Build and launch your SaaS, AI tool, or web app in hours, not weeks.",
+    "url": "https://launchsaas.org/",
+    "tags": ["saas app", "nextjs", "paid"]
+  },
+  {
     "name": "Launchway",
     "description": "Remix starter kit that provides developers with pre-built features like authentication, payment processing, and UI components, aiming to save 40-65+ hours of development time without any vendor lock-in to help products launch faster.",
     "url": "https://www.launuchway.dev/",
