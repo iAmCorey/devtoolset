@@ -65,6 +65,12 @@
   // R
   // S
   {
+    "name": "Screaming Frog SEO Spider",
+    "description": "A website crawler tool that helps you analyze and audit your site for SEO issues, including broken links, duplicate content, and more.",
+    "url": "https://www.screamingfrog.co.uk/seo-spider/",
+    "tags": ["site audit", "crawler", "link analysis"]
+  },
+  {
     "name": "SEMrush",
     "description": "An all-in-one digital marketing tool suite that provides SEO, PPC, content, and competitive research capabilities.",
     "url": "https://www.semrush.com/",
@@ -77,10 +83,10 @@
     "tags": ["website traffic", "analytics", "competitive insights"]
   },
   {
-    "name": "Screaming Frog SEO Spider",
-    "description": "A website crawler tool that helps you analyze and audit your site for SEO issues, including broken links, duplicate content, and more.",
-    "url": "https://www.screamingfrog.co.uk/seo-spider/",
-    "tags": ["site audit", "crawler", "link analysis"]
+    "name": "SEOTesting.com",
+    "description": "Measure the impact of content, technical SEO, and AI-search optimizations.",
+    "url": "https://seotesting.com/",
+    "tags": ["keyword research", "rank tracking", "analytics"]
   },
   // T
   // U
