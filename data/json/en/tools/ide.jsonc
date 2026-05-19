@@ -66,6 +66,17 @@
   // J
   // K
   // L
+  {
+    "name": "LegacyDoc AI",
+    "description": "A VS Code extension that generates AI code audit reports, documentation, and Mermaid architecture maps from local workspaces.",
+    "url": "https://www.romanticode.com/legacydoc-ai/",
+    "icon_url": "https://www.romanticode.com/images/legacydoc-icon-512.png",
+    "tags": [
+      "AI",
+      "VS Code",
+      "Documentation"
+    ]
+  },
   // M
   // N
   {
