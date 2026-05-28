@@ -42,6 +42,12 @@
   },
   // G
   // H
+  {
+    "name": "HTML Viewer",
+    "description": "A free, 100% client-side HTML/CSS/JS viewer with live preview and bidirectional highlighting between source code and rendered output.",
+    "url": "https://html-viewer.org/",
+    "tags": ["HTML", "CSS", "Debugging"]
+  },
   // I
   {
     "name": "ip.network",
