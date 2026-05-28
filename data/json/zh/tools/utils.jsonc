@@ -36,6 +36,12 @@
   },
   // G
   // H
+  {
+    "name": "HTML查看器",
+    "description": "一个免费、纯前端（100% client-side）的 HTML/CSS/JS 在线查看与调试工具，支持代码与预览双向高亮定位。",
+    "url": "https://html-viewer.org/zh",
+    "tags": ["HTML", "CSS", "调试"]
+  },
   // I
   {
     "name": "ip.network",
