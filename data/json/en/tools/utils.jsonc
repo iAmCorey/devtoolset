@@ -20,6 +20,12 @@
   // B
   // C
   {
+    "name": "Causeway",
+    "description": "Standalone Rust binary that drives Chromium through CDP and exposes browser control through MCP.",
+    "url": "https://wildernessinteractive.com/causeway",
+    "tags": ["Rust", "MCP", "Browser Automation"]
+  },
+  {
     "name": "Cert Decoder",
     "description": "A free online tool to decode X.509 SSL/TLS certificates in PEM format.",
     "url": "https://certdecoder.com/",
