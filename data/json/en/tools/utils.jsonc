@@ -50,6 +50,12 @@
     "tags": ["IP", "Network"]
 },
   // J
+  {
+    "name": "JSON Diff",
+    "description": "Compare two JSON values and review added, removed, and changed values by path.",
+    "url": "https://alltoolsverse.com/tools/json-diff/",
+    "tags": ["JSON", "Diff", "Developer Tools"]
+  },
   // K
   // L
   // M
