@@ -25,6 +25,12 @@
     "url": "https://certdecoder.com/",
     "tags": ["SSL", "TLS", "Certificate Decoder"]
   },
+  {
+    "name": "Codex Quota Overlay",
+    "description": "A privacy-friendly desktop overlay for viewing Codex quota, reset times, and reset credits beside the conversation title.",
+    "url": "https://github.com/cpys/codex-quota-overlay/",
+    "tags": ["Codex", "Quota", "Electron"]
+  },
   // D
   {
     "name": "dns.fish",
