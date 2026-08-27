@@ -20,6 +20,12 @@
   // B
   // C
   {
+    "name": "Codex Quota Overlay",
+    "description": "A Windows desktop overlay that displays Codex usage quota and reset information at a glance.",
+    "url": "https://github.com/cpys/codex-quota-overlay",
+    "tags": ["Open Source", "Developer Tools", "Codex"]
+  },
+  {
     "name": "Cert Decoder",
     "description": "A free online tool to decode X.509 SSL/TLS certificates in PEM format.",
     "url": "https://certdecoder.com/",
