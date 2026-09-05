@@ -64,6 +64,13 @@
     "url": "https://www.redirectcheck.org/",
     "tags": ["Redirect", "Analysis"]
   },
+  {
+    "name": "RuleBridge",
+    "description": "An open-source CLI for detecting and reconciling conflicting AI coding rules across agents and tools.",
+    "url": "https://github.com/Shadorux/RuleBridge",
+    "tags": ["AI", "CLI", "Developer Tools"],
+    "add_date": "2026-09-05"
+  },
   // S
   // T
   // U
