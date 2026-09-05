@@ -17,6 +17,17 @@
 
 [
   // A
+  {
+    "name": "Agent QA",
+    "description": "Natural-language web, Android, and iOS application testing with CLI, dashboard, MCP, and reusable execution memory. Source-available under FSL-1.1-ALv2; provider costs are separate.",
+    "url": "https://github.com/vostride/agent-qa",
+    "tags": [
+      "Testing",
+      "MCP",
+      "Automation"
+    ],
+    "add_date": "2026-09-05"
+  },
   // B
   // C
   {

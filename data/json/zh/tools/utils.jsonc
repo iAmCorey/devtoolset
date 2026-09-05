@@ -17,6 +17,17 @@
 
 [
   // A
+  {
+    "name": "Agent QA",
+    "description": "使用自然语言测试 Web、Android 和 iOS 应用，提供 CLI、仪表盘、MCP 和可复用的执行记忆。源码采用 FSL-1.1-ALv2，模型及浏览器或设备服务费用另计。",
+    "url": "https://github.com/vostride/agent-qa",
+    "tags": [
+      "测试",
+      "MCP",
+      "自动化"
+    ],
+    "add_date": "2026-09-05"
+  },
   // B
   // C
   // D
