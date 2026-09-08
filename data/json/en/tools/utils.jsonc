@@ -65,6 +65,13 @@
     "tags": ["Redirect", "Analysis"]
   },
   // S
+  {
+    "name": "SHAR Production Metadata Linter",
+    "description": "A local MIT-licensed CLI for deterministic validation of rights-aware AI-hybrid video-production metadata before delivery.",
+    "url": "https://github.com/SHARProduction/production-metadata-linter",
+    "tags": ["CLI", "Metadata", "Validation"],
+    "add_date": "2026-09-09"
+  },
   // T
   // U
   // V
