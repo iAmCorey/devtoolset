@@ -59,6 +59,12 @@
   },
   // S
   // T
+  {
+    "name": "TOPTL",
+    "description": "A Telegram bot directory where developers can publish bots, collect votes, and use an API for listing stats.",
+    "url": "https://toptl.net/",
+    "tags": ["telegram", "promotion", "api"]
+  },
   // U
   // V
   {
