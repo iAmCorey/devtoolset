@@ -50,6 +50,12 @@
     "tags": ["IP", "Network"]
 },
   // J
+  {
+    "name": "JSON Lab",
+    "description": "Browser-based JSON tools for comparing, formatting, minifying, recursively sorting keys, and converting nested JSON to CSV. JSON processing runs locally in the browser.",
+    "url": "https://www.thejsonlab.com/",
+    "tags": ["JSON", "Data Conversion", "Developer Tools"]
+  },
   // K
   // L
   // M

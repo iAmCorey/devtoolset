@@ -44,6 +44,12 @@
     "tags": ["IP", "网络"]
   },
   // J
+  {
+    "name": "JSON Lab",
+    "description": "浏览器中的 JSON 工具，支持对比、格式化、压缩、递归键排序及嵌套 JSON 转 CSV。JSON 数据处理在浏览器本地完成。",
+    "url": "https://www.thejsonlab.com/",
+    "tags": ["JSON", "数据转换", "开发者工具"]
+  },
   // K
   // L
   // M
