@@ -70,6 +70,7 @@
     "url": "https://www.semrush.com/",
     "tags": ["PPC", "keyword research", "competitive research"]
   },
+{ "name": "SEOAgent", "description": "AI SEO software that finds the Google queries your site can win, writes and scores SEO articles, publishes them to your CMS, and tracks rankings and traffic.", "url": "https://seoagent.bot", "tags": ["ai seo", "content marketing", "rank tracking"] },
   {
     "name": "SimilarWeb",
     "description": "A tool that provides comprehensive analytics on website traffic, user engagement, and competitive insights to help you understand and improve your digital presence.",
