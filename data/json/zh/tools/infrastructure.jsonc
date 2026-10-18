@@ -18,6 +18,12 @@
 [
   // A
   // B
+  {
+    "name": "BlueDoAI",
+    "description": "面向开发者的付费按量 AI 模型 API 平台，提供 OpenAI 兼容接口、实时模型目录、API Key 管理和用量查询。",
+    "url": "https://www.bluedoai.com/home/",
+    "tags": ["AI", "API", "大模型"]
+  },
   // C
   // D
   // E

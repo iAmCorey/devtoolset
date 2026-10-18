@@ -18,6 +18,12 @@
 [
   // A
   // B
+  {
+    "name": "BlueDoAI",
+    "description": "Paid, usage-based AI model APIs through an OpenAI-compatible endpoint, with a live model catalog, API-key management, and usage review.",
+    "url": "https://www.bluedoai.com/home-en/",
+    "tags": ["AI", "API", "LLM"]
+  },
   // C
   // D
   // E
