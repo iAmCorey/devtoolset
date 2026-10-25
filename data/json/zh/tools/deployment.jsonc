@@ -15,6 +15,13 @@
 
 [
   // A
+  {
+    "name": "apkgo",
+    "description": "一行命令将 APK 并发发布到国内主流安卓应用商店；支持鸿蒙，配套托管版 apkgo cloud 也支持 iOS；CLI 为 PolyForm Noncommercial",
+    "url": "https://apkgo.baici.tech",
+    "tags": ["CI/CD", "Android", "开源"],
+    "add_date": "2026-10-25"
+  },
   // B
   // C
   {
