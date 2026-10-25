@@ -15,6 +15,13 @@
 
 [
   // A
+  {
+    "name": "apkgo",
+    "description": "Publish one APK concurrently to major Chinese Android app stores; HarmonyOS supported; hosted apkgo cloud also covers iOS. CLI is PolyForm Noncommercial",
+    "url": "https://apkgo.baici.tech",
+    "tags": ["CI/CD", "Android", "open-source"],
+    "add_date": "2026-10-25"
+  },
   // B
   // C
   {
