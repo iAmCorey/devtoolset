@@ -57,6 +57,12 @@
   // O
   // P
   // Q
+  {
+    "name": "Quick Image Kit",
+    "description": "A free browser-local favicon generator that also exports a multi-size favicon.ico; no upload or signup.",
+    "url": "https://quickimagekit.com/favicon-generator",
+    "tags": ["Favicon", "Image", "No Upload"]
+  },
 {
     "name": "QuickFavs",
     "description": "A free online favicon generator with a simple interface and instant downloads.",
