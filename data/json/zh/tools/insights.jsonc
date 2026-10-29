@@ -71,6 +71,12 @@
     "url": "https://trendingkeywords.net/",
     "tags": ["关键词", "趋势"]
   },
+  {
+    "name": "TwitterAPI.io",
+    "description": "实时 X (Twitter) 数据 API：通过简单的 REST 接口获取推文、用户、粉丝、搜索结果和 Webhook 推送，无需 X 开发者账号。",
+    "url": "https://twitterapi.io/",
+    "tags": ["API", "Twitter", "社交数据"]
+  },
   // U
   // V
   // W

@@ -77,6 +77,12 @@
     "url": "https://trendingkeywords.net/",
     "tags": ["keywords", "trends"]
   },
+  {
+    "name": "TwitterAPI.io",
+    "description": "Real-time X (Twitter) data API: tweets, users, followers, search and webhooks via simple REST, no X developer account needed.",
+    "url": "https://twitterapi.io/",
+    "tags": ["API", "Twitter", "social data"]
+  },
   // U
   // V
   // W
