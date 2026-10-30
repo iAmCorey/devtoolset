@@ -25,6 +25,12 @@
   },
   // C
   {
+    "name": "Chronicle",
+    "description": "Free, MIT-licensed shadcn/ui dashboard and landing page template on Base UI, for Next.js or Vite.",
+    "url": "https://shadcnstore.com/templates/dashboards/chronicle",
+    "tags": ["dashboard", "templates", "free"],
+  },
+  {
     "name": "Creative Tim",
     "description": "Offers a variety of high-quality UI kits and templates for Bootstrap, Angular, and React, suitable for web and mobile app development.",
     "url": "https://www.creative-tim.com/",
@@ -68,6 +74,12 @@
     "name": "Shadcn Templates",
     "description": "Collection of Shadcn UI templates, components, boilerplates, and more.",
     "url": "https://shadcntemplates.com",
+    "tags": ["kit", "templates", "nextjs", "free"]
+  },
+  {
+    "name": "ShadcnStore",
+    "description": "Shadcn UI blocks and templates for React, built on Base UI and Tailwind CSS. Free blocks in every section, installs with the shadcn CLI, Figma kit included.",
+    "url": "https://shadcnstore.com",
     "tags": ["kit", "templates", "nextjs", "free"]
   },
   {
