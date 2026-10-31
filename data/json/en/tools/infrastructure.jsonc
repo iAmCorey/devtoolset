@@ -43,6 +43,13 @@
   // Q
   // R
   // S
+  {
+    "name": "SalesTouch",
+    "description": "The LinkedIn MCP for AI agents.",
+    "url": "https://www.salestouch.io",
+    "tags": ["LinkedIn", "MCP", "AI Agent"],
+    "add_date": "2026-10-31"
+  },
   // T
   // U
   // V
