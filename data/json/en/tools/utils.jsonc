@@ -17,6 +17,17 @@
 
 [
   // A
+  {
+    "name": "agent-qa",
+    "description": "Natural-language web, Android, and iOS QA via CLI or MCP, with persistent memidex memory and self-improvement. FSL-1.1-ALv2 restricts competing commercial uses; model and infrastructure costs are separate.",
+    "url": "https://vostride.com",
+    "tags": [
+      "Testing",
+      "MCP",
+      "Automation"
+    ],
+    "add_date": "2026-09-05"
+  },
   // B
   // C
   {

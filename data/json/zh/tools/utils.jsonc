@@ -17,6 +17,17 @@
 
 [
   // A
+  {
+    "name": "agent-qa",
+    "description": "用自然语言通过 CLI 或 MCP 测试 Web、Android 和 iOS，借助 memidex 持久记忆与测试反馈持续改进。FSL-1.1-ALv2 限制竞争性商业用途，模型与运行环境费用另计。",
+    "url": "https://vostride.com",
+    "tags": [
+      "测试",
+      "MCP",
+      "自动化"
+    ],
+    "add_date": "2026-09-05"
+  },
   // B
   // C
   // D
