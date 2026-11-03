@@ -25,6 +25,12 @@
     "url": "https://certdecoder.com/",
     "tags": ["SSL", "TLS", "Certificate Decoder"]
   },
+  {
+    "name": "Code By AI",
+    "description": "A unified API gateway for AI coding agents: one API key and one balance for Claude, GPT/Codex and Gemini, usable from Claude Code, Codex CLI, Gemini CLI and Cline.",
+    "url": "https://www.codebyai.net/",
+    "tags": ["AI Coding", "API Gateway", "LLM API"]
+  },
   // D
   {
     "name": "dns.fish",
