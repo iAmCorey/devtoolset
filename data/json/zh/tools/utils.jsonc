@@ -19,6 +19,12 @@
   // A
   // B
   // C
+  {
+    "name": "Code By AI",
+    "description": "面向 AI 编码工具的统一 API 网关：一个 API Key、一个余额调用 Claude、GPT/Codex 和 Gemini，兼容 Claude Code、Codex CLI、Gemini CLI、Cline 等。",
+    "url": "https://www.codebyai.net/",
+    "tags": ["AI 编程", "API 网关", "大模型 API"]
+  },
   // D
   {
     "name": "dns.fish",
