@@ -19,6 +19,12 @@
   // A
   // B
   // C
+  {
+    "name": "CodeI Lab",
+    "description": "面向 AI 编码工具的第三方 GPT API 网关：以折扣额度调用 GPT-6 Astra/Sol、GPT-6.1 Sol/Terra 与 GPT-5.6 Sol/Terra，一条命令配置 Claude Code、Codex CLI 或 OpenCode。",
+    "url": "https://www.codeilab.com/",
+    "tags": ["AI 编程", "API 网关", "大模型 API"]
+  },
   // D
   {
     "name": "dns.fish",
