@@ -25,6 +25,12 @@
     "url": "https://certdecoder.com/",
     "tags": ["SSL", "TLS", "Certificate Decoder"]
   },
+  {
+    "name": "CodeI Lab",
+    "description": "A third-party GPT API gateway for coding agents that bills discounted credit for GPT-6 Astra/Sol, GPT-6.1 Sol/Terra and GPT-5.6 Sol/Terra, configured for Claude Code, Codex CLI or OpenCode with one command.",
+    "url": "https://www.codeilab.com/",
+    "tags": ["AI Coding", "API Gateway", "LLM API"]
+  },
   // D
   {
     "name": "dns.fish",
