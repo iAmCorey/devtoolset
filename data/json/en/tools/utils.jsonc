@@ -33,6 +33,7 @@
     "tags": ["DNS", "Lookup"]
   },
   // E
+{"name":"easi.run","description":"Open-source, self-hosted Chrome for AI agents via MCP or REST, with live human takeover, saved profiles, and file uploads/downloads.","url":"https://easi.run","tags":["Browser Automation","MCP","Self-Hosted"]},
   // F
   {
     "name": "favicon.im",
