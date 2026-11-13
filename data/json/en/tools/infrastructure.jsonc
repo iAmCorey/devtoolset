@@ -45,6 +45,14 @@
   // S
   // T
   // U
+  {
+    "name": "UnoRouter",
+    "description": "Open source, OpenAI compatible LLM gateway: one API key and one base URL for models from OpenAI, Anthropic, Google, DeepSeek and more, with automatic failover between providers.",
+    "url": "https://unorouter.com",
+    "tags": [
+      "LLM","API","Gateway"
+    ]
+  },
   // V
   // W
   // X
