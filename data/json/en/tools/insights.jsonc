@@ -37,6 +37,12 @@
     "tags": ["venture capital", "AI", "technology"]
   },
   // D
+  {
+    "name": "Datacircle",
+    "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website.",
+    "url": "https://datacircle.dev",
+    "tags": ["api", "benchmark", "data"]
+  },
   // E
   {
     "name": "Exploding Topics",
