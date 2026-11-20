@@ -59,6 +59,12 @@
   // Q
   // R
   {
+    "name": "RedBison",
+    "description": "Free browser-based developer tools: JSON, YAML, CSV, regex, hashing, encoders, JWT, cron and unit conversion. No signup; most tools process data in the browser.",
+    "url": "https://redbison.dev/",
+    "tags": ["JSON", "Converters", "Encoding"]
+  },
+  {
     "name": "Redirect Check",
     "description": "A tool to check and analyze URL redirects, helping you trace the complete redirect path.",
     "url": "https://www.redirectcheck.org/",
