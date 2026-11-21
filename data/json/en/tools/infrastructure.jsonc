@@ -19,6 +19,14 @@
   // A
   // B
   // C
+  {
+    "name": "CrowLLM",
+    "description": "OpenAI-compatible LLM API gateway: one API key and one base URL for every model, with a zero-rated free model shelf.",
+    "url": "https://crowllm.com",
+    "tags": [
+      "LLM","API","Gateway"
+    ]
+  },
   // D
   // E
   // F
